@@ -1,0 +1,6 @@
+language: swift # or objective-c
+osx_image: xcode8
+script:
+  - xcodebuild -scheme LongPomo -project LongPomo/LongPomo.xcodeproj -sdk macosx  -configuration Release -enableCodeCoverage YES build tes
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J 'LongPomo'
