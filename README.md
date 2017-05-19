@@ -1,6 +1,7 @@
 # LongPomo
 
 [![Build Status](https://travis-ci.org/madcato/LongPomo.svg?branch=develop)](https://travis-ci.org/madcato/LongPomo)
+[![codecov](https://codecov.io/gh/madcato/LongPomo/branch/master/graph/badge.svg)](https://codecov.io/gh/madcato/LongPomo)
 
 Mac app for managing develop time. This app helps to manage the [Long-Pomodoro Technique](http://blog.veladan.org/2016/11/20/long-pomodoro-technique-republish/).
 
