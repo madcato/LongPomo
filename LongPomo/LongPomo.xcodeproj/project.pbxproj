@@ -406,7 +406,7 @@
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -421,7 +421,7 @@
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -509,6 +509,7 @@
 				0B7F9BB51ECE226C0023CF5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7F9BB61ECE226C0023CF5F /* Build configuration list for PBXNativeTarget "LongPomoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				0B7F9BB81ECE226C0023CF5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7F9BB91ECE226C0023CF5F /* Build configuration list for PBXNativeTarget "LongPomoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				0B7F9BBB1ECE226C0023CF5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
