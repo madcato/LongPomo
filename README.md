@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/madcato/LongPomo.svg?branch=develop)](https://travis-ci.org/madcato/LongPomo)
 [![codecov](https://codecov.io/gh/madcato/LongPomo/branch/master/graph/badge.svg)](https://codecov.io/gh/madcato/LongPomo)
 [![codebeat badge](https://codebeat.co/badges/ecc9eb98-a883-418f-8b84-9b83abd66a42)](https://codebeat.co/projects/github-com-madcato-longpomo-develop)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # LongPomo
 
