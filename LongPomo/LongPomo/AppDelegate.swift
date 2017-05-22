@@ -11,8 +11,6 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         configureMainAppearance()
     }
@@ -26,4 +24,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window?.backgroundColor = NSColor.black
     }
 }
-
