@@ -14,13 +14,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        configureMainAppearance()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 
-
+    func configureMainAppearance() {
+        let window = NSApplication.shared().mainWindow
+        window?.titlebarAppearsTransparent = true
+        window?.backgroundColor = NSColor.black
+    }
 }
 

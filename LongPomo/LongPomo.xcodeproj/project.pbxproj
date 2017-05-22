@@ -14,6 +14,7 @@
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
 		0BC4809D1ED339E600C8024D /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */; };
+		0BC480A01ED3403800C8024D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4809F1ED3403800C8024D /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		0BC4809F1ED3403800C8024D /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */,
 				0B7F9B931ECE226C0023CF5F /* ViewController.swift */,
 				0B7F9B951ECE226C0023CF5F /* Assets.xcassets */,
-				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
 				0B7F9B9A1ECE226C0023CF5F /* Info.plist */,
 			);
 			path = LongPomo;
@@ -128,6 +129,7 @@
 		0BC4809A1ED339B600C8024D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0BC4809E1ED33B0A00C8024D /* UI */,
 				0BC4809B1ED339CC00C8024D /* Fonts */,
 			);
 			path = Resources;
@@ -139,6 +141,15 @@
 				0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0BC4809E1ED33B0A00C8024D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
+				0BC4809F1ED3403800C8024D /* AppColors.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
 				0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */,
 				0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */,
 			);
@@ -321,6 +333,7 @@
 				0B7F9B981ECE226C0023CF5F /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
