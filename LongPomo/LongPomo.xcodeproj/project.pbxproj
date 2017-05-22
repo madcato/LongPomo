@@ -13,7 +13,6 @@
 		0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B971ECE226C0023CF5F /* Main.storyboard */; };
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
-		0BC4809D1ED339E600C8024D /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */; };
 		0BC480A01ED3403800C8024D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4809F1ED3403800C8024D /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +46,6 @@
 		0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		0BC4809F1ED3403800C8024D /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,17 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				0BC4809E1ED33B0A00C8024D /* UI */,
-				0BC4809B1ED339CC00C8024D /* Fonts */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		0BC4809B1ED339CC00C8024D /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0BC4809C1ED339E600C8024D /* fontawesome-webfont.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0BC4809E1ED33B0A00C8024D /* UI */ = {
@@ -263,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC4809D1ED339E600C8024D /* fontawesome-webfont.ttf in Resources */,
 				0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */,
 				0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */,
 			);
