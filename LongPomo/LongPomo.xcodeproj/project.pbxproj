@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */; };
+		0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
 		0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B951ECE226C0023CF5F /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
+		0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B7F9B931ECE226C0023CF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B15D5AF1ED48E65006979ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0B7F9B851ECE226C0023CF5F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		0B7F9B901ECE226C0023CF5F /* LongPomo */ = {
 			isa = PBXGroup;
 			children = (
+				0B15D5AF1ED48E65006979ED /* View */,
 				0BC480A71ED3610C00C8024D /* Util */,
 				0BC480A21ED35F8A00C8024D /* Model */,
 				0BC4809A1ED339B600C8024D /* Resources */,
@@ -165,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				0BC480A81ED3612C00C8024D /* Int+time.swift */,
+				0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -322,12 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
 				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
 				0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */,
 				0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */,
 				0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */,
 				0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */,
+				0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */,
 				0BC480A61ED360C900C8024D /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
