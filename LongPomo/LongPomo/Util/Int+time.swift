@@ -19,3 +19,16 @@ extension Int {
         return "\(mm):\(ss)"
     }
 }
+
+extension Double {
+    func minutes() -> Double {
+        return self * 60
+    }
+
+    func toMMSS() -> String {
+        let sInt = Int(self)
+        let mm = sInt / 60
+        let ss = sInt % 60
+        return String(format: "%02d:%02d", mm, ss)
+    }
+}

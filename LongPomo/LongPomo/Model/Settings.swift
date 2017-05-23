@@ -9,7 +9,7 @@
 import Foundation
 
 class Settings {
-    static var pomodoroInSeconds: Int = {
-       return 90.minutes()  // 90 minutes
+    static var pomodoroInSeconds: Double = {
+       return 5 // 90.minutes()  // 90 minutes
     }()
 }

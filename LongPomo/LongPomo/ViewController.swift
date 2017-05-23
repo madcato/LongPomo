@@ -23,8 +23,11 @@ class ViewController: NSViewController {
                 }
             }
             viewModel?.sencondsLeftDidChange = { [unowned self] viewModel in
-                guard let seconds = viewModel.secondsLeft else { return }
-                self.timeLeft.stringValue = seconds.toMMSS()
+                if let seconds = viewModel.secondsLeft {
+                    self.timeLeft.stringValue = seconds.toMMSS()
+                } else {
+                    self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
+                }
             }
             self.timeLeft.stringValue = ""
         }
@@ -46,7 +49,7 @@ class ViewController: NSViewController {
     }
 
     func configureViewModel() {
-        let interactor = PomodoroInteractor()
+        let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
     }
