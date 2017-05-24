@@ -8,30 +8,47 @@
 
 import Cocoa
 
-class TimerCicleOval {
-
-    var lineWidth: CGFloat?
-    var path: CGPath?
-    var strokeStart: CGFloat?
-    var strokeEnd: CGFloat?
-    var strokeColor: NSColor?
-    var fillColor: NSColor?
+class TimerCicleOvalShadow {
     var shadowRadius: CGFloat?
     var shadowOpacity: Float?
     var shadowOffsset: CGSize?
 
+    func configureShapeLayer(layer: CAShapeLayer) -> CAShapeLayer {
+        layer.shadowRadius = shadowRadius!
+        layer.shadowOpacity = shadowOpacity!
+        layer.shadowOffset = shadowOffsset!
+        return layer
+    }
+}
+
+class TimerCicleOvalLine {
+    var lineWidth: CGFloat?
+    var strokeStart: CGFloat?
+    var strokeEnd: CGFloat?
+    var strokeColor: NSColor?
+
+    func configureShapeLayer(layer: CAShapeLayer) -> CAShapeLayer {
+        layer.lineWidth = lineWidth!
+        layer.strokeStart = strokeStart!
+        layer.strokeEnd = strokeEnd!
+        layer.strokeColor = strokeColor!.cgColor
+        return layer
+    }
+}
+
+class TimerCicleOval {
+    var path: CGPath?
+    var fillColor: NSColor?
+    var shadow: TimerCicleOvalShadow?
+    var line: TimerCicleOvalLine?
+
     func ovalShapeLayer() -> CAShapeLayer {
-        let arc = CAShapeLayer()
-        arc.lineWidth = lineWidth!
+        var arc = CAShapeLayer()
         arc.path = path
-        arc.strokeStart = strokeStart!
-        arc.strokeEnd = strokeEnd!
-        arc.strokeColor = strokeColor!.cgColor
         arc.fillColor = fillColor!.cgColor
         arc.shadowColor = NSColor.black.cgColor
-        arc.shadowRadius = shadowRadius!
-        arc.shadowOpacity = shadowOpacity!
-        arc.shadowOffset = shadowOffsset!
+        arc = (shadow?.configureShapeLayer(layer: arc))!
+        arc = (line?.configureShapeLayer(layer: arc))!
         return arc
     }
 }
@@ -48,29 +65,43 @@ class TimerCircleView: NSView {
 
     func ovalBottom(_ path: NSBezierPath, _ color: NSColor) -> TimerCicleOval {
         let ovalBottom = TimerCicleOval()
-        ovalBottom.lineWidth = kLineWidth
         ovalBottom.path = path.CGPath
-        ovalBottom.strokeStart = 0
-        ovalBottom.strokeEnd = 1
-        ovalBottom.strokeColor = color
         ovalBottom.fillColor = NSColor.clear
-        ovalBottom.shadowRadius = 0
-        ovalBottom.shadowOpacity = 0
-        ovalBottom.shadowOffsset = CGSize.zero
+
+        let ovalBottomShadow = TimerCicleOvalShadow()
+        ovalBottomShadow.shadowRadius = 0
+        ovalBottomShadow.shadowOpacity = 0
+        ovalBottomShadow.shadowOffsset = CGSize.zero
+        ovalBottom.shadow = ovalBottomShadow
+
+        let ovalBottomLine = TimerCicleOvalLine()
+        ovalBottomLine.lineWidth = kLineWidth
+        ovalBottomLine.strokeStart = 0
+        ovalBottomLine.strokeEnd = 1
+        ovalBottomLine.strokeColor = color
+        ovalBottom.line = ovalBottomLine
+
         return ovalBottom
     }
 
     func ovalTop(_ path: NSBezierPath, _ color: NSColor) -> TimerCicleOval {
         let ovalTop = TimerCicleOval()
-        ovalTop.lineWidth = kLineWidth
         ovalTop.path = path.CGPath
-        ovalTop.strokeStart = 0
-        ovalTop.strokeEnd = 1
-        ovalTop.strokeColor = color
         ovalTop.fillColor = NSColor.clear
-        ovalTop.shadowRadius = 0
-        ovalTop.shadowOpacity = 0
-        ovalTop.shadowOffsset = CGSize.zero
+
+        let ovalTopShadow = TimerCicleOvalShadow()
+        ovalTopShadow.shadowRadius = 0
+        ovalTopShadow.shadowOpacity = 0
+        ovalTopShadow.shadowOffsset = CGSize.zero
+        ovalTop.shadow = ovalTopShadow
+
+        let ovalTopLine = TimerCicleOvalLine()
+        ovalTopLine.lineWidth = kLineWidth
+        ovalTopLine.strokeStart = 0
+        ovalTopLine.strokeEnd = 1
+        ovalTopLine.strokeColor = color
+        ovalTop.line = ovalTopLine
+
         return ovalTop
     }
 
