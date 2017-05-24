@@ -9,29 +9,42 @@
 import Cocoa
 
 class TimerCicleOvalShadow {
-    var shadowRadius: CGFloat?
-    var shadowOpacity: Float?
-    var shadowOffsset: CGSize?
+    var shadowRadius: CGFloat
+    var shadowOpacity: Float
+    var shadowOffsset: CGSize
+
+    init() {
+        self.shadowRadius = 0
+        self.shadowOpacity = 0
+        self.shadowOffsset = CGSize.zero
+    }
 
     func configureShapeLayer(layer: CAShapeLayer) -> CAShapeLayer {
-        layer.shadowRadius = shadowRadius!
-        layer.shadowOpacity = shadowOpacity!
-        layer.shadowOffset = shadowOffsset!
+        layer.shadowRadius = shadowRadius
+        layer.shadowOpacity = shadowOpacity
+        layer.shadowOffset = shadowOffsset
         return layer
     }
 }
 
 class TimerCicleOvalLine {
-    var lineWidth: CGFloat?
-    var strokeStart: CGFloat?
-    var strokeEnd: CGFloat?
-    var strokeColor: NSColor?
+    var lineWidth: CGFloat
+    var strokeStart: CGFloat
+    var strokeEnd: CGFloat
+    var strokeColor: NSColor
+
+    init(_ lineWidth: CGFloat, _ color: NSColor) {
+        self.lineWidth = lineWidth
+        self.strokeStart = 0
+        self.strokeEnd = 1
+        self.strokeColor = color
+    }
 
     func configureShapeLayer(layer: CAShapeLayer) -> CAShapeLayer {
-        layer.lineWidth = lineWidth!
-        layer.strokeStart = strokeStart!
-        layer.strokeEnd = strokeEnd!
-        layer.strokeColor = strokeColor!.cgColor
+        layer.lineWidth = lineWidth
+        layer.strokeStart = strokeStart
+        layer.strokeEnd = strokeEnd
+        layer.strokeColor = strokeColor.cgColor
         return layer
     }
 }
@@ -69,16 +82,9 @@ class TimerCircleView: NSView {
         ovalBottom.fillColor = NSColor.clear
 
         let ovalBottomShadow = TimerCicleOvalShadow()
-        ovalBottomShadow.shadowRadius = 0
-        ovalBottomShadow.shadowOpacity = 0
-        ovalBottomShadow.shadowOffsset = CGSize.zero
         ovalBottom.shadow = ovalBottomShadow
 
-        let ovalBottomLine = TimerCicleOvalLine()
-        ovalBottomLine.lineWidth = kLineWidth
-        ovalBottomLine.strokeStart = 0
-        ovalBottomLine.strokeEnd = 1
-        ovalBottomLine.strokeColor = color
+        let ovalBottomLine = TimerCicleOvalLine(kLineWidth, color)
         ovalBottom.line = ovalBottomLine
 
         return ovalBottom
@@ -90,22 +96,15 @@ class TimerCircleView: NSView {
         ovalTop.fillColor = NSColor.clear
 
         let ovalTopShadow = TimerCicleOvalShadow()
-        ovalTopShadow.shadowRadius = 0
-        ovalTopShadow.shadowOpacity = 0
-        ovalTopShadow.shadowOffsset = CGSize.zero
         ovalTop.shadow = ovalTopShadow
 
-        let ovalTopLine = TimerCicleOvalLine()
-        ovalTopLine.lineWidth = kLineWidth
-        ovalTopLine.strokeStart = 0
-        ovalTopLine.strokeEnd = 1
-        ovalTopLine.strokeColor = color
+        let ovalTopLine = TimerCicleOvalLine(kLineWidth, color)
         ovalTop.line = ovalTopLine
 
         return ovalTop
     }
 
-    func addCirle(arcRadius: CGFloat, capRadius: CGFloat, colorTop: NSColor, colorBottom: NSColor) {
+    func addCirle(arcRadius: CGFloat, colorTop: NSColor, colorBottom: NSColor) {
         let X = self.bounds.midX
         let Y = self.bounds.midY
 
@@ -122,16 +121,14 @@ class TimerCircleView: NSView {
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
         pathTop.appendArc(withCenter: NSPoint(x: X, y: Y), radius: 125, startAngle: 90, endAngle: -260, clockwise: true)
-
         self.addOval(oval: ovalTop(pathTop, colorTop))
     }
-
+ 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
         // Drawing code here.
         self.addCirle(arcRadius: self.arcRadious,
-                      capRadius: 20,
                       colorTop: self.primaryColor,
                       colorBottom:  self.secondaryColor)
     }
