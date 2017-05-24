@@ -70,6 +70,17 @@ class TimerCircleView: NSView {
     var secondaryColor: NSColor = AppColors.secondaryColor
     var arcRadious: CGFloat = 250
     var kLineWidth: CGFloat = 20
+    var currentProgress: Double = 0 { // Valid values from 0.0 to 1.0
+        didSet {
+            if currentProgress > 1.0 {
+                currentProgress = 1.0
+            }
+            if currentProgress < 0.0 {
+                currentProgress = 0.0
+            }
+            redraw()
+        }
+    }
 
     func addOval(oval: TimerCicleOval) {
         let arc = oval.ovalShapeLayer()
@@ -120,10 +131,13 @@ class TimerCircleView: NSView {
         // End -270  -> 0 leftSeconds
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
-        pathTop.appendArc(withCenter: NSPoint(x: X, y: Y), radius: 125, startAngle: 90, endAngle: -260, clockwise: true)
+        pathTop.appendArc(withCenter: NSPoint(x: X, y: Y),
+                          radius: arcRadius/2,
+                          startAngle: 90,
+                          endAngle: calculateEndAngle(), clockwise: true)
         self.addOval(oval: ovalTop(pathTop, colorTop))
     }
- 
+
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
@@ -131,5 +145,14 @@ class TimerCircleView: NSView {
         self.addCirle(arcRadius: self.arcRadious,
                       colorTop: self.primaryColor,
                       colorBottom:  self.secondaryColor)
+    }
+
+    func redraw() {
+        // invalidate view
+        self.needsDisplay = true
+    }
+
+    func calculateEndAngle() -> CGFloat {
+        return CGFloat((360 * currentProgress) - 270)
     }
 }

@@ -687,17 +687,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="496"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIl-Xy-Gbu">
-                                <rect key="frame" x="136" y="20" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="triangle" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hVj-3C-fkz">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="mainButtonTapped:" target="XfG-lQ-9wD" id="Vq2-to-3Rj"/>
-                                </connections>
-                            </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xp-Vm-sdn">
                                 <rect key="frame" x="268" y="463" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -729,9 +718,21 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gIl-Xy-Gbu">
+                                <rect key="frame" x="145" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="triangle" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hVj-3C-fkz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="mainButtonTapped:" target="XfG-lQ-9wD" id="Vq2-to-3Rj"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="circleView" destination="m2S-Jp-Qdl" id="B7y-gl-RNp"/>
                         <outlet property="mainButton" destination="gIl-Xy-Gbu" id="OIe-8b-z52"/>
                         <outlet property="timeLeft" destination="D1h-Ku-Lxu" id="sxu-Hy-Iaj"/>
                     </connections>

@@ -13,6 +13,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var mainButton: NSButton!
     @IBOutlet weak var timeLeft: NSTextField!
 
+    @IBOutlet var circleView: TimerCircleView!
+
     var viewModel: PomodoroViewModelProtocol? {
         didSet {
             viewModel?.runningDidChange = { [unowned self] viewModel in
@@ -25,8 +27,10 @@ class ViewController: NSViewController {
             viewModel?.sencondsLeftDidChange = { [unowned self] viewModel in
                 if let seconds = viewModel.secondsLeft {
                     self.timeLeft.stringValue = seconds.toMMSS()
+                    self.circleView.currentProgress = viewModel.currentProgress()
                 } else {
                     self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
+                    self.circleView.currentProgress = 0
                 }
             }
             self.timeLeft.stringValue = ""

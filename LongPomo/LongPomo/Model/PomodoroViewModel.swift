@@ -17,6 +17,7 @@ protocol PomodoroViewModelProtocol {
 
     func play()
     func stop()
+    func currentProgress() -> Double
 
     init(interactor: PomodoroInteractorProtocol)
 }
@@ -51,6 +52,12 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
         // FIXME Change the Pomodoro to rest mode 
     }
 
+    func currentProgress() -> Double {
+        if let secondsLeft = secondsLeft {
+            return secondsLeft / Settings.pomodoroInSeconds
+        }
+        return 0.0
+    }
     required init(interactor: PomodoroInteractorProtocol) {
         running = false
         secondsLeft = Settings.pomodoroInSeconds
