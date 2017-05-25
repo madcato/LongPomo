@@ -27,10 +27,23 @@ class ViewController: NSViewController {
             viewModel?.sencondsLeftDidChange = { [unowned self] viewModel in
                 if let seconds = viewModel.secondsLeft {
                     self.timeLeft.stringValue = seconds.toMMSS()
-                    self.circleView.currentProgress = viewModel.currentProgress()
+                    var progress = viewModel.currentProgress()
+                    // If resting, progress must start at 1 and end at 0
+                    if viewModel.state == .resting {
+                        progress = 1 - progress
+                    }
+                    self.circleView.currentProgress = progress
                 } else {
                     self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
                     self.circleView.currentProgress = 0
+                }
+            }
+            viewModel?.stateDidChange = { [unowned self] viewModel in
+                switch viewModel.state {
+                case .onGoing:
+                    self.circleView.primaryColor = AppColors.primaryColor
+                case .resting:
+                    self.circleView.primaryColor = AppColors.accentColor
                 }
             }
             self.timeLeft.stringValue = ""

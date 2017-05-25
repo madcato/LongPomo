@@ -11,6 +11,7 @@ import Foundation
 protocol PomodoroInteractorProtocol {
     func start()
     func stop()
+    var maxSeconds: Double { get set }
     weak var delegate: PomodoroInteractorDelegate? { get set }
 }
 
