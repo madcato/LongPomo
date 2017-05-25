@@ -19,35 +19,9 @@ class ViewController: NSViewController {
 
     var viewModel: PomodoroViewModelProtocol? {
         didSet {
-            viewModel?.runningDidChange = { [unowned self] viewModel in
-                if viewModel.running {
-                    self.mainButton.image = NSImage(named: "square")
-                } else {
-                    self.mainButton.image = NSImage(named: "triangle")
-                }
-            }
-            viewModel?.sencondsLeftDidChange = { [unowned self] viewModel in
-                if let seconds = viewModel.secondsLeft {
-                    self.timeLeft.stringValue = seconds.toMMSS()
-                    var progress = viewModel.currentProgress()
-                    // If resting, progress must start at 1 and end at 0
-                    if viewModel.state == .resting {
-                        progress = 1 - progress
-                    }
-                    self.circleView.currentProgress = progress
-                } else {
-                    self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
-                    self.circleView.currentProgress = 0
-                }
-            }
-            viewModel?.stateDidChange = { [unowned self] viewModel in
-                switch viewModel.state {
-                case .onGoing:
-                    self.circleView.primaryColor = AppColors.primaryColor
-                case .resting:
-                    self.circleView.primaryColor = AppColors.accentColor
-                }
-            }
+            viewModel?.runningDidChange = self.runningDidChange
+            viewModel?.sencondsLeftDidChange = self.secondsLeftDidChange
+            viewModel?.stateDidChange = self.stateDidChange
             self.timeLeft.stringValue = ""
         }
     }
@@ -72,6 +46,38 @@ class ViewController: NSViewController {
         let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
+    }
+
+    func runningDidChange(viewModel: PomodoroViewModelProtocol) {
+        if viewModel.running {
+            self.mainButton.image = NSImage(named: "square")
+        } else {
+            self.mainButton.image = NSImage(named: "triangle")
+        }
+    }
+
+    func secondsLeftDidChange(viewModel: PomodoroViewModelProtocol) {
+        if let seconds = viewModel.secondsLeft {
+            self.timeLeft.stringValue = seconds.toMMSS()
+            var progress = viewModel.currentProgress()
+            // If resting, progress must start at 1 and end at 0
+            if viewModel.state == .resting {
+                progress = 1 - progress
+            }
+            self.circleView.currentProgress = progress
+        } else {
+            self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
+            self.circleView.currentProgress = 0
+        }
+    }
+
+    func stateDidChange(viewModel: PomodoroViewModelProtocol) {
+        switch viewModel.state {
+        case .onGoing:
+            self.circleView.primaryColor = AppColors.primaryColor
+        case .resting:
+            self.circleView.primaryColor = AppColors.accentColor
+        }
     }
 
     @IBAction func mainButtonTapped(_ sender: Any) {

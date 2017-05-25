@@ -14,8 +14,8 @@ class TimerCicleOvalShadow {
     var shadowOffsset: CGSize
 
     init() {
-        self.shadowRadius = 0
-        self.shadowOpacity = 0
+        self.shadowRadius = 2
+        self.shadowOpacity = 1
         self.shadowOffsset = CGSize.zero
     }
 
