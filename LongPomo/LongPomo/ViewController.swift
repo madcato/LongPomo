@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    static var circleController: NSViewController?
+
     @IBOutlet weak var mainButton: NSButton!
     @IBOutlet weak var timeLeft: NSTextField!
 
@@ -54,6 +56,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         configureAppearance()
         configureViewModel()
+        ViewController.circleController = self
     }
 
     override var representedObject: Any? {
@@ -80,7 +83,17 @@ class ViewController: NSViewController {
         }
     }
 
+    lazy var mainWindow = {
+        return NSApplication.shared().mainWindow!
+    }()
     @IBAction func gearTapped(_ sender: Any) {
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateController(withIdentifier: "SettingsViewController")
+            as? SettingsViewController {
+            let windowController = NSWindowController(window: mainWindow)
+            windowController.contentViewController = controller
+            windowController.showWindow(mainWindow)
+        }
     }
 
     @IBAction func playCircleTapped(_ sender: NSButton) {

@@ -31,4 +31,10 @@ extension Double {
         let ss = sInt % 60
         return String(format: "%02d:%02d", mm, ss)
     }
+
+    func toMM() -> String {
+        let sInt = Int(self)
+        let mm = sInt / 60
+        return String(format: "%02d", mm)
+    }
 }
