@@ -30,7 +30,7 @@ class SettingsViewController: NSViewController {
     }
 
     lazy var mainWindow = {
-        return NSApplication.shared().mainWindow!
+        return NSApplication.shared().mainWindow
     }()
     @IBAction func gearTapped(_ sender: Any) {
     }
