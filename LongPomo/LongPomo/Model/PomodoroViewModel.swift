@@ -67,18 +67,12 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
     }
 
     func stop() {
-        assert(running == true, "Stop can't be called, if app counter is running")
-        running = false
-        interactor.stop()
-        // check resting state
-        switch state {
-        case .onGoing:
-            // Set pomodoro in resting mode and restart
-            state = .resting
-            play() // Start resting
-        case .resting:
-            state = .onGoing
-        }
+        internalStop(fromUser: true)
+    }
+
+    func reset() {
+        state = .onGoing
+        secondsLeft = Settings.pomodoroInSeconds
     }
 
     func currentProgress() -> Double {
@@ -97,12 +91,32 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
         self.interactor.delegate = self
     }
 
+    func internalStop(fromUser: Bool) {
+        // If it's the user has pressed the button, stop all execution
+        // If is stoped because finish time, start resting time o stop if currely resting
+        assert(running == true, "Stop can't be called, if app counter is running")
+        running = false
+        interactor.stop()
+        // check resting state
+        switch state {
+        case .onGoing:
+            // Set pomodoro in resting mode and restart
+            if (fromUser == false) {
+                state = .resting
+                play() // Start resting
+            } else {
+                reset()
+            }
+        case .resting:
+            reset()
+        }
+    }
     // MARK - PomodoroInteractorDelegate
 
     func timeChanged(secondsLeft: Double) {
         self.secondsLeft = secondsLeft
         if secondsLeft <= 0 {
-            stop()
+            internalStop(fromUser: false)
         }
     }
 }
