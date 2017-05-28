@@ -102,12 +102,16 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
         case .onGoing:
             // Set pomodoro in resting mode and restart
             if (fromUser == false) {
+                MacOSNotification.show(informativeText: "Long pomodoro finished",
+                                       title: "LongPomo")
                 state = .resting
                 play() // Start resting
             } else {
                 reset()
             }
         case .resting:
+            MacOSNotification.show(informativeText: "Rest finished",
+                                             title: "LongPomo")
             reset()
         }
     }
