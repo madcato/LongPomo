@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1031631ED72AB900210F5C /* SettingsViewController.swift */; };
+		0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */; };
+		0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */; };
+		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
+		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
 		0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B951ECE226C0023CF5F /* Assets.xcassets */; };
 		0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B971ECE226C0023CF5F /* Main.storyboard */; };
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
+		0BC480A01ED3403800C8024D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4809F1ED3403800C8024D /* AppColors.swift */; };
+		0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0BC480A61ED360C900C8024D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1031631ED72AB900210F5C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
+		0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
+		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
+		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
+		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B7F9B931ECE226C0023CF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +62,11 @@
 		0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC4809F1ED3403800C8024D /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
+		0BC480A51ED360C900C8024D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0BC480A81ED3612C00C8024D /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
+		0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1031621ED72A8000210F5C /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				0B7F9B931ECE226C0023CF5F /* ViewController.swift */,
+				0B1031631ED72AB900210F5C /* SettingsViewController.swift */,
+			);
+			name = Contoller;
+			sourceTree = "<group>";
+		};
+		0B15D5AF1ED48E65006979ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0B7F9B851ECE226C0023CF5F = {
 			isa = PBXGroup;
 			children = (
@@ -95,10 +134,13 @@
 		0B7F9B901ECE226C0023CF5F /* LongPomo */ = {
 			isa = PBXGroup;
 			children = (
+				0B1031621ED72A8000210F5C /* Contoller */,
+				0B15D5AF1ED48E65006979ED /* View */,
+				0BC480A71ED3610C00C8024D /* Util */,
+				0BC480A21ED35F8A00C8024D /* Model */,
+				0BC4809A1ED339B600C8024D /* Resources */,
 				0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */,
-				0B7F9B931ECE226C0023CF5F /* ViewController.swift */,
 				0B7F9B951ECE226C0023CF5F /* Assets.xcassets */,
-				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
 				0B7F9B9A1ECE226C0023CF5F /* Info.plist */,
 			);
 			path = LongPomo;
@@ -109,6 +151,7 @@
 			children = (
 				0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */,
 				0B7F9BA51ECE226C0023CF5F /* Info.plist */,
+				0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */,
 			);
 			path = LongPomoTests;
 			sourceTree = "<group>";
@@ -122,6 +165,44 @@
 			path = LongPomoUITests;
 			sourceTree = "<group>";
 		};
+		0BC4809A1ED339B600C8024D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BC4809E1ED33B0A00C8024D /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BC4809E1ED33B0A00C8024D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
+				0BC4809F1ED3403800C8024D /* AppColors.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0BC480A21ED35F8A00C8024D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */,
+				0BC480A51ED360C900C8024D /* Settings.swift */,
+				0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BC480A71ED3610C00C8024D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0BC480A81ED3612C00C8024D /* Int+time.swift */,
+				0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */,
+				0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */,
+				0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +213,7 @@
 				0B7F9B8A1ECE226C0023CF5F /* Sources */,
 				0B7F9B8B1ECE226C0023CF5F /* Frameworks */,
 				0B7F9B8C1ECE226C0023CF5F /* Resources */,
+				0BC480A11ED3414300C8024D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,13 +335,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BC480A11ED3414300C8024D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B7F9B8A1ECE226C0023CF5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
+				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
+				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
+				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
+				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,
+				0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */,
+				0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */,
 				0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */,
 				0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */,
+				0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */,
+				0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */,
+				0BC480A61ED360C900C8024D /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */,
+				0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +410,7 @@
 				0B7F9B981ECE226C0023CF5F /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
