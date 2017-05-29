@@ -12,12 +12,7 @@ class Settings {
     static var kPomodoInSeconds: String = "kPomodoInSeconds"
     static var kRestingInSeconds: String = "kRestingInSeconds"
     static var pomodoroInSeconds: Double = {
-        let seconds = SimplePersistence.double(forKey: kPomodoInSeconds)
-        if seconds != 0 {
-            return seconds
-        } else {
-            return 90.minutes()  // 90 minutes
-        }
+        return storedDouble(forKey: kPomodoInSeconds, default: 90)
     }() {
         didSet {
             SimplePersistence.store(pomodoroInSeconds, forKey: kPomodoInSeconds)
@@ -25,15 +20,20 @@ class Settings {
     }
 
     static var restingInSeconds: Double = {
-        let seconds = SimplePersistence.double(forKey: kRestingInSeconds)
+        return storedDouble(forKey: kRestingInSeconds, default: 20)
+    }() {
+        didSet {
+            SimplePersistence.store(pomodoroInSeconds, forKey: kRestingInSeconds)
+        }
+    }
+
+    static func storedDouble(forKey key: String,
+                             default defaultValue: Double) -> Double {
+        let seconds = SimplePersistence.double(forKey: kPomodoInSeconds)
         if seconds != 0 {
             return seconds
         } else {
-            return 20.minutes()  // 20 minutes
-        }
-        }() {
-        didSet {
-            SimplePersistence.store(pomodoroInSeconds, forKey: kRestingInSeconds)
+            return defaultValue.minutes()  // 90 minutes
         }
     }
 }
