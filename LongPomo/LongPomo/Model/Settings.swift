@@ -23,13 +23,13 @@ class Settings {
         return storedDouble(forKey: kRestingInSeconds, default: 20)
     }() {
         didSet {
-            SimplePersistence.store(pomodoroInSeconds, forKey: kRestingInSeconds)
+            SimplePersistence.store(restingInSeconds, forKey: kRestingInSeconds)
         }
     }
 
     static func storedDouble(forKey key: String,
                              default defaultValue: Double) -> Double {
-        let seconds = SimplePersistence.double(forKey: kPomodoInSeconds)
+        let seconds = SimplePersistence.double(forKey: key)
         if seconds != 0 {
             return seconds
         } else {
