@@ -82,9 +82,12 @@ class TimerCircleView: NSView {
         }
     }
 
+    var prevSublayer: [CALayer] = []
+
     func addOval(oval: TimerCicleOval) {
         let arc = oval.ovalShapeLayer()
         layer?.addSublayer(arc)
+        prevSublayer.append(arc)
     }
 
     func ovalBottom(_ path: NSBezierPath, _ color: NSColor) -> TimerCicleOval {
@@ -138,9 +141,17 @@ class TimerCircleView: NSView {
         self.addOval(oval: ovalTop(pathTop, colorTop))
     }
 
+    func removePrevSublayer() {
+        for subl in prevSublayer {
+            subl.removeFromSuperlayer()
+        }
+        prevSublayer.removeAll()
+    }
+
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
+        removePrevSublayer()
         // Drawing code here.
         self.addCirle(arcRadius: self.arcRadious,
                       colorTop: self.primaryColor,

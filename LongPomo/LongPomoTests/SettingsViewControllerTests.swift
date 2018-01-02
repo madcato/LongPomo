@@ -11,13 +11,14 @@ import XCTest
 
 class SettingsViewControllerTests: XCTestCase {
     lazy var storyboard = {
-        NSStoryboard(name: "Main", bundle: nil)
+        NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
     }()
     var controller: SettingsViewController?
     override func setUp() {
         super.setUp()
 
-        controller = storyboard.instantiateController(withIdentifier: "SettingsViewController")
+        controller = storyboard.instantiateController(withIdentifier:
+            NSStoryboard.SceneIdentifier(rawValue: "SettingsViewController"))
             as? SettingsViewController
     }
 

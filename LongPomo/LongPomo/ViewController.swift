@@ -50,9 +50,9 @@ class ViewController: NSViewController {
 
     func runningDidChange(viewModel: PomodoroViewModelProtocol) {
         if viewModel.running {
-            self.mainButton.image = NSImage(named: "square")
+            self.mainButton.image = NSImage(named: NSImage.Name(rawValue: "square"))
         } else {
-            self.mainButton.image = NSImage(named: "triangle")
+            self.mainButton.image = NSImage(named: NSImage.Name(rawValue: "triangle"))
         }
     }
 
@@ -90,11 +90,12 @@ class ViewController: NSViewController {
     }
 
     lazy var mainWindow = {
-        return NSApplication.shared().mainWindow!
+        return NSApplication.shared.mainWindow!
     }()
     @IBAction func gearTapped(_ sender: Any) {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        if let controller = storyboard.instantiateController(withIdentifier: "SettingsViewController")
+        let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
+        if let controller = storyboard.instantiateController(withIdentifier:
+            NSStoryboard.SceneIdentifier(rawValue: "SettingsViewController"))
             as? SettingsViewController {
             let windowController = NSWindowController(window: mainWindow)
             windowController.contentViewController = controller

@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func configureMainAppearance() {
-        let window = NSApplication.shared().mainWindow
+        let window = NSApplication.shared.mainWindow
         window?.titlebarAppearsTransparent = true
         window?.backgroundColor = AppColors.backgroundColor
     }
