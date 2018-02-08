@@ -19,6 +19,7 @@
 		0B571E63202C5A710070F2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */; };
 		0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */; };
 		0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */; };
+		0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */; };
 		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 		0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
 		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControllViewController.swift; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				0B571E58202C5A710070F2C5 /* AppDelegate.swift */,
 				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
+				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
 				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
 				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
 				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
@@ -549,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */,
+				0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */,
 				0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
