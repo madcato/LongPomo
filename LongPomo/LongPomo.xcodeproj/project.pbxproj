@@ -12,6 +12,13 @@
 		0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */; };
 		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
 		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E58202C5A710070F2C5 /* AppDelegate.swift */; };
+		0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E5A202C5A710070F2C5 /* ViewController.swift */; };
+		0B571E5E202C5A710070F2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E5C202C5A710070F2C5 /* Main.storyboard */; };
+		0B571E60202C5A710070F2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E5F202C5A710070F2C5 /* Assets.xcassets */; };
+		0B571E63202C5A710070F2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */; };
+		0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */; };
+		0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */; };
 		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
@@ -27,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B571E55202C5A710070F2C5;
+			remoteInfo = "LongPomo-ios";
+		};
+		0B571E75202C5A720070F2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B571E55202C5A710070F2C5;
+			remoteInfo = "LongPomo-ios";
+		};
 		0B7F9BA01ECE226C0023CF5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
@@ -49,6 +70,19 @@
 		0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
 		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
+		0B571E56202C5A710070F2C5 /* LongPomo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E58202C5A710070F2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B571E5A202C5A710070F2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B571E5D202C5A710070F2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B571E5F202C5A710070F2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B571E62202C5A710070F2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B571E64202C5A710070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosTests.swift; sourceTree = "<group>"; };
+		0B571E6F202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
+		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +104,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B571E53202C5A710070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E66202C5A710070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E71202C5A720070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8B1ECE226C0023CF5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,12 +166,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E58202C5A710070F2C5 /* AppDelegate.swift */,
+				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
+				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
+				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
+				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
+				0B571E64202C5A710070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-ios";
+			sourceTree = "<group>";
+		};
+		0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */,
+				0B571E6F202C5A720070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-iosTests";
+			sourceTree = "<group>";
+		};
+		0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */,
+				0B571E7A202C5A720070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-iosUITests";
+			sourceTree = "<group>";
+		};
 		0B7F9B851ECE226C0023CF5F = {
 			isa = PBXGroup;
 			children = (
 				0B7F9B901ECE226C0023CF5F /* LongPomo */,
 				0B7F9BA21ECE226C0023CF5F /* LongPomoTests */,
 				0B7F9BAD1ECE226C0023CF5F /* LongPomoUITests */,
+				0B571E57202C5A710070F2C5 /* LongPomo-ios */,
+				0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */,
+				0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */,
 				0B7F9B8F1ECE226C0023CF5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +216,9 @@
 				0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */,
 				0B7F9B9F1ECE226C0023CF5F /* LongPomoTests.xctest */,
 				0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */,
+				0B571E56202C5A710070F2C5 /* LongPomo-ios.app */,
+				0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */,
+				0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +298,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B571E55202C5A710070F2C5 /* LongPomo-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */;
+			buildPhases = (
+				0B571E52202C5A710070F2C5 /* Sources */,
+				0B571E53202C5A710070F2C5 /* Frameworks */,
+				0B571E54202C5A710070F2C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LongPomo-ios";
+			productName = "LongPomo-ios";
+			productReference = 0B571E56202C5A710070F2C5 /* LongPomo-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B571E68202C5A710070F2C5 /* LongPomo-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E82202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosTests" */;
+			buildPhases = (
+				0B571E65202C5A710070F2C5 /* Sources */,
+				0B571E66202C5A710070F2C5 /* Frameworks */,
+				0B571E67202C5A710070F2C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B571E6B202C5A720070F2C5 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-iosTests";
+			productName = "LongPomo-iosTests";
+			productReference = 0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E83202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosUITests" */;
+			buildPhases = (
+				0B571E70202C5A720070F2C5 /* Sources */,
+				0B571E71202C5A720070F2C5 /* Frameworks */,
+				0B571E72202C5A720070F2C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B571E76202C5A720070F2C5 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-iosUITests";
+			productName = "LongPomo-iosUITests";
+			productReference = 0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0B7F9B8D1ECE226C0023CF5F /* LongPomo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B7F9BB31ECE226C0023CF5F /* Build configuration list for PBXNativeTarget "LongPomo" */;
@@ -266,10 +411,27 @@
 		0B7F9B861ECE226C0023CF5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Daniel Vela";
 				TargetAttributes = {
+					0B571E55202C5A710070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+					};
+					0B571E68202C5A710070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B571E55202C5A710070F2C5;
+					};
+					0B571E73202C5A720070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B571E55202C5A710070F2C5;
+					};
 					0B7F9B8D1ECE226C0023CF5F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = TW65EXAM4U;
@@ -308,11 +470,38 @@
 				0B7F9B8D1ECE226C0023CF5F /* LongPomo */,
 				0B7F9B9E1ECE226C0023CF5F /* LongPomoTests */,
 				0B7F9BA91ECE226C0023CF5F /* LongPomoUITests */,
+				0B571E55202C5A710070F2C5 /* LongPomo-ios */,
+				0B571E68202C5A710070F2C5 /* LongPomo-iosTests */,
+				0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B571E54202C5A710070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E63202C5A710070F2C5 /* LaunchScreen.storyboard in Resources */,
+				0B571E60202C5A710070F2C5 /* Assets.xcassets in Resources */,
+				0B571E5E202C5A710070F2C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E67202C5A710070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E72202C5A720070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8C1ECE226C0023CF5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +544,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B571E52202C5A710070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */,
+				0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E65202C5A710070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E70202C5A720070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8A1ECE226C0023CF5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +608,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B571E6B202C5A720070F2C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
+			targetProxy = 0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */;
+		};
+		0B571E76202C5A720070F2C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
+			targetProxy = 0B571E75202C5A720070F2C5 /* PBXContainerItemProxy */;
+		};
 		0B7F9BA11ECE226C0023CF5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0B7F9B8D1ECE226C0023CF5F /* LongPomo */;
@@ -407,6 +631,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0B571E5C202C5A710070F2C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B571E5D202C5A710070F2C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B571E62202C5A710070F2C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		0B7F9B971ECE226C0023CF5F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +659,141 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B571E7B202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B571E7C202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B571E7D202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-ios.app/LongPomo-ios";
+			};
+			name = Debug;
+		};
+		0B571E7E202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-ios.app/LongPomo-ios";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B571E7F202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LongPomo-ios";
+			};
+			name = Debug;
+		};
+		0B571E80202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LongPomo-ios";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		0B7F9BB11ECE226C0023CF5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -624,6 +999,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7B202C5A720070F2C5 /* Debug */,
+				0B571E7C202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B571E82202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7D202C5A720070F2C5 /* Debug */,
+				0B571E7E202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B571E83202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7F202C5A720070F2C5 /* Debug */,
+				0B571E80202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0B7F9B891ECE226C0023CF5F /* Build configuration list for PBXProject "LongPomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
