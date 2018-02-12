@@ -115,7 +115,8 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
             reset()
         }
     }
-    // MARK - PomodoroInteractorDelegate
+
+    // MARK: - PomodoroInteractorDelegate
 
     func timeChanged(secondsLeft: Double) {
         self.secondsLeft = secondsLeft
