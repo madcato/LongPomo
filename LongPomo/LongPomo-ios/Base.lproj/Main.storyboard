@@ -25,6 +25,10 @@
                                     <segue destination="q8D-cb-m7y" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="21B-Vr-fUJ"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c3W-Tg-eUh">
+                                <rect key="frame" x="16" y="194" width="343" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,6 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
         <!--Config View Controll View Controller-->
         <scene sceneID="1i4-4e-m2e">
@@ -52,6 +57,13 @@
                                     <segue destination="GcJ-3G-1Ok" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="kIN-0T-9EB"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-u9-fEL">
+                                <rect key="frame" x="0.0" y="252" width="375" height="198"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="540115035.27672899">
+                                    <!--2018-02-12 07:57:15 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.76470588240000004" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="eIZ-QT-qAD"/>
@@ -60,7 +72,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syN-u3-wSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="GcJ-3G-1Ok" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="895" y="34"/>
+            <point key="canvasLocation" x="893.60000000000002" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>

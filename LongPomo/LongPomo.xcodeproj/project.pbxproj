@@ -18,6 +18,12 @@
 		0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09920317DC800A0C0B2 /* NotificationController.swift */; };
 		0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */; };
 		0B1DC0A220317DC800A0C0B2 /* LonPomo-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */; };
+		0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */; };
+		0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B220317FC200A0C0B2 /* ViewController.swift */; };
+		0B1DC0B620317FC200A0C0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B420317FC200A0C0B2 /* Main.storyboard */; };
+		0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */; };
+		0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */; };
+		0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */; };
 		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
 		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
 		0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E58202C5A710070F2C5 /* AppDelegate.swift */; };
@@ -56,6 +62,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0B1DC08320317DC700A0C0B2;
 			remoteInfo = "LonPomo-watch";
+		};
+		0B1DC0BF20317FC200A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC0AD20317FC200A0C0B2;
+			remoteInfo = "LongPomo-tv";
+		};
+		0B1DC0CA20317FC200A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC0AD20317FC200A0C0B2;
+			remoteInfo = "LongPomo-tv";
 		};
 		0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -127,6 +147,18 @@
 		0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B1DC09D20317DC800A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B1DC09E20317DC800A0C0B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B1DC0B220317FC200A0C0B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B1DC0B520317FC200A0C0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC0B920317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvTests.swift; sourceTree = "<group>"; };
+		0B1DC0C420317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvUITests.swift; sourceTree = "<group>"; };
+		0B1DC0CF20317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
 		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 		0B571E56202C5A710070F2C5 /* LongPomo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +197,27 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		0B1DC08D20317DC700A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0AB20317FC200A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BB20317FC200A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C620317FC200A0C0B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,6 +309,36 @@
 			path = "LonPomo-watch Extension";
 			sourceTree = "<group>";
 		};
+		0B1DC0AF20317FC200A0C0B2 /* LongPomo-tv */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */,
+				0B1DC0B220317FC200A0C0B2 /* ViewController.swift */,
+				0B1DC0B420317FC200A0C0B2 /* Main.storyboard */,
+				0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */,
+				0B1DC0B920317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tv";
+			sourceTree = "<group>";
+		};
+		0B1DC0C120317FC200A0C0B2 /* LongPomo-tvTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */,
+				0B1DC0C420317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tvTests";
+			sourceTree = "<group>";
+		};
+		0B1DC0CC20317FC200A0C0B2 /* LongPomo-tvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */,
+				0B1DC0CF20317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tvUITests";
+			sourceTree = "<group>";
+		};
 		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +382,9 @@
 				0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */,
 				0B1DC08520317DC700A0C0B2 /* LonPomo-watch */,
 				0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */,
+				0B1DC0AF20317FC200A0C0B2 /* LongPomo-tv */,
+				0B1DC0C120317FC200A0C0B2 /* LongPomo-tvTests */,
+				0B1DC0CC20317FC200A0C0B2 /* LongPomo-tvUITests */,
 				0B7F9B8F1ECE226C0023CF5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -314,6 +400,9 @@
 				0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */,
 				0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */,
 				0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */,
+				0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */,
+				0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */,
+				0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +515,59 @@
 			productName = "LonPomo-watch Extension";
 			productReference = 0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D020317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tv" */;
+			buildPhases = (
+				0B1DC0AA20317FC200A0C0B2 /* Sources */,
+				0B1DC0AB20317FC200A0C0B2 /* Frameworks */,
+				0B1DC0AC20317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LongPomo-tv";
+			productName = "LongPomo-tv";
+			productReference = 0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B1DC0BD20317FC200A0C0B2 /* LongPomo-tvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D320317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvTests" */;
+			buildPhases = (
+				0B1DC0BA20317FC200A0C0B2 /* Sources */,
+				0B1DC0BB20317FC200A0C0B2 /* Frameworks */,
+				0B1DC0BC20317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC0C020317FC200A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-tvTests";
+			productName = "LongPomo-tvTests";
+			productReference = 0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B1DC0C820317FC200A0C0B2 /* LongPomo-tvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D620317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvUITests" */;
+			buildPhases = (
+				0B1DC0C520317FC200A0C0B2 /* Sources */,
+				0B1DC0C620317FC200A0C0B2 /* Frameworks */,
+				0B1DC0C720317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC0CB20317FC200A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-tvUITests";
+			productName = "LongPomo-tvUITests";
+			productReference = 0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		0B571E55202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXNativeTarget;
@@ -557,6 +699,23 @@
 						DevelopmentTeam = TW65EXAM4U;
 						ProvisioningStyle = Automatic;
 					};
+					0B1DC0AD20317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+					};
+					0B1DC0BD20317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B1DC0AD20317FC200A0C0B2;
+					};
+					0B1DC0C820317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B1DC0AD20317FC200A0C0B2;
+					};
 					0B571E55202C5A710070F2C5 = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = TW65EXAM4U;
@@ -617,6 +776,9 @@
 				0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */,
 				0B1DC08320317DC700A0C0B2 /* LonPomo-watch */,
 				0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */,
+				0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */,
+				0B1DC0BD20317FC200A0C0B2 /* LongPomo-tvTests */,
+				0B1DC0C820317FC200A0C0B2 /* LongPomo-tvUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -636,6 +798,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0AC20317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */,
+				0B1DC0B620317FC200A0C0B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BC20317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C720317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +913,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B1DC0AA20317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */,
+				0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BA20317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C520317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B571E52202C5A710070F2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -803,6 +1013,16 @@
 			target = 0B1DC08320317DC700A0C0B2 /* LonPomo-watch */;
 			targetProxy = 0B1DC09F20317DC800A0C0B2 /* PBXContainerItemProxy */;
 		};
+		0B1DC0C020317FC200A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */;
+			targetProxy = 0B1DC0BF20317FC200A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B1DC0CB20317FC200A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */;
+			targetProxy = 0B1DC0CA20317FC200A0C0B2 /* PBXContainerItemProxy */;
+		};
 		0B571E6B202C5A720070F2C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
@@ -832,6 +1052,14 @@
 				0B1DC08720317DC700A0C0B2 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		0B1DC0B420317FC200A0C0B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1DC0B520317FC200A0C0B2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		0B571E5C202C5A710070F2C5 /* Main.storyboard */ = {
@@ -949,6 +1177,137 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0B1DC0D120317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D220317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1DC0D420317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-tv.app/LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D520317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-tv.app/LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1DC0D720317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D820317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1306,6 +1665,33 @@
 			buildConfigurations = (
 				0B1DC0A820317DC800A0C0B2 /* Debug */,
 				0B1DC0A920317DC800A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D020317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D120317FC200A0C0B2 /* Debug */,
+				0B1DC0D220317FC200A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D320317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D420317FC200A0C0B2 /* Debug */,
+				0B1DC0D520317FC200A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D620317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D720317FC200A0C0B2 /* Debug */,
+				0B1DC0D820317FC200A0C0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
