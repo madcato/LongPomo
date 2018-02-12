@@ -10,6 +10,14 @@
 		0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1031631ED72AB900210F5C /* SettingsViewController.swift */; };
 		0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */; };
 		0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */; };
+		0B1DC08820317DC700A0C0B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC08620317DC700A0C0B2 /* Interface.storyboard */; };
+		0B1DC08A20317DC700A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC08920317DC700A0C0B2 /* Assets.xcassets */; };
+		0B1DC09120317DC800A0C0B2 /* LonPomo-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */; };
+		0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */; };
+		0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09920317DC800A0C0B2 /* NotificationController.swift */; };
+		0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */; };
+		0B1DC0A220317DC800A0C0B2 /* LonPomo-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */; };
 		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
 		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
 		0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E58202C5A710070F2C5 /* AppDelegate.swift */; };
@@ -35,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B1DC09220317DC800A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC08F20317DC700A0C0B2;
+			remoteInfo = "LonPomo-watch Extension";
+		};
+		0B1DC09F20317DC800A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC08320317DC700A0C0B2;
+			remoteInfo = "LonPomo-watch";
+		};
 		0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
@@ -65,10 +87,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0B1DC0A120317DC800A0C0B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0B1DC0A220317DC800A0C0B2 /* LonPomo-watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0A620317DC800A0C0B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B1DC09120317DC800A0C0B2 /* LonPomo-watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0B1031631ED72AB900210F5C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
+		0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LonPomo-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC08720317DC700A0C0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0B1DC08920317DC700A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC08B20317DC700A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LonPomo-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0B1DC09920317DC800A0C0B2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC09D20317DC800A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC09E20317DC800A0C0B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
 		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 		0B571E56202C5A710070F2C5 /* LongPomo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +164,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B1DC08D20317DC700A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B571E53202C5A710070F2C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +233,29 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0B1DC08520317DC700A0C0B2 /* LonPomo-watch */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC08620317DC700A0C0B2 /* Interface.storyboard */,
+				0B1DC08920317DC700A0C0B2 /* Assets.xcassets */,
+				0B1DC08B20317DC700A0C0B2 /* Info.plist */,
+			);
+			path = "LonPomo-watch";
+			sourceTree = "<group>";
+		};
+		0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */,
+				0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */,
+				0B1DC09920317DC800A0C0B2 /* NotificationController.swift */,
+				0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */,
+				0B1DC09D20317DC800A0C0B2 /* Info.plist */,
+				0B1DC09E20317DC800A0C0B2 /* PushNotificationPayload.apns */,
+			);
+			path = "LonPomo-watch Extension";
+			sourceTree = "<group>";
+		};
 		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +297,8 @@
 				0B571E57202C5A710070F2C5 /* LongPomo-ios */,
 				0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */,
 				0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */,
+				0B1DC08520317DC700A0C0B2 /* LonPomo-watch */,
+				0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */,
 				0B7F9B8F1ECE226C0023CF5F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -222,6 +312,8 @@
 				0B571E56202C5A710070F2C5 /* LongPomo-ios.app */,
 				0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */,
 				0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */,
+				0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */,
+				0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +393,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B1DC08320317DC700A0C0B2 /* LonPomo-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0A720317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch" */;
+			buildPhases = (
+				0B1DC08220317DC700A0C0B2 /* Resources */,
+				0B1DC0A620317DC800A0C0B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC09320317DC800A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LonPomo-watch";
+			productName = "LonPomo-watch";
+			productReference = 0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0A320317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch Extension" */;
+			buildPhases = (
+				0B1DC08C20317DC700A0C0B2 /* Sources */,
+				0B1DC08D20317DC700A0C0B2 /* Frameworks */,
+				0B1DC08E20317DC700A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LonPomo-watch Extension";
+			productName = "LonPomo-watch Extension";
+			productReference = 0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		0B571E55202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */;
@@ -309,10 +435,12 @@
 				0B571E53202C5A710070F2C5 /* Frameworks */,
 				0B571E54202C5A710070F2C5 /* Resources */,
 				0B1DC08120317C8C00A0C0B2 /* ShellScript */,
+				0B1DC0A120317DC800A0C0B2 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B1DC0A020317DC800A0C0B2 /* PBXTargetDependency */,
 			);
 			name = "LongPomo-ios";
 			productName = "LongPomo-ios";
@@ -419,6 +547,16 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Daniel Vela";
 				TargetAttributes = {
+					0B1DC08320317DC700A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+					};
+					0B1DC08F20317DC700A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+					};
 					0B571E55202C5A710070F2C5 = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = TW65EXAM4U;
@@ -477,11 +615,30 @@
 				0B571E55202C5A710070F2C5 /* LongPomo-ios */,
 				0B571E68202C5A710070F2C5 /* LongPomo-iosTests */,
 				0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */,
+				0B1DC08320317DC700A0C0B2 /* LonPomo-watch */,
+				0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B1DC08220317DC700A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC08A20317DC700A0C0B2 /* Assets.xcassets in Resources */,
+				0B1DC08820317DC700A0C0B2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC08E20317DC700A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B571E54202C5A710070F2C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,6 +718,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B1DC08C20317DC700A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */,
+				0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */,
+				0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B571E52202C5A710070F2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -626,6 +793,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B1DC09320317DC800A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */;
+			targetProxy = 0B1DC09220317DC800A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B1DC0A020317DC800A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC08320317DC700A0C0B2 /* LonPomo-watch */;
+			targetProxy = 0B1DC09F20317DC800A0C0B2 /* PBXContainerItemProxy */;
+		};
 		0B571E6B202C5A720070F2C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
@@ -649,6 +826,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0B1DC08620317DC700A0C0B2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1DC08720317DC700A0C0B2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		0B571E5C202C5A710070F2C5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -677,6 +862,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B1DC0A420317DC800A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LonPomo-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0B1DC0A520317DC800A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LonPomo-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0B1DC0A820317DC800A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = LonPomo_watch_Extension;
+				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0B1DC0A920317DC800A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = LonPomo_watch_Extension;
+				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 		0B571E7B202C5A720070F2C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1017,6 +1292,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B1DC0A320317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0A420317DC800A0C0B2 /* Debug */,
+				0B1DC0A520317DC800A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0A720317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0A820317DC800A0C0B2 /* Debug */,
+				0B1DC0A920317DC800A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
