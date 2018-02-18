@@ -34,6 +34,7 @@
 		0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */; };
 		0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */; };
 		0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */; };
+		0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */; };
 		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
@@ -175,6 +176,7 @@
 		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
 		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControllViewController.swift; sourceTree = "<group>"; };
+		0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlockView.swift; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */,
+				0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -970,6 +973,7 @@
 			files = (
 				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
+				0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */,
 				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
 				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
 				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,

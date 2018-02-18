@@ -62,14 +62,22 @@ class TimerCicleOval {
         arc.shadowColor = NSColor.black.cgColor
         arc = (shadow?.configureShapeLayer(layer: arc))!
         arc = (line?.configureShapeLayer(layer: arc))!
+        arc.lineCap = kCALineCapRound
         return arc
     }
 }
+
+@IBDesignable
 class TimerCircleView: NSView {
+    @IBInspectable
     var primaryColor: NSColor = AppColors.primaryColor
+    @IBInspectable
     var secondaryColor: NSColor = AppColors.secondaryColor
+    @IBInspectable
     var arcRadious: CGFloat = 250
+    @IBInspectable
     var kLineWidth: CGFloat = 20
+    @IBInspectable
     var currentProgress: Double = 0 { // Valid values from 0.0 to 1.0
         didSet {
             if currentProgress > 1.0 {
@@ -134,6 +142,7 @@ class TimerCircleView: NSView {
         // End -270  -> 0 leftSeconds
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
+        pathTop.lineCapStyle = .roundLineCapStyle
         pathTop.appendArc(withCenter: NSPoint(x: X, y: Y),
                           radius: arcRadius/2,
                           startAngle: 90,
