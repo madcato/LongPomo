@@ -19,8 +19,6 @@ class SettingsViewController: NSViewController {
         restTime.stringValue = Settings.restingInSeconds.toMM()
     }
 
-    // Es to es una prube ade combinacion
-
     override func viewWillDisappear() {
         super.viewWillDisappear()
         if let nextPomodoroTime = Double(pomodoroTime.stringValue)?.minutes() {
