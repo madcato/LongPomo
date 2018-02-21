@@ -19,6 +19,8 @@ class Settings {
         }
     }
 
+    // Esto es una prubea de combinacio
+    
     static var restingInSeconds: Double = {
         return storedDouble(forKey: kRestingInSeconds, default: 20)
     }() {
