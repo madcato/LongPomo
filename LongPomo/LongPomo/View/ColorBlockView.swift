@@ -8,33 +8,33 @@
 
 import Cocoa
 
-@IBDesignable class ColorBlockView: NSView {
-    
+class ColorBlockView: NSView {
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.wantsLayer = true
     }
-    
-    @IBInspectable var cornerRounding: CGFloat = 10 {
+
+    var cornerRounding: CGFloat = 10 {
         didSet {
             layer?.cornerRadius = cornerRounding
         }
     }
-    
-    @IBInspectable var blockColor: NSColor = NSColor.gray {
+
+    var blockColor: NSColor = NSColor.gray {
         didSet {
             layer?.backgroundColor = blockColor.cgColor
         }
     }
-    
+
     override func prepareForInterfaceBuilder() {
         layer?.backgroundColor = blockColor.cgColor
         layer?.cornerRadius = cornerRounding
     }
-    
+
     override func awakeFromNib() {
         layer?.backgroundColor = blockColor.cgColor
         layer?.cornerRadius = cornerRounding
     }
-    
 }
+

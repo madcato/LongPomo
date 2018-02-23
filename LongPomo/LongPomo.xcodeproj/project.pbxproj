@@ -24,6 +24,11 @@
 		0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */; };
 		0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */; };
 		0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */; };
+		0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */; };
+		0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E66FF20400FD50012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
 		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
 		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
 		0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E58202C5A710070F2C5 /* AppDelegate.swift */; };
@@ -42,7 +47,6 @@
 		0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B971ECE226C0023CF5F /* Main.storyboard */; };
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
-		0BC480A01ED3403800C8024D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4809F1ED3403800C8024D /* AppColors.swift */; };
 		0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
 		0BC480A61ED360C900C8024D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
@@ -160,6 +164,8 @@
 		0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvUITests.swift; sourceTree = "<group>"; };
 		0B1DC0CF20317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
+		0B3E66FC20400C730012CEF1 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
 		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
 		0B571E56202C5A710070F2C5 /* LongPomo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +196,6 @@
 		0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC4809F1ED3403800C8024D /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		0BC480A51ED360C900C8024D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0BC480A81ED3612C00C8024D /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
@@ -342,9 +347,42 @@
 			path = "LongPomo-tvUITests";
 			sourceTree = "<group>";
 		};
+		0B3E66F620400BC90012CEF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B3E66F920400C5B0012CEF1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66FA20400C660012CEF1 /* Resources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0B3E66FA20400C660012CEF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66FB20400C6E0012CEF1 /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B3E66FB20400C6E0012CEF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66FC20400C730012CEF1 /* AppColors.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0B3E66F620400BC90012CEF1 /* View */,
 				0B571E58202C5A710070F2C5 /* AppDelegate.swift */,
 				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
 				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
@@ -377,6 +415,7 @@
 		0B7F9B851ECE226C0023CF5F = {
 			isa = PBXGroup;
 			children = (
+				0B3E66F920400C5B0012CEF1 /* Shared */,
 				0B7F9B901ECE226C0023CF5F /* LongPomo */,
 				0B7F9BA21ECE226C0023CF5F /* LongPomoTests */,
 				0B7F9BAD1ECE226C0023CF5F /* LongPomoUITests */,
@@ -456,7 +495,6 @@
 			isa = PBXGroup;
 			children = (
 				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
-				0BC4809F1ED3403800C8024D /* AppColors.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -911,6 +949,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */,
+				0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */,
 				0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */,
 				0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */,
 			);
@@ -920,6 +959,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3E66FF20400FD50012CEF1 /* AppColors.swift in Sources */,
 				0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */,
 				0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */,
 			);
@@ -947,6 +987,8 @@
 			files = (
 				0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */,
 				0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */,
+				0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */,
+				0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */,
 				0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -974,7 +1016,7 @@
 				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
 				0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */,
-				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
+				0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */,
 				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
 				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,
 				0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */,
