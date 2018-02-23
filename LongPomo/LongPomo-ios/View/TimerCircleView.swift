@@ -6,7 +6,7 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class TimerCicleOvalShadow {
     var shadowRadius: CGFloat
@@ -31,9 +31,9 @@ class TimerCicleOvalLine {
     var lineWidth: CGFloat
     var strokeStart: CGFloat
     var strokeEnd: CGFloat
-    var strokeColor: NSColor
+    var strokeColor: Color
 
-    init(_ lineWidth: CGFloat, _ color: NSColor) {
+    init(_ lineWidth: CGFloat, _ color: Color) {
         self.lineWidth = lineWidth
         self.strokeStart = 0
         self.strokeEnd = 1
@@ -51,7 +51,7 @@ class TimerCicleOvalLine {
 
 class TimerCicleOval {
     var path: CGPath?
-    var fillColor: NSColor?
+    var fillColor: UIColor?
     var shadow: TimerCicleOvalShadow?
     var line: TimerCicleOvalLine?
 
@@ -59,7 +59,7 @@ class TimerCicleOval {
         var arc = CAShapeLayer()
         arc.path = path
         arc.fillColor = fillColor!.cgColor
-        arc.shadowColor = NSColor.black.cgColor
+        arc.shadowColor = UIColor.black.cgColor
         arc = (shadow?.configureShapeLayer(layer: arc))!
         arc = (line?.configureShapeLayer(layer: arc))!
         arc.lineCap = kCALineCapRound
@@ -67,11 +67,12 @@ class TimerCicleOval {
     }
 }
 
-class TimerCircleView: NSView {
-    var primaryColor: NSColor = AppColors.primaryColor
-    var secondaryColor: NSColor = AppColors.secondaryColor
+class TimerCircleView: UIView {
+    var primaryColor: UIColor = AppColors.primaryColor
+    var secondaryColor: UIColor = AppColors.secondaryColor
     var arcRadious: CGFloat = 250
     var kLineWidth: CGFloat = 20
+
     var currentProgress: Double = 0 { // Valid values from 0.0 to 1.0
         didSet {
             if currentProgress > 1.0 {
@@ -88,14 +89,14 @@ class TimerCircleView: NSView {
 
     func addOval(oval: TimerCicleOval) {
         let arc = oval.ovalShapeLayer()
-        layer?.addSublayer(arc)
+        layer.addSublayer(arc)
         prevSublayer.append(arc)
     }
 
-    func ovalBottom(_ path: NSBezierPath, _ color: NSColor) -> TimerCicleOval {
+    func ovalBottom(_ path: UIBezierPath, _ color: Color) -> TimerCicleOval {
         let ovalBottom = TimerCicleOval()
-        ovalBottom.path = path.CGPath
-        ovalBottom.fillColor = NSColor.clear
+        ovalBottom.path = path.cgPath
+        ovalBottom.fillColor = Color.clear
 
         let ovalBottomShadow = TimerCicleOvalShadow()
         ovalBottom.shadow = ovalBottomShadow
@@ -106,10 +107,10 @@ class TimerCircleView: NSView {
         return ovalBottom
     }
 
-    func ovalTop(_ path: NSBezierPath, _ color: NSColor) -> TimerCicleOval {
+    func ovalTop(_ path: UIBezierPath, _ color: Color) -> TimerCicleOval {
         let ovalTop = TimerCicleOval()
-        ovalTop.path = path.CGPath
-        ovalTop.fillColor = NSColor.clear
+        ovalTop.path = path.cgPath
+        ovalTop.fillColor = Color.clear
 
         let ovalTopShadow = TimerCicleOvalShadow()
         ovalTop.shadow = ovalTopShadow
@@ -120,12 +121,12 @@ class TimerCircleView: NSView {
         return ovalTop
     }
 
-    func addCirle(arcRadius: CGFloat, colorTop: NSColor, colorBottom: NSColor) {
+    func addCirle(arcRadius: CGFloat, colorTop: Color, colorBottom: Color) {
         let X = self.bounds.midX
         let Y = self.bounds.midY
 
         // Bottom Oval
-        let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: X - (arcRadius/2),
+        let pathBottom = UIBezierPath(ovalIn: CGRect(origin: CGPoint(x: X - (arcRadius/2),
                                                                      y: Y - (arcRadius/2)),
                                                      size: CGSize(width: arcRadius,
                                                                   height: arcRadius)))
@@ -135,12 +136,13 @@ class TimerCircleView: NSView {
         // Start 90  -> maxLeftSeconds
         // End -270  -> 0 leftSeconds
         // Dif -360 * (currentSec * maxLeftSeconds)
-        let pathTop = NSBezierPath()
-        pathTop.lineCapStyle = .roundLineCapStyle
-        pathTop.appendArc(withCenter: NSPoint(x: X, y: Y),
-                          radius: arcRadius/2,
-                          startAngle: 90,
-                          endAngle: calculateEndAngle(), clockwise: true)
+        let pathTop = UIBezierPath.init(arcCenter: CGPoint(x: X, y: Y),
+                                        radius: arcRadius/2,
+                                        startAngle: 90,
+                                        endAngle: calculateEndAngle(),
+                                        clockwise: true)
+        pathTop.lineCapStyle = .round
+
         self.addOval(oval: ovalTop(pathTop, colorTop))
     }
 
@@ -151,9 +153,7 @@ class TimerCircleView: NSView {
         prevSublayer.removeAll()
     }
 
-    override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
-
+    override func draw(_ rect: CGRect) {
         removePrevSublayer()
         // Drawing code here.
         self.addCirle(arcRadius: self.arcRadious,
@@ -163,10 +163,11 @@ class TimerCircleView: NSView {
 
     func redraw() {
         // invalidate view
-        self.needsDisplay = true
+        self.setNeedsDisplay()
     }
 
     func calculateEndAngle() -> CGFloat {
         return CGFloat((360 * currentProgress) - 270)
     }
 }
+
