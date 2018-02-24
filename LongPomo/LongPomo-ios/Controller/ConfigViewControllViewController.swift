@@ -21,7 +21,7 @@ class ConfigViewControllViewController: UIViewController {
         pomoDatePicker.setValue(AppColors.primaryColor, forKey: "textColor")
         restDatePicker.setValue(AppColors.primaryColor, forKey: "textColor")
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }

@@ -28,7 +28,7 @@ class Settings {
     }
 
     private static func storedDouble(forKey key: String,
-                             default defaultValue: Double) -> Double {
+                           default defaultValue: Double) -> Double {
         let seconds = SimplePersistence.double(forKey: key)
         if seconds != 0 {
             return seconds

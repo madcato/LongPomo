@@ -53,21 +53,21 @@ let primaryColorAlpha = 1.0
     import UIKit
     typealias Color = UIColor
     class AppColors {
-        static var backgroundColor = Color(red: backgroundColorRed,
-                                           green: backgroundColorGreen,
-                                           blue: backgroundColorBlue,
-                                           alpha: backgroundColorAlpha)
-        static var secondaryColor = Color(red: secondaryColorRed,
-                                          green: secondaryColorGreen,
-                                          blue: secondaryColorBlue,
-                                          alpha: secondaryColorAlpha)
-        static var accentColor = Color(red: accentColorRed,
-                                       green: accentColorGreen,
-                                       blue: accentColorBlue,
-                                       alpha: accentColorAlpha)
-        static var primaryColor = Color(red: primaryColorRed,
-                                        green: primaryColorGreen,
-                                        blue: primaryColorBlue,
-                                        alpha: primaryColorAlpha)
+        static var backgroundColor = Color(red: CGFloat(backgroundColorRed),
+                                           green: CGFloat(backgroundColorGreen),
+                                           blue: CGFloat(backgroundColorBlue),
+                                           alpha: CGFloat(backgroundColorAlpha))
+        static var secondaryColor = Color(red: CGFloat(secondaryColorRed),
+                                          green: CGFloat(secondaryColorGreen),
+                                          blue: CGFloat(secondaryColorBlue),
+                                          alpha: CGFloat(secondaryColorAlpha))
+        static var accentColor = Color(red: CGFloat(accentColorRed),
+                                       green: CGFloat(accentColorGreen),
+                                       blue: CGFloat(accentColorBlue),
+                                       alpha: CGFloat(accentColorAlpha))
+        static var primaryColor = Color(red: CGFloat(primaryColorRed),
+                                        green: CGFloat(primaryColorGreen),
+                                        blue: CGFloat(primaryColorBlue),
+                                        alpha: CGFloat(primaryColorAlpha))
     }
 #endif
