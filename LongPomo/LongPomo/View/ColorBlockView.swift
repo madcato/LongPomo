@@ -37,4 +37,3 @@ class ColorBlockView: NSView {
         layer?.cornerRadius = cornerRounding
     }
 }
-

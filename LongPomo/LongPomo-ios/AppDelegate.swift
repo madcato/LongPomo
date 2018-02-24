@@ -15,8 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        configureAppearance()
         return true
+    }
+
+    func configureAppearance() {
+        UIView.appearance().backgroundColor = AppColors.backgroundColor
+        UIButton.appearance().tintColor = AppColors.primaryColor
+        UIButton.appearance().setTitleColor(AppColors.primaryColor, for: .normal)
+        UILabel.appearance().textColor = AppColors.primaryColor
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

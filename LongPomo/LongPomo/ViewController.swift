@@ -30,6 +30,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         configureAppearance()
         configureViewModel()
+        viewModel?.reset()
         ViewController.circleController = self
     }
 

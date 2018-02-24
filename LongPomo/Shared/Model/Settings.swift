@@ -9,8 +9,8 @@
 import Foundation
 
 class Settings {
-    static var kPomodoInSeconds: String = "kPomodoInSeconds"
-    static var kRestingInSeconds: String = "kRestingInSeconds"
+    private static var kPomodoInSeconds: String = "kPomodoInSeconds"
+    private static var kRestingInSeconds: String = "kRestingInSeconds"
     static var pomodoroInSeconds: Double = {
         return storedDouble(forKey: kPomodoInSeconds, default: 90)
     }() {
@@ -27,7 +27,7 @@ class Settings {
         }
     }
 
-    static func storedDouble(forKey key: String,
+    private static func storedDouble(forKey key: String,
                              default defaultValue: Double) -> Double {
         let seconds = SimplePersistence.double(forKey: key)
         if seconds != 0 {

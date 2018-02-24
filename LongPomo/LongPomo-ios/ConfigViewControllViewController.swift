@@ -9,11 +9,22 @@
 import UIKit
 
 class ConfigViewControllViewController: UIViewController {
-
+    @IBOutlet weak var pomoDatePicker: UIDatePicker!
+    @IBOutlet weak var restDatePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+        configureModel()
+    }
 
-        // Do any additional setup after loading the view.
+    func configureView() {
+        pomoDatePicker.setValue(AppColors.primaryColor, forKey: "textColor")
+        restDatePicker.setValue(AppColors.primaryColor, forKey: "textColor")
+    }
+
+    func configureModel() {
+        pomoDatePicker.countDownDuration = Settings.pomodoroInSeconds
+        restDatePicker.countDownDuration = Settings.restingInSeconds
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,14 +32,12 @@ class ConfigViewControllViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func pomoDatePickerValueChanged(_ sender: Any) {
+        Settings.pomodoroInSeconds = pomoDatePicker.countDownDuration
+        
     }
-    */
 
+    @IBAction func restDatePickerValueChanged(_ sender: Any) {
+        Settings.restingInSeconds = restDatePicker.countDownDuration
+    }
 }

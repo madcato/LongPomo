@@ -6,25 +6,27 @@
 //  Copyright © 2017 Daniel Vela. All rights reserved.
 //
 
-let backgroundColorRed:CGFloat = 0.0
-let backgroundColorGreen:CGFloat = 0.0
-let backgroundColorBlue:CGFloat = 0.0
-let backgroundColorAlpha:CGFloat = 0.0
+import UIKit
 
-let secondaryColorRed:CGFloat = 0.2
-let secondaryColorGreen:CGFloat = 0.2
-let secondaryColorBlue:CGFloat = 0.2
-let secondaryColorAlpha:CGFloat = 1.0
+let backgroundColorRed: CGFloat = 0.0
+let backgroundColorGreen: CGFloat = 0.0
+let backgroundColorBlue: CGFloat = 0.0
+let backgroundColorAlpha: CGFloat = 0.0
 
-let accentColorRed:CGFloat = 0.0
-let accentColorGreen:CGFloat = 0.6
-let accentColorBlue:CGFloat = 1.0
-let accentColorAlpha:CGFloat = 1.0
+let secondaryColorRed: CGFloat = 0.2
+let secondaryColorGreen: CGFloat = 0.2
+let secondaryColorBlue: CGFloat = 0.2
+let secondaryColorAlpha: CGFloat = 1.0
 
-let primaryColorRed:CGFloat = 1.0
-let primaryColorGreen:CGFloat = 1.0
-let primaryColorBlue:CGFloat = 0.0
-let primaryColorAlpha:CGFloat = 1.0
+let accentColorRed: CGFloat = 0.0
+let accentColorGreen: CGFloat = 0.6
+let accentColorBlue: CGFloat = 1.0
+let accentColorAlpha: CGFloat = 1.0
+
+let primaryColorRed: CGFloat = 1.0
+let primaryColorGreen: CGFloat = 1.0
+let primaryColorBlue: CGFloat = 0.0
+let primaryColorAlpha: CGFloat = 1.0
 
 #if os(macOS)
     import Cocoa
@@ -47,7 +49,9 @@ let primaryColorAlpha:CGFloat = 1.0
                                         blue: primaryColorBlue,
                                         alpha: primaryColorAlpha)
     }
-#else
+#endif
+
+#if os(iOS)
     import UIKit
     typealias Color = UIColor
     class AppColors {
@@ -69,5 +73,3 @@ let primaryColorAlpha:CGFloat = 1.0
                                         alpha: primaryColorAlpha)
     }
 #endif
-
-
