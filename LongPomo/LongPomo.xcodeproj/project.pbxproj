@@ -548,6 +548,7 @@
 		0BF9360720416BBA00D61EFF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
 				0BF9360820416BC800D61EFF /* UI */,
 			);
 			path = Resources;
@@ -556,7 +557,6 @@
 		0BF9360820416BC800D61EFF /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
 				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
 				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
 			);
