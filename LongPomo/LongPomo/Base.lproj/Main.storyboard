@@ -744,54 +744,6 @@
             </objects>
             <point key="canvasLocation" x="-31" y="1119"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EOJ-IW-UuF">
-            <objects>
-                <viewController id="aM8-GK-GkG" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="lDZ-Qn-pRN">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="627"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khs-p6-OQa" customClass="ColorBlockView" customModule="LongPomo" customModuleProvider="target">
-                                <rect key="frame" x="65" y="537" width="131" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRounding">
-                                        <real key="value" value="14"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="blockColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </customView>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WL4-J1-dgV" customClass="TimerCircleView" customModule="LongPomo" customModuleProvider="target">
-                                <rect key="frame" x="11" y="82" width="399" height="447"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="primaryColor">
-                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryColor">
-                                        <color key="value" red="0.71764705880000002" green="0.30196078430000001" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arcRadious">
-                                        <real key="value" value="300"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="kLineWidth">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="currentProgress">
-                                        <real key="value" value="0.59999999999999998"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </customView>
-                        </subviews>
-                    </view>
-                </viewController>
-                <customObject id="OUH-G3-J2Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-224" y="1813.5"/>
-        </scene>
         <!--Settings View Controller-->
         <scene sceneID="IgP-uy-7pG">
             <objects>

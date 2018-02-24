@@ -31,6 +31,13 @@ class ViewController: NSViewController {
         configureViewModel()
         viewModel?.reset()
         ViewController.circleController = self
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+    }
+
+    override func viewDidAppear() {
+        // any additional code
+        view.window!.styleMask.remove(NSWindow.StyleMask.resizable)
     }
 
     override var representedObject: Any? {
