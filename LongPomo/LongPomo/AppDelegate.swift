@@ -11,11 +11,11 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+    func applicationDidFinishLaunching(_ notification: Notification) {
         configureMainAppearance()
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
+    public func applicationWillTerminate(_ aNotification: Notification) {
     }
 
     func configureMainAppearance() {

@@ -28,7 +28,6 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureAppearance()
         configureViewModel()
         viewModel?.reset()
         ViewController.circleController = self
@@ -38,9 +37,6 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
-    }
-
-    func configureAppearance() {
     }
 
     func configureViewModel() {
@@ -65,6 +61,9 @@ class ViewController: NSViewController {
             if viewModel.state == .resting {
                 progress = 1 - progress
             }
+            if viewModel.state == .stopped {
+                progress = 1
+            }
             self.circleView.currentProgress = progress
         } else {
             self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
@@ -74,7 +73,7 @@ class ViewController: NSViewController {
 
     func stateDidChange(viewModel: PomodoroViewModelProtocol) {
         switch viewModel.state {
-        case .onGoing:
+        case .stopped, .onGoing:
             self.circleView.primaryColor = AppColors.primaryColor
         case .resting:
             self.circleView.primaryColor = AppColors.accentColor

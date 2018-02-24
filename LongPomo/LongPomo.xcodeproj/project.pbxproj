@@ -39,7 +39,6 @@
 		0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */; };
 		0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */; };
 		0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */; };
-		0B65FF022041412E0061E16C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B65FF012041412E0061E16C /* Main.storyboard */; };
 		0B65FF03204146290061E16C /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
 		0B65FF042041462C0061E16C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0B65FF05204146300061E16C /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
@@ -59,6 +58,7 @@
 		0BF9360320414AD300D61EFF /* iosNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360220414AD300D61EFF /* iosNotification.swift */; };
 		0BF9360520414B2600D61EFF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
 		0BF9360620414B2600D61EFF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0BF936442041877400D61EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF936422041877400D61EFF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,7 +190,6 @@
 		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
 		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControllViewController.swift; sourceTree = "<group>"; };
-		0B65FF012041412E0061E16C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlockView.swift; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +209,7 @@
 		0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroInteractor.swift; sourceTree = "<group>"; };
 		0BF9360220414AD300D61EFF /* iosNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosNotification.swift; sourceTree = "<group>"; };
 		0BF9360420414B2600D61EFF /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		0BF936432041877400D61EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LongPomo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,7 +503,7 @@
 		0BC4809E1ED33B0A00C8024D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0B65FF012041412E0061E16C /* Main.storyboard */,
+				0BF936422041877400D61EFF /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -946,7 +946,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */,
-				0B65FF022041412E0061E16C /* Main.storyboard in Resources */,
+				0BF936442041877400D61EFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1182,6 +1182,14 @@
 				0B571E62202C5A710070F2C5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0BF936422041877400D61EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BF936432041877400D61EFF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1655,13 +1663,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TW65EXAM4U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -1671,13 +1682,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TW65EXAM4U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

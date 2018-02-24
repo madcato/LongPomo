@@ -11,6 +11,7 @@ import Foundation
 enum PomodoroState {
     case onGoing
     case resting
+    case stopped
 }
 
 protocol PomodoroViewModelProtocol {
@@ -58,8 +59,9 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
     func play() {
         assert(running == false, "Play can't be called, if app counter is running")
         switch state {
-        case .onGoing:
+        case .stopped, .onGoing:
             interactor.maxSeconds = Settings.pomodoroInSeconds
+            state = .onGoing
         case .resting:
             interactor.maxSeconds = Settings.restingInSeconds
         }
@@ -72,14 +74,13 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
     }
 
     func reset() {
-        state = .onGoing
+        state = .stopped
         secondsLeft = Settings.pomodoroInSeconds
     }
 
     func currentProgress() -> Double {
-        let maxSeconds = state == .resting ? Settings.restingInSeconds : Settings.pomodoroInSeconds
         if let secondsLeft = secondsLeft {
-            return secondsLeft / maxSeconds
+            return secondsLeft / interactor.maxSeconds
         }
         return 0.0
     }
@@ -87,7 +88,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
     required init(interactor: PomodoroInteractorProtocol) {
         running = false
         secondsLeft = Settings.pomodoroInSeconds
-        state = .onGoing
+        state = .stopped
         self.interactor = interactor
         self.interactor.delegate = self
     }
@@ -100,10 +101,10 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
         interactor.stop()
         // check resting state
         switch state {
-        case .onGoing:
+        case .stopped, .onGoing:
             // Set pomodoro in resting mode and restart
             if fromUser == false {
-                Notification.show(informativeText: "Long pomodoro finished",
+                LPNotification.show(informativeText: "Long pomodoro finished",
                                             title: "LongPomo")
                 state = .resting
                 play() // Start resting
@@ -111,7 +112,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
                 reset()
             }
         case .resting:
-            Notification.show(informativeText: "Rest finished",
+            LPNotification.show(informativeText: "Rest finished",
                                         title: "LongPomo")
             reset()
         }

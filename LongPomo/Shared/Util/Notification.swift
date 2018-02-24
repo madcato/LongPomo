@@ -7,7 +7,7 @@
 //
 
 #if os(macOS)
-    class Notification {
+    class LPNotification {
         static func show(informativeText: String, title: String) {
             MacOSNotification.show(informativeText: informativeText, title: title)
         }
@@ -15,7 +15,7 @@
 #endif
 
 #if os(iOS)
-    class Notification {
+    class LPNotification {
         static func show(informativeText: String, title: String) {
             IosNotification.show(informativeText: informativeText, title: title)
         }

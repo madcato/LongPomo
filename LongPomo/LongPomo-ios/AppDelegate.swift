@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    static func get() -> AppDelegate {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            return delegate
+        }
+        return AppDelegate()
+    }
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         configureAppearance()

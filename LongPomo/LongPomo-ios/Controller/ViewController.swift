@@ -27,11 +27,14 @@ class ViewController: UIViewController {
         if let controller = unwindSegue.source as? ConfigViewControllViewController {
             controller.viewToModel()
         }
-        viewModel?.reset()
+        if viewModel?.state == .stopped {
+            viewModel?.reset()
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
         configureViewModel()
         viewModel?.reset()
     }
@@ -39,6 +42,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+
+    func configureView() {
     }
 
     func configureViewModel() {
@@ -63,6 +73,9 @@ class ViewController: UIViewController {
             if viewModel.state == .resting {
                 progress = 1 - progress
             }
+            if viewModel.state == .stopped {
+                progress = 1
+            }
             self.timeCircleView.currentProgress = progress
         } else {
             self.timeLabel.text = Settings.pomodoroInSeconds.toMMSS()
@@ -72,10 +85,12 @@ class ViewController: UIViewController {
 
     func stateDidChange(viewModel: PomodoroViewModelProtocol) {
         switch viewModel.state {
-        case .onGoing:
+        case .stopped, .onGoing:
             self.timeCircleView.primaryColor = AppColors.primaryColor
+            self.timeLabel.textColor = AppColors.primaryColor
         case .resting:
             self.timeCircleView.primaryColor = AppColors.accentColor
+            self.timeLabel.textColor = AppColors.accentColor
         }
     }
 
