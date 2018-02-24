@@ -32,12 +32,8 @@ class ConfigViewControllViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func pomoDatePickerValueChanged(_ sender: Any) {
+    func viewToModel() {
         Settings.pomodoroInSeconds = pomoDatePicker.countDownDuration
-        
-    }
-
-    @IBAction func restDatePickerValueChanged(_ sender: Any) {
         Settings.restingInSeconds = restDatePicker.countDownDuration
     }
 }

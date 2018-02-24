@@ -118,9 +118,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="540115035.27672899">
                                     <!--2018-02-12 07:57:15 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="restDatePickerValueChanged:" destination="q8D-cb-m7y" eventType="valueChanged" id="DfJ-0Y-AMw"/>
-                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eA-VE-8gh">
                                 <rect key="frame" x="16" y="326" width="343" height="21"/>
@@ -139,9 +136,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="540115035.27672899">
                                     <!--2018-02-12 07:57:15 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="pomoDatePickerValueChanged:" destination="q8D-cb-m7y" eventType="valueChanged" id="XPr-wD-H7A"/>
-                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411759999999" green="0.76470588240000004" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

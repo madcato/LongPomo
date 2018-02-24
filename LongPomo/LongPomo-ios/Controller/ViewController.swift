@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
-        _ = 3
+        if let controller = unwindSegue.source as? ConfigViewControllViewController {
+            controller.viewToModel()
+        }
+        viewModel?.reset()
     }
 
     override func viewDidLoad() {

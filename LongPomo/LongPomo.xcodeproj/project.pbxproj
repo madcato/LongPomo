@@ -394,14 +394,11 @@
 		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0BF9360920416CF600D61EFF /* Controller */,
 				0BF9360120414AB600D61EFF /* Util */,
 				0B3E66F620400BC90012CEF1 /* View */,
+				0BF9360720416BBA00D61EFF /* Resources */,
 				0B571E58202C5A710070F2C5 /* AppDelegate.swift */,
-				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
-				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
-				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
-				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
-				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
 				0B571E64202C5A710070F2C5 /* Info.plist */,
 			);
 			path = "LongPomo-ios";
@@ -546,6 +543,33 @@
 				0BF9360220414AD300D61EFF /* iosNotification.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		0BF9360720416BBA00D61EFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BF9360820416BC800D61EFF /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BF9360820416BC800D61EFF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
+				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
+				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0BF9360920416CF600D61EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
+				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
