@@ -66,7 +66,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
             interactor.maxSeconds = Settings.restingInSeconds
         }
         running = true
-        interactor.start()
+        interactor.start(from: Date.now)
     }
 
     func stop() {

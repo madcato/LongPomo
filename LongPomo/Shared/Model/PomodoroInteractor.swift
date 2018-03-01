@@ -9,7 +9,7 @@
 import Foundation
 
 protocol PomodoroInteractorProtocol {
-    func start()
+    func start(from date: Date)
     func stop()
     var maxSeconds: Double { get set }
     weak var delegate: PomodoroInteractorDelegate? { get set }
@@ -31,8 +31,15 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
         self.timer = Timer()
     }
 
-    func start() {
-        startTime = Date()
+    /**
+        Start the internal timer of the app.
+        @param date the start time of the timer.
+                    This way, the app can start timers locally, started on other
+                    devices. Pass the start time of the other device timer to
+                    indicate how to calculate de current progrees.
+    */
+    func start(from date: Date) {
+        startTime = date
         timer = Timer.scheduledTimer(withTimeInterval: 1.0,
                                      repeats: true,
                                      block: { (_) in

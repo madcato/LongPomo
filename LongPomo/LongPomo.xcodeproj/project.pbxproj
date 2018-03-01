@@ -49,6 +49,8 @@
 		0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B951ECE226C0023CF5F /* Assets.xcassets */; };
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
+		0BA8F828204806F800F050C9 /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0BA8F829204806F800F050C9 /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
 		0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
 		0BC480A61ED360C900C8024D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
@@ -203,6 +205,8 @@
 		0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BA8F826204806F700F050C9 /* LonPomo-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LonPomo-watch-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BA8F827204806F800F050C9 /* Date+now.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+now.swift"; sourceTree = "<group>"; };
 		0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		0BC480A51ED360C900C8024D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0BC480A81ED3612C00C8024D /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
@@ -533,6 +537,8 @@
 				0BC480A81ED3612C00C8024D /* Int+time.swift */,
 				0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */,
 				0BF9360420414B2600D61EFF /* Notification.swift */,
+				0BA8F827204806F800F050C9 /* Date+now.swift */,
+				0BA8F826204806F700F050C9 /* LonPomo-watch-Bridging-Header.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -785,6 +791,7 @@
 					0B1DC08320317DC700A0C0B2 = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = TW65EXAM4U;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					0B1DC08F20317DC700A0C0B2 = {
@@ -1043,6 +1050,7 @@
 				0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */,
 				0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */,
 				0B65FF042041462C0061E16C /* Settings.swift in Sources */,
+				0BA8F829204806F800F050C9 /* Date+now.swift in Sources */,
 				0B65FF05204146300061E16C /* PomodoroInteractor.swift in Sources */,
 				0BF9360620414B2600D61EFF /* Notification.swift in Sources */,
 				0BF9360320414AD300D61EFF /* iosNotification.swift in Sources */,
@@ -1075,6 +1083,7 @@
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
 				0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */,
 				0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */,
+				0BA8F828204806F800F050C9 /* Date+now.swift in Sources */,
 				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
 				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,
 				0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */,
@@ -1247,6 +1256,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1254,10 +1264,13 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = LonPomo_watch_Extension;
 				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Util/LonPomo-watch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.2;
@@ -1270,6 +1283,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1277,10 +1291,12 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = LonPomo_watch_Extension;
 				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Util/LonPomo-watch-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
