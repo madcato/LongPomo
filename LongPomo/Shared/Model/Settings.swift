@@ -8,32 +8,29 @@
 
 import Foundation
 
+protocol SettingsProtocol {
+    var pomodoroInSeconds: Double { get set }
+    var restingInSeconds: Double { get set }
+}
+
 class Settings {
-    private static var kPomodoInSeconds: String = "kPomodoInSeconds"
-    private static var kRestingInSeconds: String = "kRestingInSeconds"
-    static var pomodoroInSeconds: Double = {
-        return storedDouble(forKey: kPomodoInSeconds, default: 90)
-    }() {
-        didSet {
-            SimplePersistence.store(pomodoroInSeconds, forKey: kPomodoInSeconds)
+    static var settingsProvider: SettingsProtocol! = {
+        return SettingsLocal()
+    }()
+    static var pomodoroInSeconds: Double {
+        get {
+            return settingsProvider.pomodoroInSeconds
+        }
+        set {
+            settingsProvider.pomodoroInSeconds = newValue
         }
     }
-
-    static var restingInSeconds: Double = {
-        return storedDouble(forKey: kRestingInSeconds, default: 20)
-    }() {
-        didSet {
-            SimplePersistence.store(restingInSeconds, forKey: kRestingInSeconds)
+    static var restingInSeconds: Double {
+        get {
+            return settingsProvider.restingInSeconds
         }
-    }
-
-    private static func storedDouble(forKey key: String,
-                                     default defaultValue: Double) -> Double {
-        let seconds = SimplePersistence.double(forKey: key)
-        if seconds != 0 {
-            return seconds
-        } else {
-            return defaultValue.minutes()  // 90 minutes
+        set {
+            settingsProvider.restingInSeconds = newValue
         }
     }
 }
