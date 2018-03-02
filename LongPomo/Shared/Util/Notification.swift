@@ -7,17 +7,33 @@
 //
 
 #if os(macOS)
-    class LPNotification {
-        static func show(informativeText: String, title: String) {
-            MacOSNotification.show(informativeText: informativeText, title: title)
-        }
+/**
+     Class to show notifications in multiple platforms
+*/
+class LPNotification {
+    /**
+     Present a notification in the macOS desktop immediately
+     - Parameter informativeText: Text to present
+     - Parameter title: Title of the notification
+    */
+    static func show(informativeText: String, title: String) {
+        MacOSNotification.show(informativeText: informativeText, title: title)
     }
+}
 #endif
 
 #if os(iOS)
-    class LPNotification {
-        static func show(informativeText: String, title: String) {
-            IosNotification.show(informativeText: informativeText, title: title)
-        }
+    /**
+     Class to show notifications in multiple platforms
+     */
+class LPNotification {
+    /**
+     Present a notification in the macOS desktop immediately
+     - Parameter informativeText: Text to present
+     - Parameter title: Title of the notification
+     */
+    static func show(informativeText: String, title: String) {
+        IosNotification.show(informativeText: informativeText, title: title)
     }
+}
 #endif

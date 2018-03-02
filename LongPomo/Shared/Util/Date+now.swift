@@ -8,7 +8,14 @@
 
 import Foundation
 
+/**
+ Date class extension
+*/
 extension Date {
+    /**
+     Now
+     - Returns: the current date and time
+    */
     static var now: Date {
         return Date()
     }

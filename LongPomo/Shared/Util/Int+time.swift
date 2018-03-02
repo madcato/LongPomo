@@ -8,11 +8,22 @@
 
 import Foundation
 
+/**
+ Int class extension to make integer conversions
+*/
 extension Int {
+    /**
+     Transform the integer value into seconds, assuming the value are minutes.
+     - Returns: The number multiplied by 60
+    */
     func minutes() -> Int {
         return self * 60
     }
 
+    /**
+     Helper to write the number in seconds in a string format
+     - Returns: The number of seconds transformed in format "mm:ss"
+    */
     func toMMSS() -> String {
         let mm = self / 60
         let ss = self % 60
@@ -20,11 +31,22 @@ extension Int {
     }
 }
 
+/**
+ Double class extension to make conversions
+*/
 extension Double {
+    /**
+     Transform the double value into seconds, assuming the value are minutes.
+     - Returns: The number multiplied by 60
+    */
     func minutes() -> Double {
         return self * 60
     }
 
+    /**
+     Helper to write the number in seconds in a string format
+     - Returns: The number of seconds transformed in format "mm:ss"
+    */
     func toMMSS() -> String {
         let sInt = Int(self)
         let mm = sInt / 60
@@ -32,6 +54,10 @@ extension Double {
         return String(format: "%02d:%02d", mm, ss)
     }
 
+    /**
+     Helper to write the number in seconds in a string format
+     - Returns: The number of seconds transformed in format "mm", showing minutes
+     */
     func toMM() -> String {
         let sInt = Int(self)
         let mm = sInt / 60
