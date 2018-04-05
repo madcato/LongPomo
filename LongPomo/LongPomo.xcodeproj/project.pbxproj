@@ -468,6 +468,7 @@
 		0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0B6FF18E20763316001F634C /* views */,
 				0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */,
 				0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */,
 				0B1DC09920317DC800A0C0B2 /* NotificationController.swift */,
@@ -573,6 +574,13 @@
 				0B571E7A202C5A720070F2C5 /* Info.plist */,
 			);
 			path = "LongPomo-iosUITests";
+			sourceTree = "<group>";
+		};
+		0B6FF18E20763316001F634C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		0B7F9B851ECE226C0023CF5F = {

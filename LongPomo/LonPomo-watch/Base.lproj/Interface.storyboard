@@ -14,10 +14,16 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LonPomo_watch" customModuleProvider="target">
                     <items>
-                        <slider width="1" alignment="left" continuous="YES" value="2" maximum="8" steps="7" id="cAh-Y5-Ies"/>
-                        <timer width="82" height="45" alignment="left" id="J3m-03-NcH"/>
-                        <movie width="116" height="16" alignment="left" id="wi6-tI-oF0"/>
+                        <spriteKitScene width="96" height="96" alignment="center" id="bNh-9r-0Fw"/>
+                        <timer width="42" alignment="center" textAlignment="left" id="UBh-ag-9OS">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <button width="1" alignment="left" title="Button" id="yzj-zN-zW4"/>
                     </items>
+                    <connections>
+                        <outlet property="interfaceScene" destination="bNh-9r-0Fw" id="GoB-VY-eNI"/>
+                        <outlet property="timer" destination="UBh-ag-9OS" id="w5x-hy-86a"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="322"/>
