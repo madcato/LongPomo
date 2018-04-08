@@ -37,3 +37,20 @@ class LPNotification {
     }
 }
 #endif
+
+#if os(watchOS)
+import WatchKit
+/**
+ Class to show notifications in multiple platforms
+ */
+class LPNotification {
+    /**
+     Present a notification in the macOS desktop immediately
+     - Parameter informativeText: Text to present
+     - Parameter title: Title of the notification
+     */
+    static func show(informativeText: String, title: String) {
+        WKInterfaceDevice.current().play(.success)
+    }
+}
+#endif

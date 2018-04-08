@@ -24,6 +24,25 @@
 		0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */; };
 		0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */; };
 		0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */; };
+		0B2C8FB720795C7B00292C0D /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		0B2C8FB820795C7C00292C0D /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		0B2C8FB920795C8000292C0D /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0B2C8FBA20795C8100292C0D /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0B2C8FBB20795C8800292C0D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0B2C8FBC20795C8900292C0D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0B2C8FBD20795C8D00292C0D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B2C8FBE20795C8E00292C0D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B2C8FBF20795C9C00292C0D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0B2C8FC020795C9D00292C0D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0B2C8FC120795CA700292C0D /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0B2C8FC220795CA800292C0D /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0B2C8FC320795CC500292C0D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0B2C8FC420795CC600292C0D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0B2C8FC520795CCB00292C0D /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B2C8FC620795CCC00292C0D /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B2C8FC720795CD000292C0D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0B2C8FC820795CD100292C0D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0B2C8FCA207964C700292C0D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C8FC9207964C700292C0D /* SettingsController.swift */; };
 		0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */; };
 		0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
 		0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
@@ -42,6 +61,7 @@
 		0B65FF03204146290061E16C /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
 		0B65FF042041462C0061E16C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0B65FF05204146300061E16C /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B6DA1902079373600F63DAD /* TimeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6DA18E2079350700F63DAD /* TimeCircleView.swift */; };
 		0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */; };
 		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
@@ -309,6 +329,7 @@
 		0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvUITests.swift; sourceTree = "<group>"; };
 		0B1DC0CF20317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2C8FC9207964C700292C0D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		0B3E66FC20400C730012CEF1 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
@@ -327,6 +348,7 @@
 		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
 		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControllViewController.swift; sourceTree = "<group>"; };
+		0B6DA18E2079350700F63DAD /* TimeCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircleView.swift; sourceTree = "<group>"; };
 		0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlockView.swift; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -470,6 +492,7 @@
 			children = (
 				0B6FF18E20763316001F634C /* views */,
 				0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */,
+				0B2C8FC9207964C700292C0D /* SettingsController.swift */,
 				0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */,
 				0B1DC09920317DC800A0C0B2 /* NotificationController.swift */,
 				0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */,
@@ -579,6 +602,7 @@
 		0B6FF18E20763316001F634C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				0B6DA18E2079350700F63DAD /* TimeCircleView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1030,7 +1054,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1366,9 +1390,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2C8FC720795CD000292C0D /* Int+time.swift in Sources */,
+				0B2C8FC120795CA700292C0D /* Date+now.swift in Sources */,
 				0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */,
+				0B2C8FB920795C8000292C0D /* SettingsLocal.swift in Sources */,
+				0B2C8FBB20795C8800292C0D /* Settings.swift in Sources */,
 				0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */,
+				0B2C8FCA207964C700292C0D /* SettingsController.swift in Sources */,
+				0B2C8FC520795CCB00292C0D /* SimplePersistence.swift in Sources */,
 				0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */,
+				0B2C8FBF20795C9C00292C0D /* PomodoroViewModel.swift in Sources */,
+				0B6DA1902079373600F63DAD /* TimeCircleView.swift in Sources */,
+				0B2C8FC320795CC500292C0D /* Notification.swift in Sources */,
+				0B2C8FB720795C7B00292C0D /* SettingsiCLoud.swift in Sources */,
+				0B2C8FBD20795C8D00292C0D /* PomodoroInteractor.swift in Sources */,
 				0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1377,8 +1412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2C8FBC20795C8900292C0D /* Settings.swift in Sources */,
+				0B2C8FC620795CCC00292C0D /* SimplePersistence.swift in Sources */,
+				0B2C8FC220795CA800292C0D /* Date+now.swift in Sources */,
+				0B2C8FBA20795C8100292C0D /* SettingsLocal.swift in Sources */,
+				0B2C8FB820795C7C00292C0D /* SettingsiCLoud.swift in Sources */,
 				0B3E66FF20400FD50012CEF1 /* AppColors.swift in Sources */,
+				0B2C8FC820795CD100292C0D /* Int+time.swift in Sources */,
 				0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */,
+				0B2C8FC420795CC600292C0D /* Notification.swift in Sources */,
+				0B2C8FC020795C9D00292C0D /* PomodoroViewModel.swift in Sources */,
+				0B2C8FBE20795C8E00292C0D /* PomodoroInteractor.swift in Sources */,
 				0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1808,7 +1852,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "LongPomo-ios/LongPomo-ios.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
@@ -1830,7 +1873,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "LongPomo-ios/LongPomo-ios.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;

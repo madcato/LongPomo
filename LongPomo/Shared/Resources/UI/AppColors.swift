@@ -49,7 +49,7 @@ let primaryColorAlpha = 1.0
     }
 #endif
 
-#if os(iOS)
+#if os(iOS) || os(watchOS)
     import UIKit
     typealias Color = UIColor
     class AppColors {

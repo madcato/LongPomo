@@ -1,32 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LonPomo_watch" customModuleProvider="target">
+                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="LonPomo_watch" customModuleProvider="target">
                     <items>
-                        <spriteKitScene width="96" height="96" alignment="center" id="bNh-9r-0Fw"/>
-                        <timer width="42" alignment="center" textAlignment="left" id="UBh-ag-9OS">
-                            <calendarUnit key="units" minute="YES" second="YES"/>
-                        </timer>
-                        <button width="1" alignment="left" title="Button" id="yzj-zN-zW4"/>
+                        <spriteKitScene width="136" height="136" alignment="center" verticalAlignment="center" id="bNh-9r-0Fw">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="cvG-mW-pIG">
+                                    <connections>
+                                        <action selector="sceneTapped:" destination="AgC-eL-Hgc" id="org-5Y-2lM"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </spriteKitScene>
                     </items>
                     <connections>
                         <outlet property="interfaceScene" destination="bNh-9r-0Fw" id="GoB-VY-eNI"/>
-                        <outlet property="timer" destination="UBh-ag-9OS" id="w5x-hy-86a"/>
+                        <segue destination="Dwu-03-QUH" kind="relationship" relationship="nextPage" id="uCK-Kx-PcH"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="322"/>
+        </scene>
+        <!--Settings Controller-->
+        <scene sceneID="LEy-BE-Ufm">
+            <objects>
+                <controller fullScreen="YES" id="Dwu-03-QUH" customClass="SettingsController" customModule="LonPomo_watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="nTj-FI-WLo">
+                            <items>
+                                <label width="64" alignment="left" text="Focus" textAlignment="center" id="zJt-Rn-1K8"/>
+                                <label width="64" alignment="right" text="Rest" textAlignment="center" id="cYI-kR-Zlj"/>
+                            </items>
+                        </group>
+                        <group width="1" height="120" alignment="left" id="M6x-Qm-XfT">
+                            <items>
+                                <picker width="66" height="120" alignment="left" focusStyle="stack" id="4k9-0s-aP5">
+                                    <connections>
+                                        <action selector="timeMinutesAction:" destination="Dwu-03-QUH" id="rqm-3z-001"/>
+                                    </connections>
+                                </picker>
+                                <picker width="66" height="120" alignment="right" focusStyle="stack" id="6FG-OT-IKx">
+                                    <connections>
+                                        <action selector="restMinutesAction:" destination="Dwu-03-QUH" id="SO5-rQ-efR"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="focusLabel" destination="zJt-Rn-1K8" id="wBu-sU-g3D"/>
+                        <outlet property="restLabel" destination="cYI-kR-Zlj" id="TfB-19-sqq"/>
+                        <outlet property="restMinutesPicker" destination="6FG-OT-IKx" id="oav-ST-Xdc"/>
+                        <outlet property="timeMinutesPicker" destination="4k9-0s-aP5" id="QPk-I1-FJQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="448" y="362"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

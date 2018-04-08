@@ -11,31 +11,68 @@ import Foundation
 import SpriteKit
 
 class InterfaceController: WKInterfaceController {
-
     @IBOutlet var interfaceScene: WKInterfaceSKScene!
-    @IBOutlet var timer: WKInterfaceTimer!
+    var scene: TimeCircleView?
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let scene = SKScene(size: CGSize(width: 100, height: 100))
-        scene.scaleMode = .aspectFit
-        interfaceScene.presentScene(scene)
-        let fraction: CGFloat = 0.75
-        let path = UIBezierPath(arcCenter: .zero,
-                                radius: 50,
-                                startAngle: 0,
-                                endAngle: 2 * .pi * fraction,
-                                clockwise: true).cgPath
+        scene = TimeCircleView(size: CGSize(width: 100, height: 100))
+        interfaceScene.presentScene(scene!)
+        configureViewModel()
+    }
 
-        let shapeNode = SKShapeNode(path: path)
-        shapeNode.strokeColor = .blue
-        shapeNode.fillColor = .clear
-        shapeNode.lineWidth = 4
-        shapeNode.lineCap = .round
-        shapeNode.position = CGPoint(x: scene.size.width / 2, y: scene.size.height / 2)
-        scene.addChild(shapeNode)
+    var viewModel: PomodoroViewModelProtocol? {
+        didSet {
+            viewModel?.runningDidChange = self.runningDidChange
+            viewModel?.sencondsLeftDidChange = self.secondsLeftDidChange
+            viewModel?.stateDidChange = self.stateDidChange
+            if let seconds = viewModel?.secondsLeft {
+                self.scene?.timeLabel?.text = seconds.toMMSS()
+            }
+        }
+    }
 
-//        put SKLabelNode to show remaining time
-//https://stackoverflow.com/questions/27073029/creating-progress-circle-as-wkinterfaceimage-in-watch-app/27073432#27073432
+    func runningDidChange(viewModel: PomodoroViewModelProtocol) {
+        if viewModel.running {
+//            self.startStopButton.setTitle("Stop", for: .normal)
+        } else {
+//            self.startStopButton.setTitle("Start", for: .normal)
+        }
+    }
+
+    func secondsLeftDidChange(viewModel: PomodoroViewModelProtocol) {
+        if let seconds = viewModel.secondsLeft {
+            self.scene?.timeLabel?.text = seconds.toMMSS()
+            var progress = viewModel.currentProgress()
+            // If resting, progress must start at 1 and end at 0
+            if viewModel.state == .resting {
+                progress = 1 - progress
+            }
+            if viewModel.state == .stopped {
+                progress = 1
+            }
+            self.scene?.currentProgress = progress
+        } else {
+            self.scene?.timeLabel?.text = Settings.pomodoroInSeconds.toMMSS()
+            self.scene?.currentProgress = 0
+        }
+    }
+
+    func stateDidChange(viewModel: PomodoroViewModelProtocol) {
+        switch viewModel.state {
+        case .stopped, .onGoing:
+            self.scene?.primaryColor = AppColors.primaryColor
+            self.scene?.timeLabel?.color = AppColors.primaryColor
+        case .resting:
+            self.scene?.primaryColor = AppColors.accentColor
+            self.scene?.timeLabel?.color = AppColors.accentColor
+        }
+    }
+
+    func configureViewModel() {
+        let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
+        let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
+        viewModel = pomodoroViewModel
     }
 
     override func willActivate() {
@@ -48,4 +85,12 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func sceneTapped(_ sender: Any) {
+        guard let running = viewModel?.running else { return }
+        if running {
+            viewModel?.stop()
+        } else {
+            viewModel?.play()
+        }
+    }
 }

@@ -121,11 +121,11 @@ class TimerCircleView: NSView {
     }
 
     func addCirle(arcRadius: CGFloat, colorTop: NSColor, colorBottom: NSColor) {
-        let X = self.bounds.midX
-        let Y = self.bounds.midY
+        let vslX = self.bounds.midX
+        let vslY = self.bounds.midY
 
         // Bottom Oval
-        let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: X - (arcRadius/2),
+        let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: vslX - (arcRadius/2),
                                                                      y: Y - (arcRadius/2)),
                                                      size: CGSize(width: arcRadius,
                                                                   height: arcRadius)))
@@ -137,7 +137,7 @@ class TimerCircleView: NSView {
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
         pathTop.lineCapStyle = .roundLineCapStyle
-        pathTop.appendArc(withCenter: NSPoint(x: X, y: Y),
+        pathTop.appendArc(withCenter: NSPoint(x: vslX, y: Y),
                           radius: arcRadius/2,
                           startAngle: 90,
                           endAngle: calculateEndAngle(), clockwise: true)
