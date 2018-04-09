@@ -62,6 +62,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
         case .stopped, .onGoing:
             interactor.maxSeconds = Settings.pomodoroInSeconds
             state = .onGoing
+            LPNotification.start()
         case .resting:
             interactor.maxSeconds = Settings.restingInSeconds
         }
@@ -105,7 +106,8 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
             // Set pomodoro in resting mode and restart
             if fromUser == false {
                 LPNotification.show(informativeText: "Long pomodoro finished",
-                                            title: "LongPomo")
+                                            title: "LongPomo",
+                                            resting: false)
                 state = .resting
                 play() // Start resting
             } else {
@@ -113,7 +115,8 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
             }
         case .resting:
             LPNotification.show(informativeText: "Rest finished",
-                                        title: "LongPomo")
+                                        title: "LongPomo",
+                                        resting: true)
             reset()
         }
     }

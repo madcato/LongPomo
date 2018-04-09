@@ -15,9 +15,16 @@ class LPNotification {
      Present a notification in the macOS desktop immediately
      - Parameter informativeText: Text to present
      - Parameter title: Title of the notification
+     - Parameter resting: true if the app state was resting, false otherwise
     */
-    static func show(informativeText: String, title: String) {
+    static func show(informativeText: String, title: String, resting: Bool) {
         MacOSNotification.show(informativeText: informativeText, title: title)
+    }
+
+    /**
+     Called when the user starts the process
+     */
+    static func start() {
     }
 }
 #endif
@@ -31,9 +38,16 @@ class LPNotification {
      Present a notification in the macOS desktop immediately
      - Parameter informativeText: Text to present
      - Parameter title: Title of the notification
+     - Parameter resting: true if the app state was resting, false otherwise
      */
-    static func show(informativeText: String, title: String) {
+    static func show(informativeText: String, title: String, resting: Bool) {
         IosNotification.show(informativeText: informativeText, title: title)
+    }
+
+    /**
+     Called when the user starts the process
+     */
+    static func start() {
     }
 }
 #endif
@@ -48,9 +62,26 @@ class LPNotification {
      Present a notification in the macOS desktop immediately
      - Parameter informativeText: Text to present
      - Parameter title: Title of the notification
+     - Parameter resting: true if the app state was resting, false otherwise
+
+     https://developer.apple.com/documentation/watchkit/wkhaptictype
      */
-    static func show(informativeText: String, title: String) {
-        WKInterfaceDevice.current().play(.success)
+    static func show(informativeText: String, title: String, resting: Bool) {
+        if resting {
+            WKInterfaceDevice.current().play(.stop)
+            WKInterfaceDevice.current().play(.stop)
+        } else {
+            WKInterfaceDevice.current().play(.success)
+            WKInterfaceDevice.current().play(.success)
+        }
+    }
+
+    /**
+        Called when the user starts the process
+    */
+    static func start() {
+        WKInterfaceDevice.current().play(.start)
+        WKInterfaceDevice.current().play(.start)
     }
 }
 #endif
