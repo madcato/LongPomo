@@ -10,7 +10,7 @@ import Foundation
 import CloudKit
 
 class SettingsiCloud: SettingsProtocol {
-    var pomodoroInSeconds: Double  {
+    var pomodoroInSeconds: Double {
         get {
             return 0
         }

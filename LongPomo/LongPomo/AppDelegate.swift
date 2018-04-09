@@ -18,8 +18,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let data = keyStore.object(forKey: "hola")
         keyStore.set("Hola", forKey: "hola")
         keyStore.synchronize()
-
-
     }
 
     public func applicationWillTerminate(_ aNotification: Notification) {
