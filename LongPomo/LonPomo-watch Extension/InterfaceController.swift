@@ -13,12 +13,23 @@ import SpriteKit
 class InterfaceController: WKInterfaceController {
     @IBOutlet var interfaceScene: WKInterfaceSKScene!
     var scene: TimeCircleView?
+    @IBOutlet var tapGesture: WKTapGestureRecognizer!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         scene = TimeCircleView(size: CGSize(width: 100, height: 100))
         interfaceScene.presentScene(scene!)
+    }
+
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
         configureViewModel()
+    }
+
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
     }
 
     var viewModel: PomodoroViewModelProtocol? {
@@ -70,19 +81,12 @@ class InterfaceController: WKInterfaceController {
     }
 
     func configureViewModel() {
+        guard viewModel == nil else {
+            return
+        }
         let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
     }
 
     @IBAction func sceneTapped(_ sender: Any) {
