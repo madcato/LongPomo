@@ -1025,6 +1025,11 @@
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = TW65EXAM4U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 					0B1DC0AD20317FC200A0C0B2 = {
 						CreatedOnToolsVersion = 9.2;
