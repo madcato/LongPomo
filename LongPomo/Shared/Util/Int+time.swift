@@ -25,9 +25,9 @@ extension Int {
      - Returns: The number of seconds transformed in format "mm:ss"
     */
     func toMMSS() -> String {
-        let mm = self / 60
-        let ss = self % 60
-        return "\(mm):\(ss)"
+        let mmm = self / 60
+        let sss = self % 60
+        return "\(mmm):\(sss)"
     }
 }
 
@@ -49,9 +49,9 @@ extension Double {
     */
     func toMMSS() -> String {
         let sInt = Int(self)
-        let mm = sInt / 60
-        let ss = sInt % 60
-        return String(format: "%02d:%02d", mm, ss)
+        let mmm = sInt / 60
+        let sss = sInt % 60
+        return String(format: "%02d:%02d", mmm, sss)
     }
 
     /**
@@ -60,7 +60,7 @@ extension Double {
      */
     func toMM() -> String {
         let sInt = Int(self)
-        let mm = sInt / 60
-        return String(format: "%02d", mm)
+        let mmm = sInt / 60
+        return String(format: "%02d", mmm)
     }
 }

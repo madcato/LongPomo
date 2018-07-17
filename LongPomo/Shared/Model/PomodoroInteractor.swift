@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 protocol PomodoroInteractorProtocol {
     /**
@@ -32,6 +33,11 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
     var startTime: Date
     var timer: Timer
     weak var delegate: PomodoroInteractorDelegate?
+    var secondsLeft: Double {
+        let now = Date()
+        let differenceInSeconds = now.timeIntervalSince(self.startTime)
+        return self.maxSeconds - differenceInSeconds
+    }
 
     init(maxSeconds: Double) {
         self.maxSeconds = maxSeconds
@@ -41,18 +47,41 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
 
     func start(from date: Date) {
         startTime = date
+//        setATimerNotification(secondsLeft)
         timer = Timer.scheduledTimer(withTimeInterval: 1.0,
                                      repeats: true,
                                      block: { (_) in
-            let now = Date()
-            let differenceInSeconds = now.timeIntervalSince(self.startTime)
-            let secondsLeft = self.maxSeconds - differenceInSeconds
-            self.delegate?.timeChanged(secondsLeft: secondsLeft)
+            self.delegate?.timeChanged(secondsLeft: self.secondsLeft)
         })
         timer.fire()
     }
 
     func stop() {
         self.timer.invalidate()
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
+
+//    func setATimerNotification(_ seconds: Double) {
+//#if os(watchOS)
+//        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+//        let content = UNMutableNotificationContent()
+//        content.title = "LongPomo"
+//        content.body = "Finished"
+//        content.sound = UNNotificationSound.default()
+//        // Create the trigger as a repeating event.
+//        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: seconds, repeats: false)
+//        // Create the request
+//        let uuidString = UUID().uuidString
+//        let request = UNNotificationRequest(identifier: uuidString,
+//                                            content: content,
+//                                            trigger: trigger)
+//        // Schedule the request with the system.
+//        let notificationCenter = UNUserNotificationCenter.current()
+//        notificationCenter.add(request) { (error) in
+//            if let error = error {
+//                print("Error notification: \(error)")
+//            }
+//        }
+//#endif
+//    }
 }
