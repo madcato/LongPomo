@@ -19,9 +19,11 @@ class LongPomoNotificationManager {
     }
 
     func appActivated() {
+    }
+
+    func resetNotifications() {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
-
     }
 
     func appDeactivated() {
@@ -36,7 +38,7 @@ class LongPomoNotificationManager {
         if let time = time {
             scheduleNotification(for: time, message: "Finished")
         }
-        scheduleNotification(for: restTime, message: "Rest finished")
+        scheduleNotification(for: restTime, message: "Resting finished")
     }
 
     func scheduleNotification(for time: Double, message: String) {
@@ -45,12 +47,10 @@ class LongPomoNotificationManager {
             "LongPomo", arguments: nil)
         content.body = NSString.localizedUserNotificationString(forKey:
             message, arguments: nil)
-
         // Deliver the notification in five seconds.
         content.sound = UNNotificationSound.default()
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: time,
                                                         repeats: false)
-
         // Schedule the notification.
         let request = UNNotificationRequest(identifier: message,
                                             content: content,

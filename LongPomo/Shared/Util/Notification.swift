@@ -26,9 +26,6 @@ class LPNotification {
      */
     static func start() {
     }
-
-    static func resetNotifications() {
-    }
 }
 #endif
 
@@ -44,16 +41,15 @@ class LPNotification {
      - Parameter resting: true if the app state was resting, false otherwise
      */
     static func show(informativeText: String, title: String, resting: Bool) {
-        IosNotification.show(informativeText: informativeText, title: title)
     }
 
     /**
      Called when the user starts the process
      */
     static func start() {
-    }
-
-     static func resetNotifications() {
+        let time = Settings.pomodoroInSeconds
+        let restTime = time + Settings.restingInSeconds
+        LongPomoNotificationManager.shared.scheduleNotifications(for: time, andfor: restTime)
     }
 }
 #endif
@@ -77,11 +73,9 @@ class LPNotification {
         if resting {
             WKInterfaceDevice.current().play(.stop)
             WKInterfaceDevice.current().play(.stop)
-            setATimerNotification(1, message: "Resting finished")
         } else {
             WKInterfaceDevice.current().play(.success)
             WKInterfaceDevice.current().play(.success)
-            setATimerNotification(1, message: "Finished")
         }
     }
 
@@ -89,34 +83,9 @@ class LPNotification {
         Called when the user starts the process
     */
     static func start() {
-    }
-    
-    static func setATimerNotification(_ seconds: Double, message: String) {
-        #if os(watchOS)
-        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-        let content = UNMutableNotificationContent()
-        content.title = "LongPomo"
-        content.body = message
-        content.sound = UNNotificationSound.default()
-        // Create the trigger as a repeating event.
-        let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: seconds, repeats: false)
-        // Create the request
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString,
-                                            content: content,
-                                            trigger: trigger)
-        // Schedule the request with the system.
-        let notificationCenter = UNUserNotificationCenter.current()
-        notificationCenter.add(request) { (error) in
-            if let error = error {
-                print("Error notification: \(error)")
-            }
-        }
-        #endif
-    }
-
-    static func resetNotifications() {
-        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        let time = Settings.pomodoroInSeconds
+        let restTime = time + Settings.restingInSeconds
+        LongPomoNotificationManager.shared.scheduleNotifications(for: time, andfor: restTime)
     }
 }
 #endif

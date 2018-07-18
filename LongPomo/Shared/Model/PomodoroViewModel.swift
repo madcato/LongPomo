@@ -72,6 +72,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
 
     func stop() {
         internalStop(fromUser: true)
+        LongPomoNotificationManager.shared.resetNotifications()
     }
 
     func reset() {
