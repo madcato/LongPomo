@@ -75,10 +75,6 @@
 		0BC480A61ED360C900C8024D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
 		0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
-		0BEE8D62207CEB1400B782AF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
-		0BEE8D63207CEB1400B782AF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
-		0BEE8D64207CEB1400B782AF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
-		0BEE8D65207CEB1400B782AF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
 		0BF0F11820481BFD00892892 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F0E420481BC200892892 /* Nimble.framework */; };
 		0BF0F11920481C0300892892 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F10020481BC800892892 /* Quick.framework */; };
 		0BF0F11A20481C0900892892 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F0E820481BC200892892 /* Nimble.framework */; };
@@ -94,6 +90,8 @@
 		0BFC98BC204856C4008E7283 /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
 		0BFC98D22048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
 		0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		3450D42020FF11EC0016FF83 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
+		3450D42120FF12030016FF83 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1406,7 +1404,7 @@
 				0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */,
 				0B2C8FB920795C8000292C0D /* SettingsLocal.swift in Sources */,
 				0B2C8FBB20795C8800292C0D /* Settings.swift in Sources */,
-				0BEE8D64207CEB1400B782AF /* File.swift in Sources */,
+				3450D42120FF12030016FF83 /* File.swift in Sources */,
 				0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */,
 				0B2C8FCA207964C700292C0D /* SettingsController.swift in Sources */,
 				0B2C8FC520795CCB00292C0D /* SimplePersistence.swift in Sources */,
@@ -1434,7 +1432,6 @@
 				0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */,
 				0B2C8FC420795CC600292C0D /* Notification.swift in Sources */,
 				0B2C8FC020795C9D00292C0D /* PomodoroViewModel.swift in Sources */,
-				0BEE8D65207CEB1400B782AF /* File.swift in Sources */,
 				0B2C8FBE20795C8E00292C0D /* PomodoroInteractor.swift in Sources */,
 				0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */,
 			);
@@ -1465,7 +1462,7 @@
 				0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */,
 				0BF9360020414A5400D61EFF /* SimplePersistence.swift in Sources */,
 				0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */,
-				0BEE8D63207CEB1400B782AF /* File.swift in Sources */,
+				3450D42020FF11EC0016FF83 /* File.swift in Sources */,
 				0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */,
 				0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */,
 				0B65FF042041462C0061E16C /* Settings.swift in Sources */,
@@ -1506,7 +1503,6 @@
 				0BA8F828204806F800F050C9 /* Date+now.swift in Sources */,
 				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
 				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,
-				0BEE8D62207CEB1400B782AF /* File.swift in Sources */,
 				0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */,
 				0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */,
 				0BFC98D22048576C008E7283 /* SettingsiCLoud.swift in Sources */,

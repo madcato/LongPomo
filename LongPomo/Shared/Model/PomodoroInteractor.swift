@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UserNotifications
 
 protocol PomodoroInteractorProtocol {
     /**
@@ -58,7 +57,7 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
 
     func stop() {
         self.timer.invalidate()
-        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        LPNotification.resetNotifications()
     }
 
 //    func setATimerNotification(_ seconds: Double) {

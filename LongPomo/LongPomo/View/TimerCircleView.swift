@@ -126,7 +126,7 @@ class TimerCircleView: NSView {
 
         // Bottom Oval
         let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: vslX - (arcRadius/2),
-                                                                     y: Y - (arcRadius/2)),
+                                                                     y: vslY - (arcRadius/2)),
                                                      size: CGSize(width: arcRadius,
                                                                   height: arcRadius)))
         self.addOval(oval: ovalBottom(pathBottom, colorBottom))
@@ -137,7 +137,7 @@ class TimerCircleView: NSView {
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
         pathTop.lineCapStyle = .roundLineCapStyle
-        pathTop.appendArc(withCenter: NSPoint(x: vslX, y: Y),
+        pathTop.appendArc(withCenter: NSPoint(x: vslX, y: vslY),
                           radius: arcRadius/2,
                           startAngle: 90,
                           endAngle: calculateEndAngle(), clockwise: true)

@@ -26,6 +26,9 @@ class LPNotification {
      */
     static func start() {
     }
+
+    static func resetNotifications() {
+    }
 }
 #endif
 
@@ -48,6 +51,9 @@ class LPNotification {
      Called when the user starts the process
      */
     static func start() {
+    }
+
+     static func resetNotifications() {
     }
 }
 #endif
@@ -107,6 +113,10 @@ class LPNotification {
             }
         }
         #endif
+    }
+
+    static func resetNotifications() {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
     }
 }
 #endif
