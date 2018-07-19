@@ -20,6 +20,20 @@
                ReferencedContainer = "container:LongPomo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B7F9BA91ECE226C0023CF5F"
+               BuildableName = "LongPomoUITests.xctest"
+               BlueprintName = "LongPomoUITests"
+               ReferencedContainer = "container:LongPomo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -36,16 +50,6 @@
                BlueprintIdentifier = "0B7F9B9E1ECE226C0023CF5F"
                BuildableName = "LongPomoTests.xctest"
                BlueprintName = "LongPomoTests"
-               ReferencedContainer = "container:LongPomo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B7F9BA91ECE226C0023CF5F"
-               BuildableName = "LongPomoUITests.xctest"
-               BlueprintName = "LongPomoUITests"
                ReferencedContainer = "container:LongPomo.xcodeproj">
             </BuildableReference>
          </TestableReference>
