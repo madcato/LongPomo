@@ -28,19 +28,17 @@ protocol PomodoroInteractorDelegate: class {
 }
 
 class PomodoroInteractor: PomodoroInteractorProtocol {
-    var maxSeconds: Double
-    var startTime: Date
+    var maxSeconds: Double { didSet {
+            secondsLeft = maxSeconds
+        }
+    }
+    var startTime: Date?
     var timer: Timer
     weak var delegate: PomodoroInteractorDelegate?
-    var secondsLeft: Double {
-        let now = Date()
-        let differenceInSeconds = now.timeIntervalSince(self.startTime)
-        return self.maxSeconds - differenceInSeconds
-    }
+    var secondsLeft: Double = 0
 
     init(maxSeconds: Double) {
         self.maxSeconds = maxSeconds
-        self.startTime = Date()
         self.timer = Timer()
     }
 
@@ -49,6 +47,7 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0,
                                      repeats: true,
                                      block: { (_) in
+            self.secondsLeft -= 1
             self.delegate?.timeChanged(secondsLeft: self.secondsLeft)
         })
         timer.fire()
