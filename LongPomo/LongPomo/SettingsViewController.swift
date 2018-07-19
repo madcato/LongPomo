@@ -17,6 +17,12 @@ class SettingsViewController: NSViewController {
         super.viewDidLoad()
         pomodoroTime.stringValue = Settings.pomodoroInSeconds.toMM()
         restTime.stringValue = Settings.restingInSeconds.toMM()
+        view.layer?.backgroundColor = NSColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+    }
+
+    override func viewDidAppear() {
+        // any additional code
+        view.window!.styleMask.remove(NSWindow.StyleMask.resizable)
     }
 
     override func viewWillDisappear() {

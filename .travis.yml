@@ -2,5 +2,6 @@ language: swift # or objective-c
 osx_image: xcode9.2
 script:
   - xcodebuild -scheme LongPomo -project LongPomo/LongPomo.xcodeproj -sdk macosx  -configuration Debug -enableCodeCoverage YES build test
+  - xcodebuild -scheme LongPomo-ios -project LongPomo/LongPomo.xcodeproj -destination "platform=iOS Simulator,name=iPhone 6s" -configuration Debug -allowProvisioningUpdates -enableCodeCoverage YES ONLY_ACTIVE_ARCH=NO build test
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'LongPomo'

@@ -28,9 +28,16 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureAppearance()
         configureViewModel()
+        viewModel?.reset()
         ViewController.circleController = self
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+    }
+
+    override func viewDidAppear() {
+        // any additional code
+        view.window!.styleMask.remove(NSWindow.StyleMask.resizable)
     }
 
     override var representedObject: Any? {
@@ -39,11 +46,8 @@ class ViewController: NSViewController {
         }
     }
 
-    func configureAppearance() {
-    }
-
     func configureViewModel() {
-        let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
+        let interactor = PomodoroInteractor.shared
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
     }
@@ -64,6 +68,9 @@ class ViewController: NSViewController {
             if viewModel.state == .resting {
                 progress = 1 - progress
             }
+            if viewModel.state == .stopped {
+                progress = 1
+            }
             self.circleView.currentProgress = progress
         } else {
             self.timeLeft.stringValue = Settings.pomodoroInSeconds.toMMSS()
@@ -73,7 +80,7 @@ class ViewController: NSViewController {
 
     func stateDidChange(viewModel: PomodoroViewModelProtocol) {
         switch viewModel.state {
-        case .onGoing:
+        case .stopped, .onGoing:
             self.circleView.primaryColor = AppColors.primaryColor
         case .resting:
             self.circleView.primaryColor = AppColors.accentColor

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LongPomo_ios" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rx-UO-B0r">
+                                <rect key="frame" x="337" y="36" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="5pM-ai-que"/>
+                                    <constraint firstAttribute="height" constant="22" id="id8-gz-hZo"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="q8D-cb-m7y" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="21B-Vr-fUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB9-rQ-mgw">
+                                <rect key="frame" x="163" y="551" width="48" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="8i9-dX-hiO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="SqP-vb-dAl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startStopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ONY-Jg-mJf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1I-NY-dRo">
+                                <rect key="frame" x="78" y="309" width="218" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="TZo-h3-qb7"/>
+                                    <constraint firstAttribute="height" constant="69" id="f2s-jJ-aeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDF-P4-9tr" customClass="TimerCircleView" customModule="LongPomo_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sDF-P4-9tr" secondAttribute="height" multiplier="1:1" id="Ubj-GE-Elr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O1I-NY-dRo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1uD-0g-yRw"/>
+                            <constraint firstItem="YB9-rQ-mgw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y6l-oA-0LB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YB9-rQ-mgw" secondAttribute="bottom" constant="20" id="cnn-UK-saa"/>
+                            <constraint firstItem="O1I-NY-dRo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dRH-5t-r8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7rx-UO-B0r" secondAttribute="trailing" constant="16" id="f5O-Vn-UbX"/>
+                            <constraint firstItem="sDF-P4-9tr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ipR-e5-tKf"/>
+                            <constraint firstItem="7rx-UO-B0r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mRe-kr-zE9"/>
+                            <constraint firstItem="sDF-P4-9tr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="r4Y-f5-h1L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sDF-P4-9tr" secondAttribute="trailing" id="rIT-o9-C4q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="startStopButton" destination="YB9-rQ-mgw" id="feP-3g-HtI"/>
+                        <outlet property="timeCircleView" destination="sDF-P4-9tr" id="Aoy-F0-SrI"/>
+                        <outlet property="timeLabel" destination="O1I-NY-dRo" id="spG-YF-eOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.39999999999998" y="-175.86206896551727"/>
+        </scene>
+        <!--Config View Controll View Controller-->
+        <scene sceneID="1i4-4e-m2e">
+            <objects>
+                <viewController id="q8D-cb-m7y" customClass="ConfigViewControllViewController" customModule="LongPomo_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1y-Ci-Sbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91w-j1-8y4">
+                                <rect key="frame" x="337" y="36" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Au5-32-IvP"/>
+                                    <constraint firstAttribute="width" constant="22" id="hJR-dH-kqP"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="GcJ-3G-1Ok" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="kIN-0T-9EB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long pomodoro time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpX-bY-n0z">
+                                <rect key="frame" x="16" y="79" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="77V-8d-QuZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-Rt-3GU">
+                                <rect key="frame" x="0.0" y="355" width="375" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="cOG-c5-yIV"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="540115035.27672899">
+                                    <!--2018-02-12 07:57:15 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eA-VE-8gh">
+                                <rect key="frame" x="16" y="326" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fB8-2X-Fbp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-u9-fEL">
+                                <rect key="frame" x="0.0" y="108" width="375" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="GVP-yH-3Ng"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="540115035.27672899">
+                                    <!--2018-02-12 07:57:15 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="-978262200">
+                                    <!--1970-01-01 12:30:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.76470588240000004" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n2p-u9-fEL" firstAttribute="top" secondItem="xpX-bY-n0z" secondAttribute="bottom" constant="8" id="4o1-DY-JKs"/>
+                            <constraint firstItem="7eA-VE-8gh" firstAttribute="top" secondItem="n2p-u9-fEL" secondAttribute="bottom" constant="38" id="9Ed-U3-yAB"/>
+                            <constraint firstItem="7eA-VE-8gh" firstAttribute="leading" secondItem="eIZ-QT-qAD" secondAttribute="leading" constant="16" id="F2X-yA-cEF"/>
+                            <constraint firstItem="xpX-bY-n0z" firstAttribute="leading" secondItem="eIZ-QT-qAD" secondAttribute="leading" constant="16" id="IGC-vM-WUt"/>
+                            <constraint firstItem="bE2-Rt-3GU" firstAttribute="leading" secondItem="eIZ-QT-qAD" secondAttribute="leading" id="TmI-nN-nXx"/>
+                            <constraint firstItem="xpX-bY-n0z" firstAttribute="top" secondItem="91w-j1-8y4" secondAttribute="bottom" constant="21" id="bBg-1h-Y8i"/>
+                            <constraint firstItem="eIZ-QT-qAD" firstAttribute="trailing" secondItem="xpX-bY-n0z" secondAttribute="trailing" constant="16" id="bvX-vF-6sH"/>
+                            <constraint firstItem="eIZ-QT-qAD" firstAttribute="trailing" secondItem="91w-j1-8y4" secondAttribute="trailing" constant="16" id="eeI-hm-EMp"/>
+                            <constraint firstItem="n2p-u9-fEL" firstAttribute="leading" secondItem="eIZ-QT-qAD" secondAttribute="leading" id="hc4-4o-X1V"/>
+                            <constraint firstItem="eIZ-QT-qAD" firstAttribute="trailing" secondItem="7eA-VE-8gh" secondAttribute="trailing" constant="16" id="iIk-ri-AMl"/>
+                            <constraint firstItem="bE2-Rt-3GU" firstAttribute="trailing" secondItem="eIZ-QT-qAD" secondAttribute="trailing" id="mXs-3K-Y0M"/>
+                            <constraint firstItem="n2p-u9-fEL" firstAttribute="trailing" secondItem="eIZ-QT-qAD" secondAttribute="trailing" id="xDK-6k-rGs"/>
+                            <constraint firstItem="91w-j1-8y4" firstAttribute="top" secondItem="eIZ-QT-qAD" secondAttribute="top" constant="16" id="yz9-tR-3ra"/>
+                            <constraint firstItem="bE2-Rt-3GU" firstAttribute="top" secondItem="7eA-VE-8gh" secondAttribute="bottom" constant="8" id="zVz-P8-uEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eIZ-QT-qAD"/>
+                    </view>
+                    <connections>
+                        <outlet property="pomoDatePicker" destination="n2p-u9-fEL" id="G5k-uN-CPR"/>
+                        <outlet property="restDatePicker" destination="bE2-Rt-3GU" id="um1-Vs-fRA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syN-u3-wSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GcJ-3G-1Ok" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="-176.76161919040482"/>
+        </scene>
+    </scenes>
+</document>

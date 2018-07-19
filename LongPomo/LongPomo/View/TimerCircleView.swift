@@ -62,9 +62,11 @@ class TimerCicleOval {
         arc.shadowColor = NSColor.black.cgColor
         arc = (shadow?.configureShapeLayer(layer: arc))!
         arc = (line?.configureShapeLayer(layer: arc))!
+        arc.lineCap = kCALineCapRound
         return arc
     }
 }
+
 class TimerCircleView: NSView {
     var primaryColor: NSColor = AppColors.primaryColor
     var secondaryColor: NSColor = AppColors.secondaryColor
@@ -119,14 +121,14 @@ class TimerCircleView: NSView {
     }
 
     func addCirle(arcRadius: CGFloat, colorTop: NSColor, colorBottom: NSColor) {
-        let X = self.bounds.midX
-        let Y = self.bounds.midY
+        let vslX = self.bounds.midX
+        let vslY = self.bounds.midY
 
         // Bottom Oval
-        let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: X - (arcRadius/2),
-                                                                     y: Y - (arcRadius/2)),
+        let pathBottom = NSBezierPath(ovalIn: NSRect(origin: CGPoint(x: vslX - (arcRadius/2),
+                                                                     y: vslY - (arcRadius/2)),
                                                      size: CGSize(width: arcRadius,
-                                                                  height:arcRadius)))
+                                                                  height: arcRadius)))
         self.addOval(oval: ovalBottom(pathBottom, colorBottom))
 
         // Top Oval
@@ -134,7 +136,8 @@ class TimerCircleView: NSView {
         // End -270  -> 0 leftSeconds
         // Dif -360 * (currentSec * maxLeftSeconds)
         let pathTop = NSBezierPath()
-        pathTop.appendArc(withCenter: NSPoint(x: X, y: Y),
+        pathTop.lineCapStyle = .roundLineCapStyle
+        pathTop.appendArc(withCenter: NSPoint(x: vslX, y: vslY),
                           radius: arcRadius/2,
                           startAngle: 90,
                           endAngle: calculateEndAngle(), clockwise: true)
@@ -155,7 +158,7 @@ class TimerCircleView: NSView {
         // Drawing code here.
         self.addCirle(arcRadius: self.arcRadious,
                       colorTop: self.primaryColor,
-                      colorBottom:  self.secondaryColor)
+                      colorBottom: self.secondaryColor)
     }
 
     func redraw() {

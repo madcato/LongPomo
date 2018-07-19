@@ -10,23 +10,135 @@
 		0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1031631ED72AB900210F5C /* SettingsViewController.swift */; };
 		0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */; };
 		0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */; };
+		0B1DC08820317DC700A0C0B2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC08620317DC700A0C0B2 /* Interface.storyboard */; };
+		0B1DC08A20317DC700A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC08920317DC700A0C0B2 /* Assets.xcassets */; };
+		0B1DC09120317DC800A0C0B2 /* LonPomo-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */; };
+		0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */; };
+		0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC09920317DC800A0C0B2 /* NotificationController.swift */; };
+		0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */; };
+		0B1DC0A220317DC800A0C0B2 /* LonPomo-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */; };
+		0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */; };
+		0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B220317FC200A0C0B2 /* ViewController.swift */; };
+		0B1DC0B620317FC200A0C0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B420317FC200A0C0B2 /* Main.storyboard */; };
+		0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */; };
+		0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */; };
+		0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */; };
+		0B2C8FB720795C7B00292C0D /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		0B2C8FB820795C7C00292C0D /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		0B2C8FB920795C8000292C0D /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0B2C8FBA20795C8100292C0D /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0B2C8FBB20795C8800292C0D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0B2C8FBC20795C8900292C0D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0B2C8FBD20795C8D00292C0D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B2C8FBE20795C8E00292C0D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B2C8FBF20795C9C00292C0D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0B2C8FC020795C9D00292C0D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0B2C8FC120795CA700292C0D /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0B2C8FC220795CA800292C0D /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0B2C8FC320795CC500292C0D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0B2C8FC420795CC600292C0D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0B2C8FC520795CCB00292C0D /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B2C8FC620795CCC00292C0D /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B2C8FC720795CD000292C0D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0B2C8FC820795CD100292C0D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0B2C8FCA207964C700292C0D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C8FC9207964C700292C0D /* SettingsController.swift */; };
+		0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */; };
+		0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E66FF20400FD50012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
+		0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E66FC20400C730012CEF1 /* AppColors.swift */; };
 		0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */; };
 		0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E58202C5A710070F2C5 /* AppDelegate.swift */; };
+		0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E5A202C5A710070F2C5 /* ViewController.swift */; };
+		0B571E5E202C5A710070F2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E5C202C5A710070F2C5 /* Main.storyboard */; };
+		0B571E60202C5A710070F2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E5F202C5A710070F2C5 /* Assets.xcassets */; };
+		0B571E63202C5A710070F2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */; };
+		0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */; };
+		0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */; };
+		0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */; };
+		0B65FF03204146290061E16C /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
+		0B65FF042041462C0061E16C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
+		0B65FF05204146300061E16C /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0B6DA1902079373600F63DAD /* TimeCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6DA18E2079350700F63DAD /* TimeCircleView.swift */; };
+		0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */; };
 		0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */; };
 		0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */; };
 		0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9B931ECE226C0023CF5F /* ViewController.swift */; };
 		0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B951ECE226C0023CF5F /* Assets.xcassets */; };
-		0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7F9B971ECE226C0023CF5F /* Main.storyboard */; };
 		0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */; };
 		0B7F9BAF1ECE226C0023CF5F /* LongPomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */; };
-		0BC480A01ED3403800C8024D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4809F1ED3403800C8024D /* AppColors.swift */; };
+		0BA8F828204806F800F050C9 /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
+		0BA8F829204806F800F050C9 /* Date+now.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8F827204806F800F050C9 /* Date+now.swift */; };
 		0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */; };
 		0BC480A61ED360C900C8024D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A51ED360C900C8024D /* Settings.swift */; };
 		0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
 		0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */; };
+		0BF0F11820481BFD00892892 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F0E420481BC200892892 /* Nimble.framework */; };
+		0BF0F11920481C0300892892 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F10020481BC800892892 /* Quick.framework */; };
+		0BF0F11A20481C0900892892 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F0E820481BC200892892 /* Nimble.framework */; };
+		0BF0F11B20481C0D00892892 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0F10820481BC800892892 /* Quick.framework */; };
+		0BF0F11D20481D1000892892 /* LongPomoSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0F11C20481D1000892892 /* LongPomoSpec.swift */; };
+		0BF935FF2041491200D61EFF /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC480A81ED3612C00C8024D /* Int+time.swift */; };
+		0BF9360020414A5400D61EFF /* SimplePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */; };
+		0BF9360520414B2600D61EFF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0BF9360620414B2600D61EFF /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9360420414B2600D61EFF /* Notification.swift */; };
+		0BF936442041877400D61EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF936422041877400D61EFF /* Main.storyboard */; };
+		0BFC98BB204856C4008E7283 /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0BFC98BC204856C4008E7283 /* SettingsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98BA204856C4008E7283 /* SettingsLocal.swift */; };
+		0BFC98D22048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
+		3450D42020FF11EC0016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
+		3450D42120FF12030016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
+		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B1DC09220317DC800A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC08F20317DC700A0C0B2;
+			remoteInfo = "LonPomo-watch Extension";
+		};
+		0B1DC09F20317DC800A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC08320317DC700A0C0B2;
+			remoteInfo = "LonPomo-watch";
+		};
+		0B1DC0BF20317FC200A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC0AD20317FC200A0C0B2;
+			remoteInfo = "LongPomo-tv";
+		};
+		0B1DC0CA20317FC200A0C0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B1DC0AD20317FC200A0C0B2;
+			remoteInfo = "LongPomo-tv";
+		};
+		0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B571E55202C5A710070F2C5;
+			remoteInfo = "LongPomo-ios";
+		};
+		0B571E75202C5A720070F2C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B571E55202C5A710070F2C5;
+			remoteInfo = "LongPomo-ios";
+		};
 		0B7F9BA01ECE226C0023CF5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0B7F9B861ECE226C0023CF5F /* Project object */;
@@ -41,20 +153,212 @@
 			remoteGlobalIDString = 0B7F9B8D1ECE226C0023CF5F;
 			remoteInfo = LongPomo;
 		};
+		0BF0F0E320481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-macOS";
+		};
+		0BF0F0E520481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-macOSTests";
+		};
+		0BF0F0E720481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		0BF0F0E920481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		0BF0F0EB20481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF1551BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOS";
+		};
+		0BF0F0ED20481BC200892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOSTests";
+		};
+		0BF0F0FF20481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B8E1943873100289F44;
+			remoteInfo = "Quick-macOS";
+		};
+		0BF0F10120481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAEB6B991943873100289F44;
+			remoteInfo = "Quick - macOSTests";
+		};
+		0BF0F10320481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5663E81A4C8D8500193C88;
+			remoteInfo = "QuickFocused - macOSTests";
+		};
+		0BF0F10520481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076CF51D6D7C2000E2B499;
+			remoteInfo = "QuickAfterSuite - macOSTests";
+		};
+		0BF0F10720481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		0BF0F10920481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
+			remoteInfo = "Quick - iOSTests";
+		};
+		0BF0F10B20481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA9876B21A4C70EB0004AA17;
+			remoteInfo = "QuickFocused - iOSTests";
+		};
+		0BF0F10D20481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D081D6D7CD600E2B499;
+			remoteInfo = "QuickAfterSuite - iOSTests";
+		};
+		0BF0F10F20481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CD51BDCA4AB005013A2;
+			remoteInfo = "Quick-tvOS";
+		};
+		0BF0F11120481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CDE1BDCA4AB005013A2;
+			remoteInfo = "Quick - tvOSTests";
+		};
+		0BF0F11320481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F118CF01BDCA4BB005013A2;
+			remoteInfo = "QuickFocused - tvOSTests";
+		};
+		0BF0F11520481BC800892892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D1A1D6D7CEA00E2B499;
+			remoteInfo = "QuickAfterSuite - tvOSTests";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B1DC0A120317DC800A0C0B2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0B1DC0A220317DC800A0C0B2 /* LonPomo-watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0A620317DC800A0C0B2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B1DC09120317DC800A0C0B2 /* LonPomo-watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B1031631ED72AB900210F5C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
 		0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
+		0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LonPomo-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC08720317DC700A0C0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0B1DC08920317DC700A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC08B20317DC700A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LonPomo-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0B1DC09920317DC800A0C0B2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC09D20317DC800A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC09E20317DC800A0C0B2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-tv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B1DC0B220317FC200A0C0B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B1DC0B520317FC200A0C0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B1DC0B920317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvTests.swift; sourceTree = "<group>"; };
+		0B1DC0C420317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-tvUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_tvUITests.swift; sourceTree = "<group>"; };
+		0B1DC0CF20317FC200A0C0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2C8FC9207964C700292C0D /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCircleView.swift; sourceTree = "<group>"; };
+		0B3E66FC20400C730012CEF1 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacOSNotification.swift; sourceTree = "<group>"; };
 		0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersistence.swift; sourceTree = "<group>"; };
+		0B571E56202C5A710070F2C5 /* LongPomo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LongPomo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E58202C5A710070F2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B571E5A202C5A710070F2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B571E5D202C5A710070F2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B571E5F202C5A710070F2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B571E62202C5A710070F2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B571E64202C5A710070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosTests.swift; sourceTree = "<group>"; };
+		0B571E6F202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LongPomo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomo_iosUITests.swift; sourceTree = "<group>"; };
+		0B571E7A202C5A720070F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControllViewController.swift; sourceTree = "<group>"; };
+		0B6DA18E2079350700F63DAD /* TimeCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCircleView.swift; sourceTree = "<group>"; };
+		0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBlockView.swift; sourceTree = "<group>"; };
 		0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTests.swift; sourceTree = "<group>"; };
 		0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B7F9B931ECE226C0023CF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B7F9B951ECE226C0023CF5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B7F9B981ECE226C0023CF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B7F9B9A1ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7F9B9F1ECE226C0023CF5F /* LongPomoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoTests.swift; sourceTree = "<group>"; };
@@ -62,14 +366,78 @@
 		0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F9BAE1ECE226C0023CF5F /* LongPomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoUITests.swift; sourceTree = "<group>"; };
 		0B7F9BB01ECE226C0023CF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BC4809F1ED3403800C8024D /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		0BA8F826204806F700F050C9 /* LonPomo-watch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LonPomo-watch-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BA8F827204806F800F050C9 /* Date+now.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+now.swift"; sourceTree = "<group>"; };
 		0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		0BC480A51ED360C900C8024D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0BC480A81ED3612C00C8024D /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
 		0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomodoroInteractor.swift; sourceTree = "<group>"; };
+		0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoNotificationManager.swift; sourceTree = "<group>"; };
+		0BF0F0D920481BC200892892 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
+		0BF0F0EF20481BC800892892 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		0BF0F11C20481D1000892892 /* LongPomoSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoSpec.swift; sourceTree = "<group>"; };
+		0BF9360420414B2600D61EFF /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		0BF936432041877400D61EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LongPomo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		0BFC98BA204856C4008E7283 /* SettingsLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLocal.swift; sourceTree = "<group>"; };
+		0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsiCLoud.swift; sourceTree = "<group>"; };
+		0BFC98D4204859E2008E7283 /* LongPomo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LongPomo.entitlements; sourceTree = "<group>"; };
+		0BFC98D720485A1C008E7283 /* LongPomo-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-ios.entitlements"; sourceTree = "<group>"; };
+		0BFC98EE20485CBF008E7283 /* LongPomo-tv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-tv.entitlements"; sourceTree = "<group>"; };
+		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B1DC08D20317DC700A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0AB20317FC200A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BB20317FC200A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C620317FC200A0C0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E53202C5A710070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E66202C5A710070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF0F11B20481C0D00892892 /* Quick.framework in Frameworks */,
+				0BF0F11A20481C0900892892 /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E71202C5A720070F2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8B1ECE226C0023CF5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +449,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF0F11920481C0300892892 /* Quick.framework in Frameworks */,
+				0BF0F11820481BFD00892892 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,17 +477,160 @@
 			isa = PBXGroup;
 			children = (
 				0B15D5B01ED48EE7006979ED /* TimerCircleView.swift */,
+				0B6E4A6820349E4000571BD6 /* ColorBlockView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0B1DC08520317DC700A0C0B2 /* LonPomo-watch */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC08620317DC700A0C0B2 /* Interface.storyboard */,
+				0B1DC08920317DC700A0C0B2 /* Assets.xcassets */,
+				0B1DC08B20317DC700A0C0B2 /* Info.plist */,
+			);
+			path = "LonPomo-watch";
+			sourceTree = "<group>";
+		};
+		0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B6FF18E20763316001F634C /* views */,
+				0B1DC09520317DC800A0C0B2 /* InterfaceController.swift */,
+				0B2C8FC9207964C700292C0D /* SettingsController.swift */,
+				0B1DC09720317DC800A0C0B2 /* ExtensionDelegate.swift */,
+				0B1DC09920317DC800A0C0B2 /* NotificationController.swift */,
+				0B1DC09B20317DC800A0C0B2 /* Assets.xcassets */,
+				0B1DC09D20317DC800A0C0B2 /* Info.plist */,
+				0B1DC09E20317DC800A0C0B2 /* PushNotificationPayload.apns */,
+			);
+			path = "LonPomo-watch Extension";
+			sourceTree = "<group>";
+		};
+		0B1DC0AF20317FC200A0C0B2 /* LongPomo-tv */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC98EE20485CBF008E7283 /* LongPomo-tv.entitlements */,
+				0B1DC0B020317FC200A0C0B2 /* AppDelegate.swift */,
+				0B1DC0B220317FC200A0C0B2 /* ViewController.swift */,
+				0B1DC0B420317FC200A0C0B2 /* Main.storyboard */,
+				0B1DC0B720317FC200A0C0B2 /* Assets.xcassets */,
+				0B1DC0B920317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tv";
+			sourceTree = "<group>";
+		};
+		0B1DC0C120317FC200A0C0B2 /* LongPomo-tvTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC0C220317FC200A0C0B2 /* LongPomo_tvTests.swift */,
+				0B1DC0C420317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tvTests";
+			sourceTree = "<group>";
+		};
+		0B1DC0CC20317FC200A0C0B2 /* LongPomo-tvUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B1DC0CD20317FC200A0C0B2 /* LongPomo_tvUITests.swift */,
+				0B1DC0CF20317FC200A0C0B2 /* Info.plist */,
+			);
+			path = "LongPomo-tvUITests";
+			sourceTree = "<group>";
+		};
+		0B3E66F620400BC90012CEF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66F720400BD10012CEF1 /* TimerCircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B3E66F920400C5B0012CEF1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0BF935FE2041490400D61EFF /* Util */,
+				0BC480A21ED35F8A00C8024D /* Model */,
+				0B3E66FA20400C660012CEF1 /* Resources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0B3E66FA20400C660012CEF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66FB20400C6E0012CEF1 /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B3E66FB20400C6E0012CEF1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B3E66FC20400C730012CEF1 /* AppColors.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0B571E57202C5A710070F2C5 /* LongPomo-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0BFC98D720485A1C008E7283 /* LongPomo-ios.entitlements */,
+				0BF9360920416CF600D61EFF /* Controller */,
+				0BF9360120414AB600D61EFF /* Util */,
+				0B3E66F620400BC90012CEF1 /* View */,
+				0BF9360720416BBA00D61EFF /* Resources */,
+				0B571E58202C5A710070F2C5 /* AppDelegate.swift */,
+				0B571E64202C5A710070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-ios";
+			sourceTree = "<group>";
+		};
+		0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */,
+				0B571E6F202C5A720070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-iosTests";
+			sourceTree = "<group>";
+		};
+		0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E78202C5A720070F2C5 /* LongPomo_iosUITests.swift */,
+				0B571E7A202C5A720070F2C5 /* Info.plist */,
+			);
+			path = "LongPomo-iosUITests";
+			sourceTree = "<group>";
+		};
+		0B6FF18E20763316001F634C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0B6DA18E2079350700F63DAD /* TimeCircleView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		0B7F9B851ECE226C0023CF5F = {
 			isa = PBXGroup;
 			children = (
+				0BF0F0D920481BC200892892 /* Nimble.xcodeproj */,
+				0BF0F0EF20481BC800892892 /* Quick.xcodeproj */,
+				0B3E66F920400C5B0012CEF1 /* Shared */,
 				0B7F9B901ECE226C0023CF5F /* LongPomo */,
 				0B7F9BA21ECE226C0023CF5F /* LongPomoTests */,
 				0B7F9BAD1ECE226C0023CF5F /* LongPomoUITests */,
+				0B571E57202C5A710070F2C5 /* LongPomo-ios */,
+				0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */,
+				0B571E77202C5A720070F2C5 /* LongPomo-iosUITests */,
+				0B1DC08520317DC700A0C0B2 /* LonPomo-watch */,
+				0B1DC09420317DC800A0C0B2 /* LonPomo-watch Extension */,
+				0B1DC0AF20317FC200A0C0B2 /* LongPomo-tv */,
+				0B1DC0C120317FC200A0C0B2 /* LongPomo-tvTests */,
+				0B1DC0CC20317FC200A0C0B2 /* LongPomo-tvUITests */,
 				0B7F9B8F1ECE226C0023CF5F /* Products */,
+				0BF0F11720481BFD00892892 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +640,14 @@
 				0B7F9B8E1ECE226C0023CF5F /* LongPomo.app */,
 				0B7F9B9F1ECE226C0023CF5F /* LongPomoTests.xctest */,
 				0B7F9BAA1ECE226C0023CF5F /* LongPomoUITests.xctest */,
+				0B571E56202C5A710070F2C5 /* LongPomo-ios.app */,
+				0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */,
+				0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */,
+				0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */,
+				0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */,
+				0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */,
+				0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */,
+				0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,10 +655,10 @@
 		0B7F9B901ECE226C0023CF5F /* LongPomo */ = {
 			isa = PBXGroup;
 			children = (
+				0BFC98D4204859E2008E7283 /* LongPomo.entitlements */,
 				0B1031621ED72A8000210F5C /* Contoller */,
 				0B15D5AF1ED48E65006979ED /* View */,
 				0BC480A71ED3610C00C8024D /* Util */,
-				0BC480A21ED35F8A00C8024D /* Model */,
 				0BC4809A1ED339B600C8024D /* Resources */,
 				0B7F9B911ECE226C0023CF5F /* AppDelegate.swift */,
 				0B7F9B951ECE226C0023CF5F /* Assets.xcassets */,
@@ -152,6 +673,7 @@
 				0B7F9BA31ECE226C0023CF5F /* LongPomoTests.swift */,
 				0B7F9BA51ECE226C0023CF5F /* Info.plist */,
 				0B6E98591ED8346E00F158E4 /* SettingsViewControllerTests.swift */,
+				0BF0F11C20481D1000892892 /* LongPomoSpec.swift */,
 			);
 			path = LongPomoTests;
 			sourceTree = "<group>";
@@ -176,8 +698,7 @@
 		0BC4809E1ED33B0A00C8024D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0B7F9B971ECE226C0023CF5F /* Main.storyboard */,
-				0BC4809F1ED3403800C8024D /* AppColors.swift */,
+				0BF936422041877400D61EFF /* Main.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -186,8 +707,12 @@
 			isa = PBXGroup;
 			children = (
 				0BC480A31ED35FB100C8024D /* PomodoroViewModel.swift */,
-				0BC480A51ED360C900C8024D /* Settings.swift */,
 				0BC480AA1ED3647100C8024D /* PomodoroInteractor.swift */,
+				0BC480A51ED360C900C8024D /* Settings.swift */,
+				0BFC98BA204856C4008E7283 /* SettingsLocal.swift */,
+				0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */,
+				0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */,
+				349509452100865F00F4A60D /* RestorationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,17 +720,243 @@
 		0BC480A71ED3610C00C8024D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				0BC480A81ED3612C00C8024D /* Int+time.swift */,
 				0B15D5B21ED49211006979ED /* NSBezierPath+CGPath.swift */,
 				0B4423561EDAB2F0009A2AD0 /* MacOSNotification.swift */,
-				0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		0BF0F0DA20481BC200892892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BF0F0E420481BC200892892 /* Nimble.framework */,
+				0BF0F0E620481BC200892892 /* NimbleTests.xctest */,
+				0BF0F0E820481BC200892892 /* Nimble.framework */,
+				0BF0F0EA20481BC200892892 /* NimbleTests.xctest */,
+				0BF0F0EC20481BC200892892 /* Nimble.framework */,
+				0BF0F0EE20481BC200892892 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BF0F0F020481BC800892892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BF0F10020481BC800892892 /* Quick.framework */,
+				0BF0F10220481BC800892892 /* Quick - macOSTests.xctest */,
+				0BF0F10420481BC800892892 /* QuickFocused - macOSTests.xctest */,
+				0BF0F10620481BC800892892 /* QuickAfterSuite - macOSTests.xctest */,
+				0BF0F10820481BC800892892 /* Quick.framework */,
+				0BF0F10A20481BC800892892 /* Quick - iOSTests.xctest */,
+				0BF0F10C20481BC800892892 /* QuickFocused - iOSTests.xctest */,
+				0BF0F10E20481BC800892892 /* QuickAfterSuite - iOSTests.xctest */,
+				0BF0F11020481BC800892892 /* Quick.framework */,
+				0BF0F11220481BC800892892 /* Quick - tvOSTests.xctest */,
+				0BF0F11420481BC800892892 /* QuickFocused - tvOSTests.xctest */,
+				0BF0F11620481BC800892892 /* QuickAfterSuite - tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BF0F11720481BFD00892892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BF935FE2041490400D61EFF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0BC480A81ED3612C00C8024D /* Int+time.swift */,
+				0B4423581EDABD7F009A2AD0 /* SimplePersistence.swift */,
+				0BF9360420414B2600D61EFF /* Notification.swift */,
+				0BA8F827204806F800F050C9 /* Date+now.swift */,
+				0BA8F826204806F700F050C9 /* LonPomo-watch-Bridging-Header.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0BF9360120414AB600D61EFF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0BF9360720416BBA00D61EFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E5F202C5A710070F2C5 /* Assets.xcassets */,
+				0BF9360820416BC800D61EFF /* UI */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BF9360820416BC800D61EFF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E5C202C5A710070F2C5 /* Main.storyboard */,
+				0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0BF9360920416CF600D61EFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B571E5A202C5A710070F2C5 /* ViewController.swift */,
+				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B1DC08320317DC700A0C0B2 /* LonPomo-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0A720317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch" */;
+			buildPhases = (
+				0B1DC08220317DC700A0C0B2 /* Resources */,
+				0B1DC0A620317DC800A0C0B2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC09320317DC800A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LonPomo-watch";
+			productName = "LonPomo-watch";
+			productReference = 0B1DC08420317DC700A0C0B2 /* LonPomo-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0A320317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch Extension" */;
+			buildPhases = (
+				0B1DC08C20317DC700A0C0B2 /* Sources */,
+				0B1DC08D20317DC700A0C0B2 /* Frameworks */,
+				0B1DC08E20317DC700A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LonPomo-watch Extension";
+			productName = "LonPomo-watch Extension";
+			productReference = 0B1DC09020317DC700A0C0B2 /* LonPomo-watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D020317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tv" */;
+			buildPhases = (
+				0B1DC0AA20317FC200A0C0B2 /* Sources */,
+				0B1DC0AB20317FC200A0C0B2 /* Frameworks */,
+				0B1DC0AC20317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LongPomo-tv";
+			productName = "LongPomo-tv";
+			productReference = 0B1DC0AE20317FC200A0C0B2 /* LongPomo-tv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B1DC0BD20317FC200A0C0B2 /* LongPomo-tvTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D320317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvTests" */;
+			buildPhases = (
+				0B1DC0BA20317FC200A0C0B2 /* Sources */,
+				0B1DC0BB20317FC200A0C0B2 /* Frameworks */,
+				0B1DC0BC20317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC0C020317FC200A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-tvTests";
+			productName = "LongPomo-tvTests";
+			productReference = 0B1DC0BE20317FC200A0C0B2 /* LongPomo-tvTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B1DC0C820317FC200A0C0B2 /* LongPomo-tvUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1DC0D620317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvUITests" */;
+			buildPhases = (
+				0B1DC0C520317FC200A0C0B2 /* Sources */,
+				0B1DC0C620317FC200A0C0B2 /* Frameworks */,
+				0B1DC0C720317FC200A0C0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC0CB20317FC200A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-tvUITests";
+			productName = "LongPomo-tvUITests";
+			productReference = 0B1DC0C920317FC200A0C0B2 /* LongPomo-tvUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0B571E55202C5A710070F2C5 /* LongPomo-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */;
+			buildPhases = (
+				0B571E52202C5A710070F2C5 /* Sources */,
+				0B571E53202C5A710070F2C5 /* Frameworks */,
+				0B571E54202C5A710070F2C5 /* Resources */,
+				0B1DC08120317C8C00A0C0B2 /* ShellScript */,
+				0B1DC0A120317DC800A0C0B2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B1DC0A020317DC800A0C0B2 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-ios";
+			productName = "LongPomo-ios";
+			productReference = 0B571E56202C5A710070F2C5 /* LongPomo-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B571E68202C5A710070F2C5 /* LongPomo-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E82202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosTests" */;
+			buildPhases = (
+				0B571E65202C5A710070F2C5 /* Sources */,
+				0B571E66202C5A710070F2C5 /* Frameworks */,
+				0B571E67202C5A710070F2C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B571E6B202C5A720070F2C5 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-iosTests";
+			productName = "LongPomo-iosTests";
+			productReference = 0B571E69202C5A710070F2C5 /* LongPomo-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B571E83202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosUITests" */;
+			buildPhases = (
+				0B571E70202C5A720070F2C5 /* Sources */,
+				0B571E71202C5A720070F2C5 /* Frameworks */,
+				0B571E72202C5A720070F2C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B571E76202C5A720070F2C5 /* PBXTargetDependency */,
+			);
+			name = "LongPomo-iosUITests";
+			productName = "LongPomo-iosUITests";
+			productReference = 0B571E74202C5A720070F2C5 /* LongPomo-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0B7F9B8D1ECE226C0023CF5F /* LongPomo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B7F9BB31ECE226C0023CF5F /* Build configuration list for PBXNativeTarget "LongPomo" */;
@@ -266,15 +1017,82 @@
 		0B7F9B861ECE226C0023CF5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Daniel Vela";
 				TargetAttributes = {
-					0B7F9B8D1ECE226C0023CF5F = {
-						CreatedOnToolsVersion = 8.3.2;
+					0B1DC08320317DC700A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = TW65EXAM4U;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					0B1DC08F20317DC700A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+					0B1DC0AD20317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					0B1DC0BD20317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B1DC0AD20317FC200A0C0B2;
+					};
+					0B1DC0C820317FC200A0C0B2 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B1DC0AD20317FC200A0C0B2;
+					};
+					0B571E55202C5A710070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					0B571E68202C5A710070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B571E55202C5A710070F2C5;
+					};
+					0B571E73202C5A720070F2C5 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = TW65EXAM4U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0B571E55202C5A710070F2C5;
+					};
+					0B7F9B8D1ECE226C0023CF5F = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					0B7F9B9E1ECE226C0023CF5F = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -303,22 +1121,233 @@
 			mainGroup = 0B7F9B851ECE226C0023CF5F;
 			productRefGroup = 0B7F9B8F1ECE226C0023CF5F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0BF0F0DA20481BC200892892 /* Products */;
+					ProjectRef = 0BF0F0D920481BC200892892 /* Nimble.xcodeproj */;
+				},
+				{
+					ProductGroup = 0BF0F0F020481BC800892892 /* Products */;
+					ProjectRef = 0BF0F0EF20481BC800892892 /* Quick.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0B7F9B8D1ECE226C0023CF5F /* LongPomo */,
 				0B7F9B9E1ECE226C0023CF5F /* LongPomoTests */,
 				0B7F9BA91ECE226C0023CF5F /* LongPomoUITests */,
+				0B571E55202C5A710070F2C5 /* LongPomo-ios */,
+				0B571E68202C5A710070F2C5 /* LongPomo-iosTests */,
+				0B571E73202C5A720070F2C5 /* LongPomo-iosUITests */,
+				0B1DC08320317DC700A0C0B2 /* LonPomo-watch */,
+				0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */,
+				0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */,
+				0B1DC0BD20317FC200A0C0B2 /* LongPomo-tvTests */,
+				0B1DC0C820317FC200A0C0B2 /* LongPomo-tvUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0BF0F0E420481BC200892892 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 0BF0F0E320481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F0E620481BC200892892 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 0BF0F0E520481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F0E820481BC200892892 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 0BF0F0E720481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F0EA20481BC200892892 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 0BF0F0E920481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F0EC20481BC200892892 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 0BF0F0EB20481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F0EE20481BC200892892 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 0BF0F0ED20481BC200892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10020481BC800892892 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 0BF0F0FF20481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10220481BC800892892 /* Quick - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - macOSTests.xctest";
+			remoteRef = 0BF0F10120481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10420481BC800892892 /* QuickFocused - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - macOSTests.xctest";
+			remoteRef = 0BF0F10320481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10620481BC800892892 /* QuickAfterSuite - macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - macOSTests.xctest";
+			remoteRef = 0BF0F10520481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10820481BC800892892 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 0BF0F10720481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10A20481BC800892892 /* Quick - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - iOSTests.xctest";
+			remoteRef = 0BF0F10920481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10C20481BC800892892 /* QuickFocused - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - iOSTests.xctest";
+			remoteRef = 0BF0F10B20481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F10E20481BC800892892 /* QuickAfterSuite - iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - iOSTests.xctest";
+			remoteRef = 0BF0F10D20481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F11020481BC800892892 /* Quick.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Quick.framework;
+			remoteRef = 0BF0F10F20481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F11220481BC800892892 /* Quick - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Quick - tvOSTests.xctest";
+			remoteRef = 0BF0F11120481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F11420481BC800892892 /* QuickFocused - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickFocused - tvOSTests.xctest";
+			remoteRef = 0BF0F11320481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0BF0F11620481BC800892892 /* QuickAfterSuite - tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite - tvOSTests.xctest";
+			remoteRef = 0BF0F11520481BC800892892 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		0B1DC08220317DC700A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC08A20317DC700A0C0B2 /* Assets.xcassets in Resources */,
+				0B1DC08820317DC700A0C0B2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC08E20317DC700A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC09C20317DC800A0C0B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0AC20317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0B820317FC200A0C0B2 /* Assets.xcassets in Resources */,
+				0B1DC0B620317FC200A0C0B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BC20317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C720317FC200A0C0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E54202C5A710070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E63202C5A710070F2C5 /* LaunchScreen.storyboard in Resources */,
+				0B571E60202C5A710070F2C5 /* Assets.xcassets in Resources */,
+				0B571E5E202C5A710070F2C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E67202C5A710070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E72202C5A720070F2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8C1ECE226C0023CF5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B7F9B961ECE226C0023CF5F /* Assets.xcassets in Resources */,
-				0B7F9B991ECE226C0023CF5F /* Main.storyboard in Resources */,
+				0BF936442041877400D61EFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +1368,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BC480A11ED3414300C8024D /* ShellScript */ = {
+		0B1DC08120317C8C00A0C0B2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,22 +1381,139 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		0BC480A11ED3414300C8024D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint --path LongPomo\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B1DC08C20317DC700A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C8FC720795CD000292C0D /* Int+time.swift in Sources */,
+				0B2C8FC120795CA700292C0D /* Date+now.swift in Sources */,
+				0B1DC09A20317DC800A0C0B2 /* NotificationController.swift in Sources */,
+				0B2C8FB920795C8000292C0D /* SettingsLocal.swift in Sources */,
+				0B2C8FBB20795C8800292C0D /* Settings.swift in Sources */,
+				3450D42120FF12030016FF83 /* LongPomoNotificationManager.swift in Sources */,
+				0B3E670020400FDA0012CEF1 /* AppColors.swift in Sources */,
+				0B2C8FCA207964C700292C0D /* SettingsController.swift in Sources */,
+				0B2C8FC520795CCB00292C0D /* SimplePersistence.swift in Sources */,
+				0B1DC09820317DC800A0C0B2 /* ExtensionDelegate.swift in Sources */,
+				0B2C8FBF20795C9C00292C0D /* PomodoroViewModel.swift in Sources */,
+				0B6DA1902079373600F63DAD /* TimeCircleView.swift in Sources */,
+				0B2C8FC320795CC500292C0D /* Notification.swift in Sources */,
+				0B2C8FB720795C7B00292C0D /* SettingsiCLoud.swift in Sources */,
+				0B2C8FBD20795C8D00292C0D /* PomodoroInteractor.swift in Sources */,
+				0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */,
+				349509482100865F00F4A60D /* RestorationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0AA20317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2C8FBC20795C8900292C0D /* Settings.swift in Sources */,
+				0B2C8FC620795CCC00292C0D /* SimplePersistence.swift in Sources */,
+				0B2C8FC220795CA800292C0D /* Date+now.swift in Sources */,
+				0B2C8FBA20795C8100292C0D /* SettingsLocal.swift in Sources */,
+				0B2C8FB820795C7C00292C0D /* SettingsiCLoud.swift in Sources */,
+				0B3E66FF20400FD50012CEF1 /* AppColors.swift in Sources */,
+				0B2C8FC820795CD100292C0D /* Int+time.swift in Sources */,
+				0B1DC0B320317FC200A0C0B2 /* ViewController.swift in Sources */,
+				0B2C8FC420795CC600292C0D /* Notification.swift in Sources */,
+				0B2C8FC020795C9D00292C0D /* PomodoroViewModel.swift in Sources */,
+				0B2C8FBE20795C8E00292C0D /* PomodoroInteractor.swift in Sources */,
+				0B1DC0B120317FC200A0C0B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0BA20317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0C320317FC200A0C0B2 /* LongPomo_tvTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B1DC0C520317FC200A0C0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1DC0CE20317FC200A0C0B2 /* LongPomo_tvUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E52202C5A710070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF935FF2041491200D61EFF /* Int+time.swift in Sources */,
+				0B571E5B202C5A710070F2C5 /* ViewController.swift in Sources */,
+				0B571E85202C5FCC0070F2C5 /* ConfigViewControllViewController.swift in Sources */,
+				0BF9360020414A5400D61EFF /* SimplePersistence.swift in Sources */,
+				0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */,
+				3450D42020FF11EC0016FF83 /* LongPomoNotificationManager.swift in Sources */,
+				0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */,
+				0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */,
+				349509472100865F00F4A60D /* RestorationManager.swift in Sources */,
+				0B65FF042041462C0061E16C /* Settings.swift in Sources */,
+				0BA8F829204806F800F050C9 /* Date+now.swift in Sources */,
+				0BFC98BC204856C4008E7283 /* SettingsLocal.swift in Sources */,
+				0B65FF05204146300061E16C /* PomodoroInteractor.swift in Sources */,
+				0BF9360620414B2600D61EFF /* Notification.swift in Sources */,
+				0B571E59202C5A710070F2C5 /* AppDelegate.swift in Sources */,
+				0B65FF03204146290061E16C /* PomodoroViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E65202C5A710070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B571E70202C5A720070F2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B571E79202C5A720070F2C5 /* LongPomo_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B7F9B8A1ECE226C0023CF5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
-				0BC480A01ED3403800C8024D /* AppColors.swift in Sources */,
+				349509462100865F00F4A60D /* RestorationManager.swift in Sources */,
+				0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */,
+				0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */,
+				0BA8F828204806F800F050C9 /* Date+now.swift in Sources */,
 				0B1031641ED72AB900210F5C /* SettingsViewController.swift in Sources */,
 				0B4423571EDAB2F0009A2AD0 /* MacOSNotification.swift in Sources */,
 				0B4423591EDABD7F009A2AD0 /* SimplePersistence.swift in Sources */,
 				0BC480A41ED35FB100C8024D /* PomodoroViewModel.swift in Sources */,
+				0BFC98D22048576C008E7283 /* SettingsiCLoud.swift in Sources */,
 				0B7F9B941ECE226C0023CF5F /* ViewController.swift in Sources */,
+				0BFC98BB204856C4008E7283 /* SettingsLocal.swift in Sources */,
 				0B7F9B921ECE226C0023CF5F /* AppDelegate.swift in Sources */,
+				0BF9360520414B2600D61EFF /* Notification.swift in Sources */,
 				0BC480AB1ED3647100C8024D /* PomodoroInteractor.swift in Sources */,
 				0B15D5B11ED48EE7006979ED /* TimerCircleView.swift in Sources */,
 				0BC480A61ED360C900C8024D /* Settings.swift in Sources */,
@@ -380,6 +1526,7 @@
 			files = (
 				0B7F9BA41ECE226C0023CF5F /* LongPomoTests.swift in Sources */,
 				0B6E985A1ED8346E00F158E4 /* SettingsViewControllerTests.swift in Sources */,
+				0BF0F11D20481D1000892892 /* LongPomoSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +1541,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0B1DC09320317DC800A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC08F20317DC700A0C0B2 /* LonPomo-watch Extension */;
+			targetProxy = 0B1DC09220317DC800A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B1DC0A020317DC800A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC08320317DC700A0C0B2 /* LonPomo-watch */;
+			targetProxy = 0B1DC09F20317DC800A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B1DC0C020317FC200A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */;
+			targetProxy = 0B1DC0BF20317FC200A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B1DC0CB20317FC200A0C0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B1DC0AD20317FC200A0C0B2 /* LongPomo-tv */;
+			targetProxy = 0B1DC0CA20317FC200A0C0B2 /* PBXContainerItemProxy */;
+		};
+		0B571E6B202C5A720070F2C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
+			targetProxy = 0B571E6A202C5A720070F2C5 /* PBXContainerItemProxy */;
+		};
+		0B571E76202C5A720070F2C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B571E55202C5A710070F2C5 /* LongPomo-ios */;
+			targetProxy = 0B571E75202C5A720070F2C5 /* PBXContainerItemProxy */;
+		};
 		0B7F9BA11ECE226C0023CF5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0B7F9B8D1ECE226C0023CF5F /* LongPomo */;
@@ -407,18 +1584,418 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0B7F9B971ECE226C0023CF5F /* Main.storyboard */ = {
+		0B1DC08620317DC700A0C0B2 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0B7F9B981ECE226C0023CF5F /* Base */,
+				0B1DC08720317DC700A0C0B2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		0B1DC0B420317FC200A0C0B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B1DC0B520317FC200A0C0B2 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			sourceTree = "<group>";
+		};
+		0B571E5C202C5A710070F2C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B571E5D202C5A710070F2C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B571E61202C5A710070F2C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B571E62202C5A710070F2C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0BF936422041877400D61EFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BF936432041877400D61EFF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B1DC0A420317DC800A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LonPomo-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0B1DC0A520317DC800A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LonPomo-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0B1DC0A820317DC800A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = LonPomo_watch_Extension;
+				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Util/LonPomo-watch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		0B1DC0A920317DC800A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = LonPomo_watch_Extension;
+				INFOPLIST_FILE = "LonPomo-watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Util/LonPomo-watch-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		0B1DC0D120317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "LongPomo-tv/LongPomo-tv.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D220317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "LongPomo-tv/LongPomo-tv.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1DC0D420317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-tv.app/LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D520317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-tv.app/LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B1DC0D720317FC200A0C0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		0B1DC0D820317FC200A0C0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-tvUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-tvUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = "LongPomo-tv";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B571E7B202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B571E7C202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B571E7D202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-ios.app/LongPomo-ios";
+			};
+			name = Debug;
+		};
+		0B571E7E202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LongPomo-ios.app/LongPomo-ios";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B571E7F202C5A720070F2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LongPomo-ios";
+			};
+			name = Debug;
+		};
+		0B571E80202C5A720070F2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "LongPomo-iosUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.LongPomo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LongPomo-ios";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		0B7F9BB11ECE226C0023CF5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +2010,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -440,6 +2018,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -489,6 +2068,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -496,6 +2076,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -527,13 +2108,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TW65EXAM4U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -543,13 +2127,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = TW65EXAM4U;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LongPomo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.LongPomo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -624,6 +2211,78 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B1DC0A320317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0A420317DC800A0C0B2 /* Debug */,
+				0B1DC0A520317DC800A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0A720317DC800A0C0B2 /* Build configuration list for PBXNativeTarget "LonPomo-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0A820317DC800A0C0B2 /* Debug */,
+				0B1DC0A920317DC800A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D020317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D120317FC200A0C0B2 /* Debug */,
+				0B1DC0D220317FC200A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D320317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D420317FC200A0C0B2 /* Debug */,
+				0B1DC0D520317FC200A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B1DC0D620317FC200A0C0B2 /* Build configuration list for PBXNativeTarget "LongPomo-tvUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1DC0D720317FC200A0C0B2 /* Debug */,
+				0B1DC0D820317FC200A0C0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B571E81202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7B202C5A720070F2C5 /* Debug */,
+				0B571E7C202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B571E82202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7D202C5A720070F2C5 /* Debug */,
+				0B571E7E202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B571E83202C5A720070F2C5 /* Build configuration list for PBXNativeTarget "LongPomo-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B571E7F202C5A720070F2C5 /* Debug */,
+				0B571E80202C5A720070F2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0B7F9B891ECE226C0023CF5F /* Build configuration list for PBXProject "LongPomo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
