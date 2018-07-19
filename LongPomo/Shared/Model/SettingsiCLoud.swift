@@ -25,4 +25,11 @@ class SettingsiCloud: SettingsProtocol {
         set {
         }
     }
+    var startingDate: Date? {
+        get {
+            return nil
+        }
+        set {
+        }
+    }
 }

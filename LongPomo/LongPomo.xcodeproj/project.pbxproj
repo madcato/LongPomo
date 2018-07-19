@@ -91,6 +91,9 @@
 		0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
 		3450D42020FF11EC0016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
 		3450D42120FF12030016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
+		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -380,6 +383,7 @@
 		0BFC98D4204859E2008E7283 /* LongPomo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LongPomo.entitlements; sourceTree = "<group>"; };
 		0BFC98D720485A1C008E7283 /* LongPomo-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-ios.entitlements"; sourceTree = "<group>"; };
 		0BFC98EE20485CBF008E7283 /* LongPomo-tv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-tv.entitlements"; sourceTree = "<group>"; };
+		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -708,6 +712,7 @@
 				0BFC98BA204856C4008E7283 /* SettingsLocal.swift */,
 				0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */,
 				0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */,
+				349509452100865F00F4A60D /* RestorationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1412,6 +1417,7 @@
 				0B2C8FB720795C7B00292C0D /* SettingsiCLoud.swift in Sources */,
 				0B2C8FBD20795C8D00292C0D /* PomodoroInteractor.swift in Sources */,
 				0B1DC09620317DC800A0C0B2 /* InterfaceController.swift in Sources */,
+				349509482100865F00F4A60D /* RestorationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1462,6 +1468,7 @@
 				3450D42020FF11EC0016FF83 /* LongPomoNotificationManager.swift in Sources */,
 				0B3E66F820400BD40012CEF1 /* TimerCircleView.swift in Sources */,
 				0B3E66FE20400C7C0012CEF1 /* AppColors.swift in Sources */,
+				349509472100865F00F4A60D /* RestorationManager.swift in Sources */,
 				0B65FF042041462C0061E16C /* Settings.swift in Sources */,
 				0BA8F829204806F800F050C9 /* Date+now.swift in Sources */,
 				0BFC98BC204856C4008E7283 /* SettingsLocal.swift in Sources */,
@@ -1494,6 +1501,7 @@
 			files = (
 				0B15D5B31ED49211006979ED /* NSBezierPath+CGPath.swift in Sources */,
 				0BC480A91ED3612C00C8024D /* Int+time.swift in Sources */,
+				349509462100865F00F4A60D /* RestorationManager.swift in Sources */,
 				0B6E4A6920349E4000571BD6 /* ColorBlockView.swift in Sources */,
 				0B3E66FD20400C7B0012CEF1 /* AppColors.swift in Sources */,
 				0BA8F828204806F800F050C9 /* Date+now.swift in Sources */,

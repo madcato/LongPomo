@@ -18,15 +18,9 @@ class LongPomoNotificationManager {
         }
     }
 
-    func appActivated() {
-    }
-
     func resetNotifications() {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
-    }
-
-    func appDeactivated() {
     }
 
     /**

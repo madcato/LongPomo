@@ -11,6 +11,8 @@ import Foundation
 class SettingsLocal: SettingsProtocol {
     private static var kPomodoInSeconds: String = "kPomodoInSeconds"
     private static var kRestingInSeconds: String = "kRestingInSeconds"
+    private static var kStartingInSeconds: String = "kStartingInSeconds"
+
     var pomodoroInSeconds: Double = {
         return storedDouble(forKey: SettingsLocal.kPomodoInSeconds, default: 90)
         }() {
@@ -21,6 +23,14 @@ class SettingsLocal: SettingsProtocol {
 
     var restingInSeconds: Double = {
         return storedDouble(forKey: kRestingInSeconds, default: 20)
+        }() {
+        didSet {
+            SimplePersistence.store(restingInSeconds, forKey: SettingsLocal.kRestingInSeconds)
+        }
+    }
+
+    var startingDate: Date? = {
+        return SimplePersistence.object(forKey: kStartingInSeconds) as? Date
         }() {
         didSet {
             SimplePersistence.store(restingInSeconds, forKey: SettingsLocal.kRestingInSeconds)

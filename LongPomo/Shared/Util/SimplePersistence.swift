@@ -76,6 +76,40 @@ public class SimplePersistence {
     func double(forKey key: String) -> Double {
         return 0
     }
+    /**
+     Store an object
+     - Parameter value: Object to store
+     - Parameter key: Key associated to the store location to recover the stored object
+     */
+    public static func store(_ object: Any?,
+                             forKey key: String) {
+        provider.store(object: object, forKey: key)
+    }
+    /**
+     Blank method used to define the protocol of the function to override by the
+     concrete descendant. Don't use it directly.
+     - Parameter value: Object to store
+     - Parameter key: Key associated to the store location to recover the stored object
+     */
+    func store(object: Any?, forKey key: String) {
+    }
+    /**
+     Recover an object previously persisted
+     - Parameter key: Key associated to the store location to recover the stored object
+     - Returns: The previously stored Double value
+     */
+    public static func object(forKey key: String) -> Any? {
+        return provider.object(forKey: key)
+    }
+    /**
+     Blank method used to define the protocol of the function to override by the
+     concrete descendant. Don't use it directly.
+     - Parameter key: Key associated to the store location to recover the stored object
+     - Returns: The previously stored object value
+     */
+    func object(forKey key: String) -> Any? {
+        return 0
+    }
 }
 
 /**
@@ -98,6 +132,24 @@ class UserDefaultsSimpleProvider: SimplePersistence {
      - Returns: The previously stored Double value
     */
     override func double(forKey key: String) -> Double {
+        return UserDefaults.standard.double(forKey: key)
+    }
+    /**
+     Store a Object
+     - Parameter value: Object to store
+     - Parameter key: Key associated to the store location to recover the stored object
+     */
+    override func store(object: Any?,
+                        forKey key: String) {
+        UserDefaults.standard.set(object, forKey: key)
+        UserDefaults.standard.synchronize()
+    }
+    /**
+     Recover an Object previously persisted
+     - Parameter key: Key associated to the store location to recover the stored object
+     - Returns: The previously stored object
+     */
+    override func object(forKey key: String) -> Any? {
         return UserDefaults.standard.double(forKey: key)
     }
 }

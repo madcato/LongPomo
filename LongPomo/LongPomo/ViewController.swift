@@ -47,7 +47,7 @@ class ViewController: NSViewController {
     }
 
     func configureViewModel() {
-        let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
+        let interactor = PomodoroInteractor.shared
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
     }

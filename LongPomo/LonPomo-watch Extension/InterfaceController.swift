@@ -84,7 +84,7 @@ class InterfaceController: WKInterfaceController {
         guard viewModel == nil else {
             return
         }
-        let interactor = PomodoroInteractor(maxSeconds: Settings.pomodoroInSeconds)
+        let interactor = PomodoroInteractor.shared
         let pomodoroViewModel = PomodoroViewModel(interactor: interactor)
         viewModel = pomodoroViewModel
     }

@@ -18,11 +18,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     }
 
     func applicationDidBecomeActive() {
-        LongPomoNotificationManager.shared.appActivated()
+        RestorationManager.appActivated()
     }
 
     func applicationWillResignActive() {
-        LongPomoNotificationManager.shared.appDeactivated()
+        RestorationManager.appDeactivated()
     }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {

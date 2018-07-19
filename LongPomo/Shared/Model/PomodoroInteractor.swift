@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum PomodoroState {
+    case onGoing
+    case resting
+    case stopped
+}
+
 protocol PomodoroInteractorProtocol {
     /**
      Start the internal timer of the app.
@@ -20,14 +26,22 @@ protocol PomodoroInteractorProtocol {
     func start(from date: Date)
     func stop()
     var maxSeconds: Double { get set }
-    weak var delegate: PomodoroInteractorDelegate? { get set }
+    var initialState: PomodoroState { get }
+    var delegate: PomodoroInteractorDelegate? { get set }
 }
 
 protocol PomodoroInteractorDelegate: class {
     func timeChanged(secondsLeft: Double)
+    func stateChangedFromInteractor(_ newState: PomodoroState)
 }
 
-class PomodoroInteractor: PomodoroInteractorProtocol {
+final class PomodoroInteractor: PomodoroInteractorProtocol {
+    static let shared = PomodoroInteractor()
+    var initialState: PomodoroState {
+        didSet {
+            self.delegate?.stateChangedFromInteractor(initialState)
+        }
+    }
     var maxSeconds: Double { didSet {
             secondsLeft = maxSeconds
         }
@@ -37,13 +51,15 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
     weak var delegate: PomodoroInteractorDelegate?
     var secondsLeft: Double = 0
 
-    init(maxSeconds: Double) {
-        self.maxSeconds = maxSeconds
-        self.timer = Timer()
+    private init() {
+        timer = Timer()
+        maxSeconds = 0
+        initialState = .stopped
     }
 
     func start(from date: Date) {
         startTime = date
+        timer.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 1.0,
                                      repeats: true,
                                      block: { (_) in
@@ -54,6 +70,6 @@ class PomodoroInteractor: PomodoroInteractorProtocol {
     }
 
     func stop() {
-        self.timer.invalidate()
+        timer.invalidate()
     }
 }

@@ -8,12 +8,6 @@
 
 import Foundation
 
-enum PomodoroState {
-    case onGoing
-    case resting
-    case stopped
-}
-
 protocol PomodoroViewModelProtocol {
     var running: Bool { get }
     var runningDidChange: ((PomodoroViewModelProtocol) -> Void)? { get set }
@@ -32,7 +26,7 @@ protocol PomodoroViewModelProtocol {
     init(interactor: PomodoroInteractorProtocol)
 }
 
-class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
+class PomodoroViewModel: PomodoroViewModelProtocol {
     var running: Bool {
         didSet {
             self.runningDidChange?(self)
@@ -72,12 +66,12 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
 
     func stop() {
         internalStop(fromUser: true)
-        LongPomoNotificationManager.shared.resetNotifications()
     }
 
     func reset() {
         state = .stopped
         secondsLeft = Settings.pomodoroInSeconds
+        LPNotification.reset()
     }
 
     func currentProgress() -> Double {
@@ -90,7 +84,7 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
     required init(interactor: PomodoroInteractorProtocol) {
         running = false
         secondsLeft = Settings.pomodoroInSeconds
-        state = .stopped
+        state = interactor.initialState
         self.interactor = interactor
         self.interactor.delegate = self
     }
@@ -121,13 +115,25 @@ class PomodoroViewModel: PomodoroViewModelProtocol, PomodoroInteractorDelegate {
             reset()
         }
     }
+}
 
     // MARK: - PomodoroInteractorDelegate
 
+extension PomodoroViewModel: PomodoroInteractorDelegate {
     func timeChanged(secondsLeft: Double) {
         self.secondsLeft = secondsLeft
         if secondsLeft <= 0 {
             internalStop(fromUser: false)
+        }
+    }
+
+    func stateChangedFromInteractor(_ newState: PomodoroState) {
+        if newState == .stopped {
+            running = false
+            interactor.stop()
+            reset()
+        } else {
+            state = newState
         }
     }
 }

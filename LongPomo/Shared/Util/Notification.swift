@@ -26,6 +26,12 @@ class LPNotification {
      */
     static func start() {
     }
+    
+    /**
+     Called when reset the app to initial state
+    */
+    static func reset() {
+    }
 }
 #endif
 
@@ -50,6 +56,13 @@ class LPNotification {
         let time = Settings.pomodoroInSeconds
         let restTime = time + Settings.restingInSeconds
         LongPomoNotificationManager.shared.scheduleNotifications(for: time, andfor: restTime)
+    }
+
+    /**
+     Called when reset the app to initial state
+     */
+    static func reset() {
+        LongPomoNotificationManager.shared.resetNotifications()
     }
 }
 #endif
@@ -86,6 +99,13 @@ class LPNotification {
         let time = Settings.pomodoroInSeconds
         let restTime = time + Settings.restingInSeconds
         LongPomoNotificationManager.shared.scheduleNotifications(for: time, andfor: restTime)
+    }
+
+    /**
+     Called when reset the app to initial state
+     */
+    static func reset() {
+        LongPomoNotificationManager.shared.resetNotifications()
     }
 }
 #endif
