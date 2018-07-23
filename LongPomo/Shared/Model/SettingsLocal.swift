@@ -33,7 +33,7 @@ class SettingsLocal: SettingsProtocol {
         return SimplePersistence.object(forKey: kStartingInSeconds) as? Date
         }() {
         didSet {
-            SimplePersistence.store(restingInSeconds, forKey: SettingsLocal.kRestingInSeconds)
+            SimplePersistence.store(startingDate, forKey: SettingsLocal.kStartingInSeconds)
         }
     }
 

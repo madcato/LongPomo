@@ -26,7 +26,7 @@ class LPNotification {
      */
     static func start() {
     }
-    
+
     /**
      Called when reset the app to initial state
     */
@@ -63,6 +63,7 @@ class LPNotification {
      */
     static func reset() {
         LongPomoNotificationManager.shared.resetNotifications()
+        Settings.startingDate = nil
     }
 }
 #endif
@@ -106,6 +107,7 @@ class LPNotification {
      */
     static func reset() {
         LongPomoNotificationManager.shared.resetNotifications()
+        Settings.startingDate = nil
     }
 }
 #endif

@@ -12,6 +12,9 @@ class RestorationManager {
     static func appActivated() {
         let interactor = PomodoroInteractor.shared
         interactor.startTime = Settings.startingDate
+        guard interactor.startTime != nil else {
+            return
+        }
         if let startingTime = interactor.startTime {
             // Calculate the current state of the times
             let now = Date()
@@ -19,14 +22,14 @@ class RestorationManager {
             let fullPeriod = Settings.pomodoroInSeconds + Settings.restingInSeconds
             if interval < Settings.pomodoroInSeconds {
                 // Pomodoro currently
-                interactor.secondsLeft = Settings.pomodoroInSeconds - interval
                 interactor.maxSeconds = Settings.pomodoroInSeconds
+                interactor.secondsLeft = Settings.pomodoroInSeconds - interval
                 interactor.start(from: startingTime)
                 interactor.initialState = .onGoing
             } else if interval < fullPeriod {
                 // Resting  currently
-                interactor.secondsLeft = fullPeriod - interval
                 interactor.maxSeconds = Settings.restingInSeconds
+                interactor.secondsLeft = fullPeriod - interval
                 interactor.start(from: startingTime)
                 interactor.initialState = .resting
             } else {

@@ -55,6 +55,7 @@ final class PomodoroInteractor: PomodoroInteractorProtocol {
         timer = Timer()
         maxSeconds = 0
         initialState = .stopped
+        startTime = nil
     }
 
     func start(from date: Date) {
@@ -71,5 +72,6 @@ final class PomodoroInteractor: PomodoroInteractorProtocol {
 
     func stop() {
         timer.invalidate()
+        startTime = nil
     }
 }
