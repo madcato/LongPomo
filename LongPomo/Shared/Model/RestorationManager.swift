@@ -9,7 +9,12 @@
 import Foundation
 
 class RestorationManager {
-    static func appActivated() {
+    static var shared = RestorationManager()
+
+    public init() {
+    }
+
+    func appActivated() {
         let interactor = PomodoroInteractor.shared
         interactor.startTime = Settings.startingDate
         guard interactor.startTime != nil else {
@@ -41,7 +46,7 @@ class RestorationManager {
         }
     }
 
-    static func appDeactivated() {
+    func appDeactivated() {
         let interactor = PomodoroInteractor.shared
         Settings.startingDate = interactor.startTime
         interactor.stop() // We don't need the timer to run on background.

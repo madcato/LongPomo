@@ -18,11 +18,11 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
     }
 
     func applicationDidBecomeActive() {
-        RestorationManager.appActivated()
+        RestorationManager.shared.appActivated()
     }
 
     func applicationWillResignActive() {
-        RestorationManager.appDeactivated()
+        RestorationManager.shared.appDeactivated()
     }
 
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {

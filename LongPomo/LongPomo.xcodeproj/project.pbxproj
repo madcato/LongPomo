@@ -91,6 +91,9 @@
 		0BFC98D32048576C008E7283 /* SettingsiCLoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFC98D12048576C008E7283 /* SettingsiCLoud.swift */; };
 		3450D42020FF11EC0016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
 		3450D42120FF12030016FF83 /* LongPomoNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE8D61207CEB1400B782AF /* LongPomoNotificationManager.swift */; };
+		346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A10032119B8EC00325568 /* ViewControllerTests.swift */; };
+		346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A10192119BC4700325568 /* AppDelegateTests.swift */; };
+		346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A101C2119BFDA00325568 /* RestorationManagerMock.swift */; };
 		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
@@ -383,6 +386,9 @@
 		0BFC98D4204859E2008E7283 /* LongPomo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LongPomo.entitlements; sourceTree = "<group>"; };
 		0BFC98D720485A1C008E7283 /* LongPomo-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-ios.entitlements"; sourceTree = "<group>"; };
 		0BFC98EE20485CBF008E7283 /* LongPomo-tv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LongPomo-tv.entitlements"; sourceTree = "<group>"; };
+		346A10032119B8EC00325568 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		346A10192119BC4700325568 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		346A101C2119BFDA00325568 /* RestorationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManagerMock.swift; sourceTree = "<group>"; };
 		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -589,8 +595,11 @@
 		0B571E6C202C5A720070F2C5 /* LongPomo-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				346A101B2119BFB400325568 /* Helper */,
 				0B571E6D202C5A720070F2C5 /* LongPomo_iosTests.swift */,
 				0B571E6F202C5A720070F2C5 /* Info.plist */,
+				346A10032119B8EC00325568 /* ViewControllerTests.swift */,
+				346A10192119BC4700325568 /* AppDelegateTests.swift */,
 			);
 			path = "LongPomo-iosTests";
 			sourceTree = "<group>";
@@ -809,6 +818,14 @@
 				0B571E84202C5FCC0070F2C5 /* ConfigViewControllViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		346A101B2119BFB400325568 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				346A101C2119BFDA00325568 /* RestorationManagerMock.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1483,6 +1500,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */,
+				346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */,
+				346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */,
 				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

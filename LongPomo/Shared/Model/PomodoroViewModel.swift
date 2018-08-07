@@ -71,7 +71,6 @@ class PomodoroViewModel: PomodoroViewModelProtocol {
     func reset() {
         state = .stopped
         secondsLeft = Settings.pomodoroInSeconds
-        LPNotification.reset()
     }
 
     func currentProgress() -> Double {
@@ -113,6 +112,9 @@ class PomodoroViewModel: PomodoroViewModelProtocol {
                                         title: "LongPomo",
                                         resting: true)
             reset()
+        }
+        if fromUser == true {
+            LPNotification.reset()
         }
     }
 }

@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        RestorationManager.appDeactivated()
+        RestorationManager.shared.appDeactivated()
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        RestorationManager.appActivated()
+        RestorationManager.shared.appActivated()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
