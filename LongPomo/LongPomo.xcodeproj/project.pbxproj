@@ -97,6 +97,7 @@
 		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		34FFFD5D211B149400F10A0C /* ConfigViewControlViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -390,6 +391,7 @@
 		346A10192119BC4700325568 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		346A101C2119BFDA00325568 /* RestorationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManagerMock.swift; sourceTree = "<group>"; };
 		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
+		34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControlViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,6 +602,7 @@
 				0B571E6F202C5A720070F2C5 /* Info.plist */,
 				346A10032119B8EC00325568 /* ViewControllerTests.swift */,
 				346A10192119BC4700325568 /* AppDelegateTests.swift */,
+				34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */,
 			);
 			path = "LongPomo-iosTests";
 			sourceTree = "<group>";
@@ -1502,6 +1505,7 @@
 			files = (
 				346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */,
 				346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */,
+				34FFFD5D211B149400F10A0C /* ConfigViewControlViewControllerTests.swift in Sources */,
 				346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */,
 				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
 			);
