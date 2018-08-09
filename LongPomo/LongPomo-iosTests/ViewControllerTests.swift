@@ -11,10 +11,12 @@ import XCTest
 
 class ViewControllerTests: XCTestCase {
     var storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: ViewController.self))
+    var controller: UIViewController?
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        controller = storyboard.instantiateInitialViewController()
     }
 
     override func tearDown() {
@@ -24,7 +26,10 @@ class ViewControllerTests: XCTestCase {
 
     func testLoadViewController() {
         // This is an example of a functional test case.
-        let controller = storyboard.instantiateInitialViewController()
         XCTAssertNotNil(controller, "ViewController not loaded")
+    }
+
+    func testDidReceiveMemory() {
+        controller?.didReceiveMemoryWarning()
     }
 }

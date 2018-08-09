@@ -97,6 +97,9 @@
 		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
+		34DC2DC5211C69520049680B /* LongPomoNotificationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC2DC4211C69520049680B /* LongPomoNotificationManagerTests.swift */; };
+		34DC2DDB211C6D350049680B /* PomodoroInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC2DDA211C6D350049680B /* PomodoroInteractorTests.swift */; };
+		34DC2DDD211C6FB20049680B /* PomodoroInteractorDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC2DDC211C6FB20049680B /* PomodoroInteractorDelegateMock.swift */; };
 		34FFFD5D211B149400F10A0C /* ConfigViewControlViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -391,6 +394,9 @@
 		346A10192119BC4700325568 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		346A101C2119BFDA00325568 /* RestorationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManagerMock.swift; sourceTree = "<group>"; };
 		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
+		34DC2DC4211C69520049680B /* LongPomoNotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoNotificationManagerTests.swift; sourceTree = "<group>"; };
+		34DC2DDA211C6D350049680B /* PomodoroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroInteractorTests.swift; sourceTree = "<group>"; };
+		34DC2DDC211C6FB20049680B /* PomodoroInteractorDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroInteractorDelegateMock.swift; sourceTree = "<group>"; };
 		34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewControlViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -603,6 +609,8 @@
 				346A10032119B8EC00325568 /* ViewControllerTests.swift */,
 				346A10192119BC4700325568 /* AppDelegateTests.swift */,
 				34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */,
+				34DC2DC4211C69520049680B /* LongPomoNotificationManagerTests.swift */,
+				34DC2DDA211C6D350049680B /* PomodoroInteractorTests.swift */,
 			);
 			path = "LongPomo-iosTests";
 			sourceTree = "<group>";
@@ -827,6 +835,7 @@
 			isa = PBXGroup;
 			children = (
 				346A101C2119BFDA00325568 /* RestorationManagerMock.swift */,
+				34DC2DDC211C6FB20049680B /* PomodoroInteractorDelegateMock.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1504,9 +1513,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */,
+				34DC2DC5211C69520049680B /* LongPomoNotificationManagerTests.swift in Sources */,
 				346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */,
+				34DC2DDB211C6D350049680B /* PomodoroInteractorTests.swift in Sources */,
 				34FFFD5D211B149400F10A0C /* ConfigViewControlViewControllerTests.swift in Sources */,
 				346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */,
+				34DC2DDD211C6FB20049680B /* PomodoroInteractorDelegateMock.swift in Sources */,
 				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
