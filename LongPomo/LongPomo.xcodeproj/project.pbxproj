@@ -94,6 +94,8 @@
 		346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A10032119B8EC00325568 /* ViewControllerTests.swift */; };
 		346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A10192119BC4700325568 /* AppDelegateTests.swift */; };
 		346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A101C2119BFDA00325568 /* RestorationManagerMock.swift */; };
+		34836A10211DA034008FDA8A /* PomodoroViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34836A0F211DA034008FDA8A /* PomodoroViewModelTests.swift */; };
+		34836A12211DA111008FDA8A /* PomodoroInteractorProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34836A11211DA111008FDA8A /* PomodoroInteractorProtocolMock.swift */; };
 		349509462100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509472100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
 		349509482100865F00F4A60D /* RestorationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349509452100865F00F4A60D /* RestorationManager.swift */; };
@@ -393,6 +395,8 @@
 		346A10032119B8EC00325568 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		346A10192119BC4700325568 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		346A101C2119BFDA00325568 /* RestorationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManagerMock.swift; sourceTree = "<group>"; };
+		34836A0F211DA034008FDA8A /* PomodoroViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModelTests.swift; sourceTree = "<group>"; };
+		34836A11211DA111008FDA8A /* PomodoroInteractorProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroInteractorProtocolMock.swift; sourceTree = "<group>"; };
 		349509452100865F00F4A60D /* RestorationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationManager.swift; sourceTree = "<group>"; };
 		34DC2DC4211C69520049680B /* LongPomoNotificationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPomoNotificationManagerTests.swift; sourceTree = "<group>"; };
 		34DC2DDA211C6D350049680B /* PomodoroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroInteractorTests.swift; sourceTree = "<group>"; };
@@ -611,6 +615,7 @@
 				34FFFD5C211B149400F10A0C /* ConfigViewControlViewControllerTests.swift */,
 				34DC2DC4211C69520049680B /* LongPomoNotificationManagerTests.swift */,
 				34DC2DDA211C6D350049680B /* PomodoroInteractorTests.swift */,
+				34836A0F211DA034008FDA8A /* PomodoroViewModelTests.swift */,
 			);
 			path = "LongPomo-iosTests";
 			sourceTree = "<group>";
@@ -836,6 +841,7 @@
 			children = (
 				346A101C2119BFDA00325568 /* RestorationManagerMock.swift */,
 				34DC2DDC211C6FB20049680B /* PomodoroInteractorDelegateMock.swift */,
+				34836A11211DA111008FDA8A /* PomodoroInteractorProtocolMock.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1515,9 +1521,11 @@
 				346A10042119B8EC00325568 /* ViewControllerTests.swift in Sources */,
 				34DC2DC5211C69520049680B /* LongPomoNotificationManagerTests.swift in Sources */,
 				346A101A2119BC4700325568 /* AppDelegateTests.swift in Sources */,
+				34836A10211DA034008FDA8A /* PomodoroViewModelTests.swift in Sources */,
 				34DC2DDB211C6D350049680B /* PomodoroInteractorTests.swift in Sources */,
 				34FFFD5D211B149400F10A0C /* ConfigViewControlViewControllerTests.swift in Sources */,
 				346A101D2119BFDA00325568 /* RestorationManagerMock.swift in Sources */,
+				34836A12211DA111008FDA8A /* PomodoroInteractorProtocolMock.swift in Sources */,
 				34DC2DDD211C6FB20049680B /* PomodoroInteractorDelegateMock.swift in Sources */,
 				0B571E6E202C5A720070F2C5 /* LongPomo_iosTests.swift in Sources */,
 			);
